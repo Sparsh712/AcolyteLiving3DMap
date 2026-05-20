@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+/* ─── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0f1117;
+  color: #e8eaf0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Design tokens ─────────────────────────────────────────── */
+:root {
+  /* Brand */
+  --color-accent:        #7c3aed;
+  --color-accent-light:  #a78bfa;
+  --color-accent-glow:   rgba(124,58,237,0.35);
+
+  /* Property price tiers */
+  --color-cheap:      #4ade80;
+  --color-mid:        #fbbf24;
+  --color-expensive:  #f87171;
+  --color-selected:   #818cf8;
+
+  /* Surface */
+  --color-surface:    rgba(15,17,23,0.85);
+  --color-surface-2:  rgba(24,26,36,0.92);
+  --color-border:     rgba(255,255,255,0.08);
+
+  /* Text */
+  --color-text:       #e8eaf0;
+  --color-text-muted: #8b95a8;
+
+  /* Layout */
+  --panel-width: 380px;
+  --filter-height: 56px;
+  --hud-gap: 16px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+/* ─── MapLibre overrides ─────────────────────────────────────── */
+.maplibregl-canvas { outline: none; }
+
+.maplibregl-ctrl-group {
+  background: var(--color-surface-2) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+}
+
+.maplibregl-ctrl-group button {
+  color: var(--color-text) !important;
+}
+
+.maplibregl-ctrl-group button:hover {
+  background: rgba(255,255,255,0.08) !important;
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgba(0,0,0,0.4) !important;
+  color: rgba(255,255,255,0.4) !important;
+  border-radius: 6px !important;
+  font-size: 10px !important;
+}
+
+/* ─── Utility ────────────────────────────────────────────────── */
+.glass {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─── Animations ─────────────────────────────────────────────── */
+@keyframes pulse-ring {
+  0%   { transform: scale(1);   opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slide-out-right {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fly-bounce {
+  0%, 100% { transform: translateY(0) rotate(-15deg); }
+  50%       { transform: translateY(-4px) rotate(-15deg); }
+}

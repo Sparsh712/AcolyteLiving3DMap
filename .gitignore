@@ -1,0 +1,75 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local reports / tooling outputs
+eslint-output.txt
+eslint.json
+
+# raw source datasets (local processing inputs — too large, never deployed)
+Manchester All Data.json
+london All Data.json
+raw_osm_universities.json
+coventry_properties_data.json
+nottingham_Properties_Data (1).json
+
+# generated aggregate datasets not needed at runtime
+public/data/all-properties.json
+
+# generated/intermediate datasets — large, not referenced in app code
+public/data/manchester-university-buildings.json
+public/data/manchester_amenities_structures.json
+
+# Next.js boilerplate SVGs (not used in the app)
+public/file.svg
+public/globe.svg
+public/next.svg
+public/vercel.svg
+public/window.svg
+
+# developer-only data-fetch & one-off fix scripts (not needed in repo)
+scripts/fetch-london-amenities.ts
+scripts/fetch-property-buildings.ts
+scripts/mock-london-amenities.ts
+scripts/fix-park-categorization.ts
+
+# AI tooling config files (not for collaborators)
+CLAUDE.md
