@@ -1,5 +1,15 @@
 import type { Property } from '@/types/property';
 
+function parseImagePaths(raw: { media_updated_images?: string[] | null; media_image_paths?: string | null }): string[] {
+  if (Array.isArray(raw.media_updated_images) && raw.media_updated_images.length > 0) {
+    return raw.media_updated_images.slice(0, 5);
+  }
+
+  if (!raw.media_image_paths) return [];
+  const matches = String(raw.media_image_paths).match(/https?:\/\/[^"}]+|image\/[^"}]+/g) ?? [];
+  return matches.slice(0, 5);
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function normalizeHouse(raw: any): Property | null {
   const lat = parseFloat(raw.lat);
@@ -21,9 +31,7 @@ export function normalizeHouse(raw: any): Property | null {
     distance: parseFloat(raw.school_distance) || 0,
     rating: raw.review_avg_score ? parseFloat(raw.review_avg_score) : null,
     about: raw.about?.trim() || '',
-    images: Array.isArray(raw.media_updated_images)
-      ? raw.media_updated_images.slice(0, 5)
-      : [],
+    images: parseImagePaths(raw),
     houseUrl: raw.house_url || '',
     operator: raw.supplier_name?.trim() || '',
     beds: parseInt(raw.bed_num, 10) || 0,
@@ -150,11 +158,16 @@ function inflatePolygonByMeters(polygon: GeoJSON.Polygon, bufferMeters: number):
 // Lazily loaded OSM building data per city (client-safe: only used in browser via fetch)
 let manchesterBuildingCache: BuildingCache | null = null;
 let londonBuildingCache: BuildingCache | null = null;
+let coventryBuildingCache: BuildingCache | null = null;
+let nottinghamBuildingCache: BuildingCache | null = null;
 
-function getPropertyCity(property: Property): 'Manchester' | 'London' {
+function getPropertyCity(property: Property): 'Manchester' | 'London' | 'Coventry' | 'Nottingham' {
   const houseUrl = property.houseUrl?.toLowerCase() ?? '';
+  if (houseUrl.includes('/nottingham/')) return 'Nottingham';
+  if (houseUrl.includes('/coventry/')) return 'Coventry';
   if (houseUrl.includes('/london/')) return 'London';
-  return 'Manchester';
+  if (property.lat > 52.7 && property.lng > -2.0) return 'Nottingham';
+  return property.lat > 52.5 ? 'Manchester' : 'London';
 }
 
 async function loadBuildingCache(url: string): Promise<BuildingCache> {
@@ -179,6 +192,18 @@ async function getLondonBuildingCache(): Promise<BuildingCache> {
   return londonBuildingCache;
 }
 
+async function getCoventryBuildingCache(): Promise<BuildingCache> {
+  if (coventryBuildingCache) return coventryBuildingCache;
+  coventryBuildingCache = await loadBuildingCache('/data/coventry-property-buildings.json');
+  return coventryBuildingCache;
+}
+
+async function getNottinghamBuildingCache(): Promise<BuildingCache> {
+  if (nottinghamBuildingCache) return nottinghamBuildingCache;
+  nottinghamBuildingCache = await loadBuildingCache('/data/nottingham-property-buildings.json');
+  return nottinghamBuildingCache;
+}
+
 /**
  * Convert a Property[] to a GeoJSON FeatureCollection using real OSM building
  * footprints where available, falling back to a rectangular approximation.
@@ -187,14 +212,22 @@ async function getLondonBuildingCache(): Promise<BuildingCache> {
 export async function propertiesToGeoJSON(
   properties: Property[],
 ): Promise<GeoJSON.FeatureCollection> {
-  const [manchesterBuildings, londonBuildings] = await Promise.all([
+  const [manchesterBuildings, londonBuildings, coventryBuildings, nottinghamBuildings] = await Promise.all([
     getManchesterBuildingCache(),
     getLondonBuildingCache(),
+    getCoventryBuildingCache(),
+    getNottinghamBuildingCache(),
   ]);
 
   const features: GeoJSON.Feature[] = properties.map((p) => {
     const city = getPropertyCity(p);
-    const cityBuildings = city === 'London' ? londonBuildings : manchesterBuildings;
+    const cityBuildings = city === 'London'
+      ? londonBuildings
+      : city === 'Coventry'
+        ? coventryBuildings
+        : city === 'Nottingham'
+          ? nottinghamBuildings
+          : manchesterBuildings;
     const osm = cityBuildings[p.id];
 
     const geometryBase: GeoJSON.Polygon = osm

@@ -33,6 +33,8 @@ export async function GET(
     const { id } = await params;
     const manchesterPath = path.join(process.cwd(), 'public', 'data', 'manchester_amenities.json');
     const londonPath = path.join(process.cwd(), 'public', 'data', 'london_amenities.json');
+    const coventryPath = path.join(process.cwd(), 'public', 'data', 'coventry_amenities.json');
+    const nottinghamPath = path.join(process.cwd(), 'public', 'data', 'nottingham_amenities.json');
     
     let propertyAmenities = null;
 
@@ -45,6 +47,20 @@ export async function GET(
 
     if (!propertyAmenities && fs.existsSync(londonPath)) {
       const data = JSON.parse(fs.readFileSync(londonPath, 'utf8'));
+      if (data[id]) {
+        propertyAmenities = data[id];
+      }
+    }
+
+    if (!propertyAmenities && fs.existsSync(coventryPath)) {
+      const data = JSON.parse(fs.readFileSync(coventryPath, 'utf8'));
+      if (data[id]) {
+        propertyAmenities = data[id];
+      }
+    }
+
+    if (!propertyAmenities && fs.existsSync(nottinghamPath)) {
+      const data = JSON.parse(fs.readFileSync(nottinghamPath, 'utf8'));
       if (data[id]) {
         propertyAmenities = data[id];
       }

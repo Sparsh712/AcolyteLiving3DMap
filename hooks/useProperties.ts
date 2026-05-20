@@ -30,12 +30,22 @@ export function useProperties() {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<Property[]>;
       }),
+      fetch('/data/coventry-properties.json').then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json() as Promise<Property[]>;
+      }),
+      fetch('/data/nottingham-properties.json').then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json() as Promise<Property[]>;
+      }),
     ])
-      .then(([manchesterResult, londonResult]) => {
+      .then(([manchesterResult, londonResult, coventryResult, nottinghamResult]) => {
         const manchester = manchesterResult.status === 'fulfilled' ? manchesterResult.value : [];
         const london = londonResult.status === 'fulfilled' ? londonResult.value : [];
+        const coventry = coventryResult.status === 'fulfilled' ? coventryResult.value : [];
+        const nottingham = nottinghamResult.status === 'fulfilled' ? nottinghamResult.value : [];
 
-        const merged = [...manchester, ...london].filter(isValidProperty);
+        const merged = [...manchester, ...london, ...coventry, ...nottingham].filter(isValidProperty);
         cached = merged;
         setProperties(merged);
       })

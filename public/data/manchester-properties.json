@@ -19,8 +19,10 @@
       "01J2E06K4T1STJ1612HR1Q766E.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1620964",
+    "operator": "Uninist",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1630317",
@@ -42,8 +44,10 @@
       "01J2FZ8QPAY875CNSW1MV285P2.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1630317",
+    "operator": "Britannia Student Services",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1637520",
@@ -65,8 +69,10 @@
       "01J5FCN3WQ7R40BHTGHWN5APH4.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1637520",
+    "operator": "Uninist",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1641540",
@@ -88,8 +94,10 @@
       "01J742TDNK8FZZSKSFMCYN9R96.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1641540",
+    "operator": "ICONINC",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1657291",
@@ -111,8 +119,10 @@
       "01JVMEM4PJB5GXMQC8FQ5T654M.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1657291",
+    "operator": "Homes for Students",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1664612",
@@ -134,8 +144,10 @@
       "01JJ4MY1RGMCMP9E9884RTRY94.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1664612",
+    "operator": "Hello Student",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1495491",
@@ -157,8 +169,10 @@
       "01HS0PBBCMG1XW03AJ7DZMF32Z.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1495491",
+    "operator": "ICONINC",
     "floors": 4,
-    "beds": 198
+    "beds": 198,
+    "roomTypes": ""
   },
   {
     "id": "1495494",
@@ -180,8 +194,10 @@
       "01HS0PG68A0GJ028D2463B7XM1.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1495494",
+    "operator": "ICONINC",
     "floors": 10,
-    "beds": 300
+    "beds": 300,
+    "roomTypes": ""
   },
   {
     "id": "1485967",
@@ -203,8 +219,10 @@
       "01HS0N58B0YP68RWYQ70BXKY66.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1485967",
+    "operator": "Unite Students",
     "floors": 32,
-    "beds": 603
+    "beds": 603,
+    "roomTypes": ""
   },
   {
     "id": "1510908",
@@ -226,8 +244,10 @@
       "01JA5V4VFCD3XP3111WDJ13KGB.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1510908",
+    "operator": "Homes for Students",
     "floors": 3,
-    "beds": 206
+    "beds": 206,
+    "roomTypes": ""
   },
   {
     "id": "1566432",
@@ -249,8 +269,10 @@
       "01J8Z870AXBVNHS3XWHAD28C05.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1566432",
+    "operator": "Uninist",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1577191",
@@ -272,8 +294,10 @@
       "01K0F1B2693Q9DWKHT272W8ZG4.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1577191",
+    "operator": "Pulse Property Management",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "1450127",
@@ -295,8 +319,10 @@
       "01HS0GCMNRJ2SK4YWR0G1Z9CVD.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1450127",
+    "operator": "Hello Student",
     "floors": 5,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "181694",
@@ -318,8 +344,10 @@
       "01HS0FT9F7QGTKQBAR4J2JPMG6.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-181694",
+    "operator": "iQ Student Accommodation",
     "floors": 4,
-    "beds": 41
+    "beds": 41,
+    "roomTypes": ""
   },
   {
     "id": "1710625",
@@ -341,8 +369,10 @@
       "01K83RKYQ56PSHAWFEYR0VA1VR.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1710625",
+    "operator": "YPP",
     "floors": 5,
-    "beds": 48
+    "beds": 48,
+    "roomTypes": ""
   },
   {
     "id": "17406",
@@ -364,8 +394,10 @@
       "01JQC2MA2C3XS0EXX9C642PZBM.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17406",
+    "operator": "Student Facility Management",
     "floors": 4,
-    "beds": 217
+    "beds": 217,
+    "roomTypes": ""
   },
   {
     "id": "46380",
@@ -387,8 +419,10 @@
       "01J4Q6DC5Z5Y86GHHW9Q73RCNH.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-46380",
+    "operator": "Unite Students",
     "floors": 36,
-    "beds": 520
+    "beds": 520,
+    "roomTypes": ""
   },
   {
     "id": "193017",
@@ -410,8 +444,10 @@
       "01K2Q5N8E87MZ5C9DS7FVJ1BJ0.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-193017",
+    "operator": "iQ Student Accommodation",
     "floors": 7,
-    "beds": 70
+    "beds": 70,
+    "roomTypes": ""
   },
   {
     "id": "17390",
@@ -433,8 +469,10 @@
       "01HS01DHFYHMD9KT93EQEFMRRC.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17390",
+    "operator": "Homes for Students",
     "floors": 4,
-    "beds": 43
+    "beds": 43,
+    "roomTypes": ""
   },
   {
     "id": "17378",
@@ -456,8 +494,10 @@
       "01HS017ZA8Y706AN5BT6D03GNN.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17378",
+    "operator": "Homes for Students",
     "floors": 4,
-    "beds": 99
+    "beds": 99,
+    "roomTypes": ""
   },
   {
     "id": "17397",
@@ -479,8 +519,10 @@
       "01HS02XYF7R1TKBR0185DXGZ17.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17397",
+    "operator": "Homes for Students",
     "floors": 3,
-    "beds": 122
+    "beds": 122,
+    "roomTypes": ""
   },
   {
     "id": "35500",
@@ -502,8 +544,10 @@
       "01J2E7BAQ6YGCX4BDKMJ2C1RTY.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-35500",
+    "operator": "dwell Student Living",
     "floors": 5,
-    "beds": 362
+    "beds": 362,
+    "roomTypes": ""
   },
   {
     "id": "51739",
@@ -525,8 +569,10 @@
       "01JXAH3Q7F0W4W61MN9G9T55QZ.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-51739",
+    "operator": "dwell Student Living",
     "floors": 4,
-    "beds": 140
+    "beds": 140,
+    "roomTypes": ""
   },
   {
     "id": "1623847",
@@ -548,8 +594,10 @@
       "01K5C0W6GE34FW4TA5FT58WQER.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1623847",
+    "operator": "Almero student",
     "floors": 4,
-    "beds": 120
+    "beds": 120,
+    "roomTypes": ""
   },
   {
     "id": "1652935",
@@ -571,8 +619,10 @@
       "01JRG2NSJDM8NN2N5ZHNM921H3.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1652935",
+    "operator": "House of Social",
     "floors": 13,
-    "beds": 576
+    "beds": 576,
+    "roomTypes": ""
   },
   {
     "id": "1467819",
@@ -594,8 +644,10 @@
       "01HS0GDHPMW07TYCVSFG5795VP.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1467819",
+    "operator": "true Student",
     "floors": 14,
-    "beds": 402
+    "beds": 402,
+    "roomTypes": ""
   },
   {
     "id": "1522452",
@@ -617,8 +669,10 @@
       "01J9P83Y8D67WTRJNP1PJMGRXR.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1522452",
+    "operator": "CRM Students",
     "floors": 8,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "446768",
@@ -640,8 +694,10 @@
       "01HS0G4S7XKZKFZ7D1FJFYGN03.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-446768",
+    "operator": "Mansion Student",
     "floors": 3,
-    "beds": 108
+    "beds": 108,
+    "roomTypes": ""
   },
   {
     "id": "446771",
@@ -663,8 +719,10 @@
       "01HS0G5SZFJVY3PCJ5MDBVY4NM.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-446771",
+    "operator": "Mansion Student",
     "floors": 3,
-    "beds": 69
+    "beds": 69,
+    "roomTypes": ""
   },
   {
     "id": "1586247",
@@ -686,8 +744,10 @@
       "01JV5098VYB23GFVAXZHPHPH4E.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1586247",
+    "operator": "Homes for Students",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "31961",
@@ -709,8 +769,10 @@
       "01HS05VWMCZBMTEXWA3F511QCM.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-31961",
+    "operator": "Unite Students",
     "floors": 8,
-    "beds": 600
+    "beds": 600,
+    "roomTypes": ""
   },
   {
     "id": "1711854",
@@ -732,8 +794,10 @@
       "01K9CSZ1JQGZEKDGXKD1WCNB61.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1711854",
+    "operator": "iQ Student Accommodation",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "361428",
@@ -755,8 +819,10 @@
       "01HS0G08FEK4V05MJ0CPH5XM58.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-361428",
+    "operator": "iQ Student Accommodation",
     "floors": 5,
-    "beds": 39
+    "beds": 39,
+    "roomTypes": ""
   },
   {
     "id": "1471324",
@@ -778,8 +844,10 @@
       "01J2FSHE4F8MZ94NX50ZHZSV00.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1471324",
+    "operator": "dwell Student Living",
     "floors": 6,
-    "beds": 126
+    "beds": 126,
+    "roomTypes": ""
   },
   {
     "id": "1475335",
@@ -801,8 +869,10 @@
       "01K8NV0YYTYS2HT290ANB59QNH.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1475335",
+    "operator": "Canvas Student",
     "floors": 31,
-    "beds": 813
+    "beds": 813,
+    "roomTypes": ""
   },
   {
     "id": "1711156",
@@ -824,8 +894,10 @@
       "01K8R765KB46NBJ94A8680NJJ2.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-1711156",
+    "operator": "Homes for Students",
     "floors": 0,
-    "beds": 0
+    "beds": 0,
+    "roomTypes": ""
   },
   {
     "id": "366961",
@@ -847,8 +919,10 @@
       "01JAWW6F0D5MWSA88103WRDW55.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-366961",
+    "operator": "Hello Student",
     "floors": 0,
-    "beds": 80
+    "beds": 80,
+    "roomTypes": ""
   },
   {
     "id": "17362",
@@ -870,8 +944,10 @@
       "01HS000S9VT44G4A13EGZV1R4D.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17362",
+    "operator": "Homes for Students",
     "floors": 3,
-    "beds": 142
+    "beds": 142,
+    "roomTypes": ""
   },
   {
     "id": "17371",
@@ -893,8 +969,10 @@
       "01HS006FQDNDXVG44MKYPYRGNG.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17371",
+    "operator": "Homes for Students",
     "floors": 3,
-    "beds": 150
+    "beds": 150,
+    "roomTypes": ""
   },
   {
     "id": "17467",
@@ -916,8 +994,10 @@
       "01HS04PE56H3N606KR1H3N269M.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17467",
+    "operator": "Unite Students",
     "floors": 7,
-    "beds": 690
+    "beds": 690,
+    "roomTypes": ""
   },
   {
     "id": "17470",
@@ -938,8 +1018,10 @@
       "01HS1MAVZ6AZ728FFDXDZMS3J4.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17470",
+    "operator": "Host",
     "floors": 4,
-    "beds": 80
+    "beds": 80,
+    "roomTypes": ""
   },
   {
     "id": "17684",
@@ -957,8 +1039,10 @@
       "01JCNM5700ENWSPNNMYZSE6FHG.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17684",
+    "operator": "iQ Student Accommodation",
     "floors": 8,
-    "beds": 351
+    "beds": 351,
+    "roomTypes": ""
   },
   {
     "id": "17461",
@@ -980,8 +1064,10 @@
       "01HS04CNQA9TVJJA13AJE996E8.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17461",
+    "operator": "Unite Students",
     "floors": 17,
-    "beds": 729
+    "beds": 729,
+    "roomTypes": ""
   },
   {
     "id": "17602",
@@ -1003,8 +1089,10 @@
       "01HS050JXT1QXEDT6Q4QJ1VFGM.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17602",
+    "operator": "CRM Students",
     "floors": 0,
-    "beds": 80
+    "beds": 80,
+    "roomTypes": ""
   },
   {
     "id": "17661",
@@ -1026,8 +1114,10 @@
       "01HS0517P8MWHRK1XDTQMHH2BH.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17661",
+    "operator": "iQ Student Accommodation",
     "floors": 6,
-    "beds": 521
+    "beds": 521,
+    "roomTypes": ""
   },
   {
     "id": "17418",
@@ -1049,8 +1139,10 @@
       "01J17D6G7EB07N4WEPHXVCR1X2.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17418",
+    "operator": "dwell Student Living",
     "floors": 5,
-    "beds": 145
+    "beds": 145,
+    "roomTypes": ""
   },
   {
     "id": "17446",
@@ -1072,8 +1164,10 @@
       "01HS0478CWCM3STX7M2NQT0N6C.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17446",
+    "operator": "Unite Students",
     "floors": 17,
-    "beds": 588
+    "beds": 588,
+    "roomTypes": ""
   },
   {
     "id": "17432",
@@ -1095,8 +1189,10 @@
       "01HS03Y5M1CK8VQX8V0627HW2B.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17432",
+    "operator": "dwell Student Living",
     "floors": 8,
-    "beds": 982
+    "beds": 982,
+    "roomTypes": ""
   },
   {
     "id": "17440",
@@ -1118,8 +1214,10 @@
       "01HS041ZZPRVKQTZE490H07QJE.webp"
     ],
     "houseUrl": "uk/manchester/detail-apartments-17440",
+    "operator": "Unite Students",
     "floors": 5,
-    "beds": 321
+    "beds": 321,
+    "roomTypes": ""
   },
   {
     "id": "17644",
@@ -1133,9 +1231,17 @@
     "distance": 0.95,
     "rating": 2.3,
     "about": "Park View is a cheap student accommodation in Manchester, offering 222 En-suite rooms, with rooms categorised into 5 grades to suit a diverse range of student needs. All rooms are supplied with basic furniture and domestic appliances to ensure that students can move into their rooms quickly. The flats are ideally located in a quiet residential area. There are also a large number of supermarket chains and well-reviewed restaurants in the vicinity to help students with their daily needs. Alternatively, the University of Manchester is within walking distance from the flats, and Manchester Metropolitan University and BPP University Manchester Campus are also accessible by transport. FeaturesPark View offers 222 rooms, all En-suite, divided into 5 classes of varying sizes. All rooms are equipped with a strong Wi-Fi connection, making it easy for students to study or stream their favourite shows from inside the house. The built-in heating system creates a warm and cosy atmosphere, whatever the weather outside. The bedrooms are private sanctuaries with spacious wardrobes for all your belongings, comfy beds for a restful night's sleep, and dedicated desks and chairs for work or study. In the communal kitchen, a modern fridge, oven, microwave, and hob make it easy for everyone to cook a meal. Park View student flats are more than just a place to sleep. They also offer first-class facilities for the modern student lifestyle. The laundry room ensures that students keep washing clothes from getting in the way of their studies. Lifts make daily commuting a breeze, especially for those students living on higher floors. The comfortably designed lounge area in the lobby is the perfect place to relax, socialise, and even brainstorm for your next group project. For environmentally conscious and fitness-minded students, the flats also offer secure bike storage facilities to encourage the use of sustainable transport. Location and What's Hot? Modern conveniences and an eclectic range of cuisines are available in the vibrant neighbourhood surrounding Park View student accommodation. Students can stock up on everyday essentials at local supermarkets such as Tesco, Lidl, Morrison's and Co-op for all their grocery needs. Those who don't like cooking can savour traditional dishes at the Ayas restaurant or authentic Ethiopian food at the Mesob and Merhaba restaurants. As the day draws to a close, relax at The Old Abbey Taphouse or JD Wetherspoon, two popular pubs in the community ideal for socialising and taking a break. As well as a wide range of amenities, a wealth of activities and venues can be found around Park View, with Snyder Park being a tree-lined, tranquil setting ideal for reflection or a leisurely picnic. For sports enthusiasts, the Denmark Road Sports Centre has various sports facilities and training programmes to keep students fit and active. Whitworth Park's expansive lawns and bustling social scene provide a welcoming space to relax and socialise with fellow students. Finally, take advantage of the Whitworth Art Gallery, which boasts a wide range of modern and historical exhibits and is the ideal place to spark your creativity and broaden your horizons. TransportPark View is located just south of the University of Manchester and is an 8-minute walk to the campus. Students can also travel to other universities by public transport: 16 minutes to Manchester Metropolitan University, 17 minutes to INTO Manchester and BPP University's Manchester campus, and 19 minutes to the University of Law Manchester Campus. The University of Salford is the furthest away, taking 31 minutes by public transport. Students who need to travel to other cities can take a 17-minute bus journey to Manchester Oxford Road train station. Security & ServicesPark View is equipped with a video surveillance system within the flat boundaries to ensure a safe living environment. In addition, there is free WIFI coverage throughout the flats, which can be upgraded for a fee if required. If students notice any faults with the facilities, the professional maintenance team will carry out repairs immediately.",
-    "images": [],
+    "images": [
+      "https://img.uhzcdn.com/images/supplier/26/3ea03523aa1a7759f5dfa9e701f59a21a55bb3.png",
+      "https://img.uhzcdn.com/images/user/57/6c47b2c52001bf527fb8a9335adb18b9d2d9c7.jpg",
+      "image/1391/01KCH7V99GXWYA585V49KR9Y51.webp",
+      "image/1389/01KCH5FA5KA2K5KS8GKDRSPX1B.webp",
+      "image/1391/01KCH80N7MRGA5506PC08Z3CJ0.webp"
+    ],
     "houseUrl": "uk/manchester/detail-apartments-17644",
+    "operator": "Homes for Students",
     "floors": 5,
-    "beds": 222
+    "beds": 222,
+    "roomTypes": ""
   }
 ]

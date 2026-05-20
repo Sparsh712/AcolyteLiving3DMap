@@ -66,10 +66,13 @@ public/vercel.svg
 public/window.svg
 
 # developer-only data-fetch & one-off fix scripts (not needed in repo)
-scripts/fetch-london-amenities.ts
-scripts/fetch-property-buildings.ts
-scripts/mock-london-amenities.ts
-scripts/fix-park-categorization.ts
+scripts_other/fetch-london-amenities.ts
+scripts_other/fetch-property-buildings.ts
+scripts_other/mock-london-amenities.ts
+scripts_other/fix-park-categorization.ts
+scripts_other/process-data.ts
+
+scripts/*
 
 # AI tooling config files (not for collaborators)
 CLAUDE.md

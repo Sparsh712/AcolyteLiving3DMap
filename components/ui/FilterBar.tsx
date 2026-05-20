@@ -2,7 +2,7 @@
 
 import CustomSelect, { type SelectOption } from '@/components/ui/CustomSelect';
 
-type CityFilter = '' | 'Manchester' | 'London';
+type CityFilter = '' | 'Manchester' | 'London' | 'Coventry' | 'Nottingham';
 
 interface FilterBarProps {
   cityFilter: CityFilter;
@@ -22,6 +22,8 @@ export default function FilterBar({
   const cityOptions: SelectOption[] = [
     { value: 'Manchester', label: 'Manchester' },
     { value: 'London', label: 'London' },
+    { value: 'Coventry', label: 'Coventry' },
+    { value: 'Nottingham', label: 'Nottingham' },
   ];
   const uniOptions: SelectOption[] = universities.map((u) => ({ value: u, label: u }));
 

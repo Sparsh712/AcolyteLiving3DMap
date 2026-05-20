@@ -3,6 +3,8 @@ import type { CameraOptions, FitBoundsOptions } from 'maplibre-gl';
 // Manchester city centre
 export const MANCHESTER_CENTER: [number, number] = [-2.2426, 53.4808];
 export const LONDON_CENTER: [number, number] = [-0.1276, 51.5072];
+export const COVENTRY_CENTER: [number, number] = [-1.5106, 52.4068];
+export const NOTTINGHAM_CENTER: [number, number] = [-1.1581, 52.9548];
 
 export const INITIAL_VIEW: CameraOptions & Pick<FitBoundsOptions, 'padding'> = {
   center: [0, 20],

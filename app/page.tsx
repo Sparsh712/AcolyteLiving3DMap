@@ -7,7 +7,7 @@ import type { Map as MapLibreMap, MapMouseEvent } from 'maplibre-gl';
 import { useProperties } from '@/hooks/useProperties';
 import { useMapInteraction } from '@/hooks/useMapInteraction';
 import type { Property } from '@/types/property';
-import { LONDON_CENTER, MANCHESTER_CENTER } from '@/lib/maplibre/mapConfig';
+import { COVENTRY_CENTER, LONDON_CENTER, MANCHESTER_CENTER, NOTTINGHAM_CENTER } from '@/lib/maplibre/mapConfig';
 
 // SSR-safe dynamic imports for anything that uses `window`
 const MapView          = dynamic(() => import('@/components/map/MapView'),          { ssr: false });
@@ -19,14 +19,17 @@ import PropertyPanel from '@/components/ui/PropertyPanel';
 import FilterBar     from '@/components/ui/FilterBar';
 import CustomSelect, { type SelectOption } from '@/components/ui/CustomSelect';
 
-type CityFilter = '' | 'Manchester' | 'London';
+type CityFilter = '' | 'Manchester' | 'London' | 'Coventry' | 'Nottingham';
 
 function getPropertyCity(property: Property): Exclude<CityFilter, ''> {
   const houseUrl = property.houseUrl?.toLowerCase() ?? '';
+  if (houseUrl.includes('/nottingham/')) return 'Nottingham';
+  if (houseUrl.includes('/coventry/')) return 'Coventry';
   if (houseUrl.includes('/london/')) return 'London';
   if (houseUrl.includes('/manchester/')) return 'Manchester';
 
   // Fallback by latitude when URL city segment is missing.
+  if (property.lat > 52.7 && property.lng > -2.0) return 'Nottingham';
   return property.lat > 52.5 ? 'Manchester' : 'London';
 }
 
@@ -277,7 +280,13 @@ export default function HomePage() {
     }
 
     map.stop();
-    const targetCenter = city === 'London' ? LONDON_CENTER : MANCHESTER_CENTER;
+    const targetCenter = city === 'London'
+      ? LONDON_CENTER
+      : city === 'Coventry'
+        ? COVENTRY_CENTER
+        : city === 'Nottingham'
+          ? NOTTINGHAM_CENTER
+          : MANCHESTER_CENTER;
     map.flyTo({
       center: targetCenter,
       zoom: city === 'London' ? 12.8 : 13.4,
@@ -306,7 +315,13 @@ export default function HomePage() {
       return;
     }
 
-    const targetCenter = cityFilter === 'London' ? LONDON_CENTER : MANCHESTER_CENTER;
+    const targetCenter = cityFilter === 'London'
+      ? LONDON_CENTER
+      : cityFilter === 'Coventry'
+        ? COVENTRY_CENTER
+        : cityFilter === 'Nottingham'
+          ? NOTTINGHAM_CENTER
+          : MANCHESTER_CENTER;
     const targetZoom = cityFilter === 'London' ? 12.8 : 13.4;
 
     map.stop();
