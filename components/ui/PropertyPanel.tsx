@@ -54,6 +54,7 @@ export default function PropertyPanel({
   const images = p?.images?.map((f) => getImageUrl(f, 'full')) ?? [];
 
   const stars = p?.rating ? Math.round(p.rating) : 0;
+  const listingUrl = p ? buildListingUrl(p) : '';
 
   return (
     <div
@@ -312,7 +313,7 @@ export default function PropertyPanel({
             {p.id && (
               <a
                 id="view-listing-btn"
-                href={`https://acolyteliving.com/properties/uk/manchester/apartments-${p.id}`}
+                href={listingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -367,6 +368,28 @@ function arrowBtnStyle(side: 'left' | 'right'): React.CSSProperties {
 
 const detailLabelStyle = { fontSize: 11, color: '#8b95a8', textTransform: 'uppercase' as const, letterSpacing: '0.05em', marginBottom: 2 };
 const detailValueStyle = { fontSize: 13, color: '#e8eaf0', fontWeight: 500 };
+
+function getPropertyCitySlug(property: Property): 'manchester' | 'london' | 'coventry' | 'nottingham' {
+  const houseUrl = property.houseUrl?.toLowerCase() ?? '';
+  if (houseUrl.includes('/nottingham/')) return 'nottingham';
+  if (houseUrl.includes('/coventry/')) return 'coventry';
+  if (houseUrl.includes('/london/')) return 'london';
+  if (houseUrl.includes('/manchester/')) return 'manchester';
+  if (property.lat > 52.7 && property.lng > -2.0) return 'nottingham';
+  return property.lat > 52.5 ? 'manchester' : 'london';
+}
+
+function buildListingUrl(property: Property): string {
+  const raw = property.houseUrl?.trim() ?? '';
+  if (raw) {
+    const normalized = raw.replace(/detail-apartments-/i, 'apartments-');
+    if (/^https?:\/\//i.test(normalized)) return normalized;
+    return `https://acolyteliving.com/properties/${normalized.replace(/^\/+/, '')}`;
+  }
+
+  const city = getPropertyCitySlug(property);
+  return `https://acolyteliving.com/properties/uk/${city}/apartments-${property.id}`;
+}
 
 export function getCategoryColor(category: string) {
   const colors: Record<string, string> = {

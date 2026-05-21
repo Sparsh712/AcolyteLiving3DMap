@@ -73,6 +73,9 @@ scripts_other/fix-park-categorization.ts
 scripts_other/process-data.ts
 
 scripts/*
+scripts/process-data.ts
+
+README.md
 
 # AI tooling config files (not for collaborators)
 CLAUDE.md
