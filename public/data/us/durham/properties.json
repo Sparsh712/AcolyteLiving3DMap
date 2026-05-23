@@ -1,0 +1,27 @@
+[
+  {
+    "id": "20962",
+    "name": "The Cottages of Durham",
+    "lat": 43.150445,
+    "lng": -70.961692,
+    "price": 854,
+    "currency": "USD",
+    "address": "100 Clubhouse Street, Durham NH, New Hampshire 03824",
+    "university": "University of New Hampshire Main Campus",
+    "distance": 2.85,
+    "rating": null,
+    "about": "Off-Campus Housing Near The University of New Hampshire\nThe Cottages of Durham isn't your normal Durham student apartment, it's extra-large living for your extra-large college life at The University of New Hampshire. Our off-campus housing near UNH offers fully furnished cottages with private bedrooms and bathrooms, and amenities for health, fitness, and socialization.",
+    "images": [
+      "01K9SNCQATA8VAJD2T6VNZFH56.webp",
+      "01K9Q3YBK7G7AN0SVGR8Y8TMRY.webp",
+      "01K9Q28H1QPBR28KZ106B1DDNN.webp",
+      "01K9Q59YHNF8BMVW1RBYJWXATP.webp",
+      "01K9Q501CZ05A6FH7Y4V3ZJMJA.webp"
+    ],
+    "houseUrl": "us/durham/detail-apartments-20962",
+    "operator": "American Campus Communities",
+    "floors": 0,
+    "beds": 616,
+    "roomTypes": ""
+  }
+]

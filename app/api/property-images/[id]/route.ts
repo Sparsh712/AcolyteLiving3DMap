@@ -1,12 +1,39 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const BASE_URL = 'https://acolyteliving.com/properties/uk';
-const DEFAULT_CITY = 'manchester';
+const BASE_URL = 'https://acolyteliving.com/properties';
+const ALLOWED_COUNTRIES = new Set(['uk', 'us']);
 const ALLOWED_CITIES = new Set([
   'manchester',
   'london',
   'coventry',
   'nottingham',
+  'birmingham',
+  'aberdeen',
+  'bath',
+  'belfast',
+  'brighton',
+  'bristol',
+  'canterbury',
+  'cardiff',
+  'colchester',
+  'dundee',
+  'durham',
+  'edinburgh',
+  'exeter',
+  'glasgow',
+  'guildford',
+  'lancaster',
+  'leeds',
+  'liverpool',
+  'loughborough',
+  'norwich',
+  'portsmouth',
+  'reading',
+  'sheffield',
+  'southampton',
+  'st-andrews',
+  'swansea',
+  'york',
 ]);
 
 /**
@@ -23,9 +50,17 @@ export async function GET(
   if (!id) {
     return NextResponse.json({ images: [] }, { status: 400 });
   }
+  const countryParam = req.nextUrl.searchParams.get('country')?.toLowerCase() ?? '';
   const cityParam = req.nextUrl.searchParams.get('city')?.toLowerCase() ?? '';
-  const city = ALLOWED_CITIES.has(cityParam) ? cityParam : DEFAULT_CITY;
-  const url = `${BASE_URL}/${city}/apartments-${id}`;
+  if (!countryParam || !cityParam) {
+    return NextResponse.json({ images: [], error: 'Missing country or city query param.' }, { status: 400 });
+  }
+  if (!ALLOWED_COUNTRIES.has(countryParam) || !ALLOWED_CITIES.has(cityParam)) {
+    return NextResponse.json({ images: [], error: 'Invalid country or city.' }, { status: 400 });
+  }
+  const country = countryParam;
+  const city = cityParam;
+  const url = `${BASE_URL}/${country}/${city}/apartments-${id}`;
 
   try {
     const res = await fetch(url, {

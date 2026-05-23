@@ -40,12 +40,33 @@ export default function CustomSelect({
   const [hovered, setHovered] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const uid = useId();
 
   const selectedOption = options.find((o) => o.value === value);
   const filteredOptions = searchable
     ? options.filter((opt) => opt.label.toLowerCase().includes(searchQuery.trim().toLowerCase()))
     : options;
+  const hasTypedQuery = searchQuery.trim().length > 0;
+  const hasClearableState = searchable && (hasTypedQuery || Boolean(value));
+  const triggerValue = searchable
+    ? (open || searchQuery ? searchQuery : selectedOption?.label ?? '')
+    : (selectedOption?.label ?? '');
+
+  function clearCurrentState() {
+    if (!searchable) return;
+    if (hasTypedQuery) {
+      setSearchQuery('');
+      setOpen(true);
+      requestAnimationFrame(() => inputRef.current?.focus());
+      return;
+    }
+    if (value) {
+      onChange('');
+      setOpen(true);
+      requestAnimationFrame(() => inputRef.current?.focus());
+    }
+  }
 
   // Close on outside click
   useEffect(() => {
@@ -74,6 +95,12 @@ export default function CustomSelect({
     }
   }, [open]);
 
+  useEffect(() => {
+    if (open && searchable) {
+      requestAnimationFrame(() => inputRef.current?.focus());
+    }
+  }, [open, searchable]);
+
   return (
     <div
       ref={containerRef}
@@ -81,11 +108,15 @@ export default function CustomSelect({
       style={{ position: 'relative', minWidth, maxWidth, userSelect: 'none' }}
     >
       {/* Trigger */}
-      <button
-        type="button"
+      <div
+        role="combobox"
         aria-haspopup="listbox"
         aria-expanded={open}
-        onClick={() => setOpen((o) => !o)}
+        aria-controls={`${id ?? uid}-listbox`}
+        onClick={() => {
+          setOpen(true);
+          if (searchable) inputRef.current?.focus();
+        }}
         style={{
           width: '100%',
           minWidth: 0,
@@ -93,7 +124,7 @@ export default function CustomSelect({
           alignItems: 'center',
           justifyContent: 'space-between',
           gap: 8,
-          padding: '7px 10px 7px 12px',
+          padding: '7px 8px 7px 12px',
           borderRadius: 10,
           background: open
             ? 'rgba(139,92,246,0.15)'
@@ -114,9 +145,82 @@ export default function CustomSelect({
           boxShadow: open ? '0 0 0 3px rgba(139,92,246,0.18)' : 'none',
         }}
       >
-        <span style={{ display: 'block', minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flexShrink: 1 }}>
-          {selectedOption ? selectedOption.label : placeholder}
-        </span>
+        {searchable ? (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 0, flex: 1 }}>
+            <input
+              ref={inputRef}
+              type="text"
+              value={triggerValue}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setOpen(true);
+              }}
+              onFocus={() => setOpen(true)}
+              onKeyDown={(e) => {
+                if (e.key === 'Escape') {
+                  setOpen(false);
+                  inputRef.current?.blur();
+                }
+                if (e.key === 'Backspace' && searchQuery === '' && value) {
+                  e.preventDefault();
+                  onChange('');
+                }
+              }}
+              placeholder={placeholder}
+              style={{
+                flex: 1,
+                minWidth: 0,
+                border: 'none',
+                outline: 'none',
+                background: 'transparent',
+                color: selectedOption ? '#c4b5fd' : '#e8eaf0',
+                fontSize: 13,
+                fontFamily: "'Space Grotesk', sans-serif",
+                fontWeight: selectedOption ? 600 : 400,
+                cursor: 'pointer',
+                padding: 0,
+                margin: 0,
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+              }}
+            />
+
+            {hasClearableState && (
+              <button
+                type="button"
+                aria-label={hasTypedQuery ? 'Clear typed text' : 'Clear selection'}
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  clearCurrentState();
+                }}
+                style={{
+                  width: 20,
+                  height: 20,
+                  borderRadius: '50%',
+                  border: '1px solid rgba(255,255,255,0.14)',
+                  background: 'rgba(255,255,255,0.05)',
+                  color: '#8b95a8',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                  cursor: 'pointer',
+                  padding: 0,
+                }}
+              >
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                  <path d="M1 1l8 8M9 1L1 9" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+                </svg>
+              </button>
+            )}
+          </div>
+        ) : (
+          <span style={{ display: 'block', minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', flexShrink: 1 }}>
+            {selectedOption ? selectedOption.label : placeholder}
+          </span>
+        )}
         {/* Chevron */}
         <svg
           width="14" height="14" viewBox="0 0 16 16" fill="currentColor"
@@ -129,12 +233,13 @@ export default function CustomSelect({
         >
           <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
         </svg>
-      </button>
+      </div>
 
       {/* Dropdown panel */}
       {open && (
         <div
           role="listbox"
+          id={`${id ?? uid}-listbox`}
           style={{
             position: 'absolute',
             [openDirection === 'up' ? 'bottom' : 'top']: 'calc(100% + 6px)',
@@ -165,29 +270,6 @@ export default function CustomSelect({
             ::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.3); border-radius: 4px; }
           `}</style>
 
-          {searchable && (
-            <div style={{ padding: '4px 6px 8px', borderBottom: '1px solid rgba(255,255,255,0.06)', marginBottom: 4 }}>
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Type to search..."
-                style={{
-                  width: '100%',
-                  borderRadius: 8,
-                  border: '1px solid rgba(139,92,246,0.35)',
-                  background: 'rgba(255,255,255,0.04)',
-                  color: '#e8eaf0',
-                  fontSize: 12,
-                  fontFamily: "'Space Grotesk', sans-serif",
-                  padding: '7px 9px',
-                  outline: 'none',
-                }}
-                aria-label="Search options"
-              />
-            </div>
-          )}
-
           {/* Optional: clear / placeholder row */}
           {value && (
             <div
@@ -196,6 +278,7 @@ export default function CustomSelect({
               onMouseEnter={() => setHovered('__clear__')}
               onMouseLeave={() => setHovered(null)}
               onClick={() => { onChange(''); setOpen(false); }}
+              onMouseDown={(e) => e.preventDefault()}
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -227,6 +310,7 @@ export default function CustomSelect({
                 onMouseEnter={() => setHovered(opt.value)}
                 onMouseLeave={() => setHovered(null)}
                 onClick={() => { onChange(opt.value); setOpen(false); }}
+                onMouseDown={(e) => e.preventDefault()}
                 style={{
                   display: 'flex',
                   alignItems: 'center',

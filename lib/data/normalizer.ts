@@ -7,7 +7,27 @@ function parseImagePaths(raw: { media_updated_images?: string[] | null; media_im
 
   if (!raw.media_image_paths) return [];
   const matches = String(raw.media_image_paths).match(/https?:\/\/[^"}]+|image\/[^"}]+/g) ?? [];
-  return matches.slice(0, 5);
+  return matches.map(normalizeImageRef).filter(Boolean).slice(0, 5);
+}
+
+function normalizeImageRef(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed) return '';
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    try {
+      const url = new URL(trimmed);
+      const host = url.hostname.toLowerCase();
+      if (host.includes('uhzcdn') || host.includes('uhomes')) {
+        const parts = url.pathname.split('/').filter(Boolean);
+        return parts.length > 0 ? parts[parts.length - 1] : trimmed;
+      }
+    } catch {
+      return trimmed;
+    }
+  }
+
+  return trimmed.replace(/^\/+/, '');
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -155,53 +175,92 @@ function inflatePolygonByMeters(polygon: GeoJSON.Polygon, bufferMeters: number):
   };
 }
 
-// Lazily loaded OSM building data per city (client-safe: only used in browser via fetch)
-let manchesterBuildingCache: BuildingCache | null = null;
-let londonBuildingCache: BuildingCache | null = null;
-let coventryBuildingCache: BuildingCache | null = null;
-let nottinghamBuildingCache: BuildingCache | null = null;
-
-function getPropertyCity(property: Property): 'Manchester' | 'London' | 'Coventry' | 'Nottingham' {
-  const houseUrl = property.houseUrl?.toLowerCase() ?? '';
-  if (houseUrl.includes('/nottingham/')) return 'Nottingham';
-  if (houseUrl.includes('/coventry/')) return 'Coventry';
-  if (houseUrl.includes('/london/')) return 'London';
-  if (property.lat > 52.7 && property.lng > -2.0) return 'Nottingham';
-  return property.lat > 52.5 ? 'Manchester' : 'London';
-}
-
-async function loadBuildingCache(url: string): Promise<BuildingCache> {
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return {};
-    return (await res.json()) as BuildingCache;
-  } catch {
-    return {};
+function normalizeHouseUrl(raw: string): string {
+  const trimmed = raw.trim();
+  if (!trimmed) return '';
+  if (/^https?:\/\//i.test(trimmed)) {
+    try {
+      return new URL(trimmed).pathname.replace(/^\/+/, '');
+    } catch {
+      return trimmed.replace(/^\/+/, '');
+    }
   }
+  return trimmed.replace(/^\/+/, '');
 }
 
-async function getManchesterBuildingCache(): Promise<BuildingCache> {
-  if (manchesterBuildingCache) return manchesterBuildingCache;
-  manchesterBuildingCache = await loadBuildingCache('/data/manchester-property-buildings.json');
-  return manchesterBuildingCache;
+function extractCountrySlug(houseUrl: string): string | null {
+  const normalized = normalizeHouseUrl(houseUrl.toLowerCase());
+  const match = normalized.match(/(^|\/)(uk|us)\//);
+  return match?.[2] ?? null;
 }
 
-async function getLondonBuildingCache(): Promise<BuildingCache> {
-  if (londonBuildingCache) return londonBuildingCache;
-  londonBuildingCache = await loadBuildingCache('/data/london-property-buildings.json');
-  return londonBuildingCache;
+function extractCitySlug(houseUrl: string): string | null {
+  const normalized = normalizeHouseUrl(houseUrl.toLowerCase());
+  if (!normalized) return null;
+  const parts = normalized.split('/').filter(Boolean);
+  if (parts.length === 0) return null;
+
+  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us');
+  if (countryIndex >= 0 && parts[countryIndex + 1]) {
+    return parts[countryIndex + 1];
+  }
+
+  return parts[0] ?? null;
 }
 
-async function getCoventryBuildingCache(): Promise<BuildingCache> {
-  if (coventryBuildingCache) return coventryBuildingCache;
-  coventryBuildingCache = await loadBuildingCache('/data/coventry-property-buildings.json');
-  return coventryBuildingCache;
+function getPropertyCountrySlug(property: Property): string {
+  const slug = extractCountrySlug(property.houseUrl ?? '');
+  if (slug) return slug;
+
+  if (property.lng < -20) return 'us';
+  return 'uk';
 }
 
-async function getNottinghamBuildingCache(): Promise<BuildingCache> {
-  if (nottinghamBuildingCache) return nottinghamBuildingCache;
-  nottinghamBuildingCache = await loadBuildingCache('/data/nottingham-property-buildings.json');
-  return nottinghamBuildingCache;
+function getPropertyCitySlug(property: Property): string {
+  const slug = extractCitySlug(property.houseUrl ?? '');
+  if (slug) return slug;
+
+  if (property.lat > 52.7 && property.lng > -2.0) return 'nottingham';
+  return property.lat > 52.5 ? 'manchester' : 'london';
+}
+
+// Lazily loaded OSM building data per city (client-safe: only used in browser via fetch)
+const buildingCacheByKey = new Map<string, BuildingCache>();
+const buildingCachePromises = new Map<string, Promise<BuildingCache>>();
+
+async function loadBuildingCache(urls: string[]): Promise<BuildingCache> {
+  for (const url of urls) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      return (await res.json()) as BuildingCache;
+    } catch {
+      continue;
+    }
+  }
+  return {};
+}
+
+async function getBuildingCache(country: string, city: string): Promise<BuildingCache> {
+  const key = `${country}/${city}`;
+  if (buildingCacheByKey.has(key)) return buildingCacheByKey.get(key)!;
+
+  const pending = buildingCachePromises.get(key);
+  if (pending) return pending;
+
+  const urls = [
+    `/data/${country}/${city}/property-buildings.json`,
+    `/data/${city}-property-buildings.json`,
+  ];
+
+  const promise = loadBuildingCache(urls).then((cache) => {
+    buildingCacheByKey.set(key, cache);
+    buildingCachePromises.delete(key);
+    return cache;
+  });
+
+  buildingCachePromises.set(key, promise);
+  return promise;
 }
 
 /**
@@ -212,22 +271,25 @@ async function getNottinghamBuildingCache(): Promise<BuildingCache> {
 export async function propertiesToGeoJSON(
   properties: Property[],
 ): Promise<GeoJSON.FeatureCollection> {
-  const [manchesterBuildings, londonBuildings, coventryBuildings, nottinghamBuildings] = await Promise.all([
-    getManchesterBuildingCache(),
-    getLondonBuildingCache(),
-    getCoventryBuildingCache(),
-    getNottinghamBuildingCache(),
-  ]);
+  const uniqueKeys = new Map<string, { country: string; city: string }>();
+  for (const property of properties) {
+    const country = getPropertyCountrySlug(property);
+    const city = getPropertyCitySlug(property);
+    uniqueKeys.set(`${country}/${city}`, { country, city });
+  }
+
+  const keyEntries = [...uniqueKeys.entries()];
+  const caches = await Promise.all(
+    keyEntries.map(([, value]) => getBuildingCache(value.country, value.city))
+  );
+  const cacheByKey = new Map<string, BuildingCache>();
+  keyEntries.forEach(([key], index) => {
+    cacheByKey.set(key, caches[index]);
+  });
 
   const features: GeoJSON.Feature[] = properties.map((p) => {
-    const city = getPropertyCity(p);
-    const cityBuildings = city === 'London'
-      ? londonBuildings
-      : city === 'Coventry'
-        ? coventryBuildings
-        : city === 'Nottingham'
-          ? nottinghamBuildings
-          : manchesterBuildings;
+    const key = `${getPropertyCountrySlug(p)}/${getPropertyCitySlug(p)}`;
+    const cityBuildings = cacheByKey.get(key) ?? {};
     const osm = cityBuildings[p.id];
 
     const geometryBase: GeoJSON.Polygon = osm

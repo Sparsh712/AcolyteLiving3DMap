@@ -19,9 +19,60 @@ import PropertyPanel from '@/components/ui/PropertyPanel';
 import FilterBar     from '@/components/ui/FilterBar';
 import CustomSelect, { type SelectOption } from '@/components/ui/CustomSelect';
 
-type CityFilter = '' | 'Manchester' | 'London' | 'Coventry' | 'Nottingham';
+type CountryFilter = string;
+type CityFilter = string;
 
-function getPropertyCity(property: Property): Exclude<CityFilter, ''> {
+function normalizeHouseUrl(raw: string): string {
+  const trimmed = raw.trim();
+  if (!trimmed) return '';
+  if (/^https?:\/\//i.test(trimmed)) {
+    try {
+      return new URL(trimmed).pathname.replace(/^\/+/, '');
+    } catch {
+      return trimmed.replace(/^\/+/, '');
+    }
+  }
+  return trimmed.replace(/^\/+/, '');
+}
+
+function extractCitySlug(houseUrl: string): string | null {
+  const normalized = normalizeHouseUrl(houseUrl);
+  if (!normalized) return null;
+  const parts = normalized.split('/').filter(Boolean);
+  if (parts.length === 0) return null;
+
+  const lower = parts.map((part) => part.toLowerCase());
+  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us');
+
+  if (countryIndex >= 0 && parts[countryIndex + 1]) {
+    return parts[countryIndex + 1].toLowerCase();
+  }
+
+  return parts[0]?.toLowerCase() ?? null;
+}
+
+function slugToLabel(slug: string): string {
+  return slug
+    .split(/[-_\s]+/g)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
+function getPropertyCountry(property: Property): string {
+  const normalized = normalizeHouseUrl(property.houseUrl?.toLowerCase() ?? '');
+  const match = normalized.match(/(^|\/)(uk|us)\//);
+  if (match?.[2] === 'us') return 'US';
+  if (match?.[2] === 'uk') return 'UK';
+
+  if (property.lng < -20) return 'US';
+  return 'UK';
+}
+
+function getPropertyCity(property: Property): string {
+  const slug = extractCitySlug(property.houseUrl ?? '');
+  if (slug) return slugToLabel(slug);
+
   const houseUrl = property.houseUrl?.toLowerCase() ?? '';
   if (houseUrl.includes('/nottingham/')) return 'Nottingham';
   if (houseUrl.includes('/coventry/')) return 'Coventry';
@@ -31,6 +82,44 @@ function getPropertyCity(property: Property): Exclude<CityFilter, ''> {
   // Fallback by latitude when URL city segment is missing.
   if (property.lat > 52.7 && property.lng > -2.0) return 'Nottingham';
   return property.lat > 52.5 ? 'Manchester' : 'London';
+}
+
+function buildCityCenters(properties: Property[]): Record<string, [number, number]> {
+  const sums: Record<string, { lat: number; lng: number; count: number }> = {};
+  for (const property of properties) {
+    const city = getPropertyCity(property);
+    if (!city) continue;
+    if (!sums[city]) sums[city] = { lat: 0, lng: 0, count: 0 };
+    sums[city].lat += property.lat;
+    sums[city].lng += property.lng;
+    sums[city].count += 1;
+  }
+
+  const centers: Record<string, [number, number]> = {};
+  for (const [city, data] of Object.entries(sums)) {
+    if (data.count === 0) continue;
+    centers[city] = [data.lng / data.count, data.lat / data.count];
+  }
+  return centers;
+}
+
+function buildCountryCenters(properties: Property[]): Record<string, [number, number]> {
+  const sums: Record<string, { lat: number; lng: number; count: number }> = {};
+  for (const property of properties) {
+    const country = getPropertyCountry(property);
+    if (!country) continue;
+    if (!sums[country]) sums[country] = { lat: 0, lng: 0, count: 0 };
+    sums[country].lat += property.lat;
+    sums[country].lng += property.lng;
+    sums[country].count += 1;
+  }
+
+  const centers: Record<string, [number, number]> = {};
+  for (const [country, data] of Object.entries(sums)) {
+    if (data.count === 0) continue;
+    centers[country] = [data.lng / data.count, data.lat / data.count];
+  }
+  return centers;
 }
 
 export default function HomePage() {
@@ -47,16 +136,35 @@ export default function HomePage() {
   const [nearest,  setNearest]              = useState<Property | null>(null);
   const [selectedUniversity, setSelectedUni] = useState<string | null>(null);
   const [selectedAmenityCategories, setSelectedAmenityCategories] = useState<string[]>([]);
+  const [countryFilter, setCountryFilter] = useState<CountryFilter>('');
   const [cityFilter, setCityFilter] = useState<CityFilter>('');
 
   // ── Filters ─────────────────────────────────────────────────────────────
   const [priceRange, setPriceRange] = useState<[number, number]>([100, 1100]);
   const [uniFilter,  setUniFilter]  = useState('');
 
+  const countries = useMemo(
+    () => [...new Set(properties.map(getPropertyCountry).filter(Boolean))].sort(),
+    [properties]
+  );
+
+  const countryProperties = useMemo(() => {
+    if (!countryFilter) return properties;
+    return properties.filter((p) => getPropertyCountry(p) === countryFilter);
+  }, [countryFilter, properties]);
+
+  const cities = useMemo(
+    () => [...new Set(countryProperties.map((p) => getPropertyCity(p)).filter(Boolean))].sort(),
+    [countryProperties]
+  );
+
   const cityProperties = useMemo(() => {
     if (!cityFilter) return [];
-    return properties.filter((p) => getPropertyCity(p) === cityFilter);
-  }, [cityFilter, properties]);
+    return countryProperties.filter((p) => getPropertyCity(p) === cityFilter);
+  }, [cityFilter, countryProperties]);
+
+  const cityCenters = useMemo(() => buildCityCenters(countryProperties), [countryProperties]);
+  const countryCenters = useMemo(() => buildCountryCenters(properties), [properties]);
 
   useEffect(() => {
     propertiesRef.current = cityProperties;
@@ -138,7 +246,6 @@ export default function HomePage() {
     if (!map) return;
 
     const animationToken = ++propertyAnimationTokenRef.current;
-    map.stop();
 
     map.flyTo({
       center: [property.lng, property.lat],
@@ -172,18 +279,12 @@ export default function HomePage() {
   }, [continuePropertyRotation, map, smoothEaseInOut, smoothEaseOut]);
 
   useEffect(() => {
-    if (!map) return;
-
-    const onPointerDown = () => {
-      propertyAnimationTokenRef.current += 1;
-      map.stop();
-    };
-
-    map.getContainer().ownerDocument.addEventListener('pointerdown', onPointerDown);
-    return () => {
-      map.getContainer().ownerDocument.removeEventListener('pointerdown', onPointerDown);
-    };
-  }, [map]);
+    if (selected) {
+      animatePropertyShowcase(selected);
+      return;
+    }
+    propertyAnimationTokenRef.current += 1;
+  }, [animatePropertyShowcase, selected]);
 
   useEffect(() => {
     // Reset amenity category filters when switching the selected property.
@@ -220,7 +321,6 @@ export default function HomePage() {
     (university: string, lat: number, lng: number) => {
       setSelectedUni(university);
       setSelected(null);
-      map?.stop();
       map?.flyTo({
         center: [lng, lat],
         zoom: 15.2,
@@ -244,7 +344,6 @@ export default function HomePage() {
     const avgLat = uniProps.reduce((sum, p) => sum + p.lat, 0) / uniProps.length;
     const avgLng = uniProps.reduce((sum, p) => sum + p.lng, 0) / uniProps.length;
 
-    map.stop();
     map.flyTo({
       center: [avgLng, avgLat],
       zoom: 15.2,
@@ -257,6 +356,59 @@ export default function HomePage() {
     return true;
   }, [cityProperties, map, selectedUniversity, smoothEaseInOut]);
 
+  const resolveCityCenter = useCallback((city: CityFilter): [number, number] => {
+    if (city === 'London') return LONDON_CENTER;
+    if (city === 'Coventry') return COVENTRY_CENTER;
+    if (city === 'Nottingham') return NOTTINGHAM_CENTER;
+    if (city === 'Manchester') return MANCHESTER_CENTER;
+    return cityCenters[city] ?? MANCHESTER_CENTER;
+  }, [cityCenters]);
+
+  const resolveCountryZoom = useCallback((country: CountryFilter): number => {
+    if (country === 'US') return 3.2;
+    if (country === 'UK') return 4.4;
+    return 4.0;
+  }, []);
+
+  const flyToCountry = useCallback((country: CountryFilter) => {
+    if (!map) return;
+    if (!country) {
+      map.flyTo({
+        center: [0, 20],
+        zoom: 1.6,
+        pitch: 0,
+        bearing: 0,
+        duration: 1800,
+        essential: true,
+        easing: smoothEaseInOut,
+      });
+      return;
+    }
+
+    const targetCenter = countryCenters[country] ?? [0, 20];
+    const targetZoom = resolveCountryZoom(country);
+
+    map.flyTo({
+      center: targetCenter,
+      zoom: targetZoom,
+      pitch: 0,
+      bearing: 0,
+      duration: 1800,
+      essential: true,
+      easing: smoothEaseInOut,
+    });
+  }, [countryCenters, map, resolveCountryZoom, smoothEaseInOut]);
+
+  const handleCountryChange = useCallback((country: CountryFilter) => {
+    setCountryFilter(country);
+    setCityFilter('');
+    setUniFilter('');
+    setSelectedUni(null);
+    setSelected(null);
+
+    flyToCountry(country);
+  }, [flyToCountry]);
+
   const handleCityChange = useCallback((city: CityFilter) => {
     setCityFilter(city);
     setUniFilter('');
@@ -266,27 +418,11 @@ export default function HomePage() {
     if (!map) return;
 
     if (!city) {
-      map.stop();
-      map.flyTo({
-        center: [0, 20],
-        zoom: 1.6,
-        pitch: 0,
-        bearing: 0,
-        duration: 1800,
-        essential: true,
-        easing: smoothEaseInOut,
-      });
+      flyToCountry(countryFilter);
       return;
     }
 
-    map.stop();
-    const targetCenter = city === 'London'
-      ? LONDON_CENTER
-      : city === 'Coventry'
-        ? COVENTRY_CENTER
-        : city === 'Nottingham'
-          ? NOTTINGHAM_CENTER
-          : MANCHESTER_CENTER;
+    const targetCenter = resolveCityCenter(city);
     map.flyTo({
       center: targetCenter,
       zoom: city === 'London' ? 12.8 : 13.4,
@@ -296,13 +432,12 @@ export default function HomePage() {
       essential: true,
       easing: smoothEaseInOut,
     });
-  }, [map, smoothEaseInOut]);
+  }, [countryFilter, flyToCountry, map, resolveCityCenter, smoothEaseInOut]);
 
   const resetToCityView = useCallback(() => {
     if (!map) return;
 
     if (!cityFilter) {
-      map.stop();
       map.flyTo({
         center: [0, 20],
         zoom: 1.6,
@@ -315,16 +450,9 @@ export default function HomePage() {
       return;
     }
 
-    const targetCenter = cityFilter === 'London'
-      ? LONDON_CENTER
-      : cityFilter === 'Coventry'
-        ? COVENTRY_CENTER
-        : cityFilter === 'Nottingham'
-          ? NOTTINGHAM_CENTER
-          : MANCHESTER_CENTER;
+    const targetCenter = resolveCityCenter(cityFilter);
     const targetZoom = cityFilter === 'London' ? 12.8 : 13.4;
 
-    map.stop();
     map.flyTo({
       center: targetCenter,
       zoom: targetZoom,
@@ -334,7 +462,7 @@ export default function HomePage() {
       essential: true,
       easing: smoothEaseInOut,
     });
-  }, [cityFilter, map, smoothEaseInOut]);
+  }, [cityFilter, map, resolveCityCenter, smoothEaseInOut]);
 
   // Clicking the map canvas (not on a marker) deselects university
   useEffect(() => {
@@ -344,10 +472,10 @@ export default function HomePage() {
       if ((e.originalEvent as any)._isMarkerHit) {
         return;
       }
-      propertyAnimationTokenRef.current += 1;
-      map.stop();
       setSelected(null);
-      setSelectedUni(null);
+      if (selectedUniversity) {
+        focusSelectedUniversity();
+      }
     };
     map.on('click', handleCanvasClick);
     return () => { map.off('click', handleCanvasClick); };
@@ -413,8 +541,7 @@ export default function HomePage() {
 
       {/* ── University breadcrumb banner ─────────────────────────────── */}
       {selectedUniversity && (() => {
-        const allUniAccommodations = properties
-          .filter((p) => getPropertyCity(p) === cityFilter)
+        const allUniAccommodations = cityProperties
           .filter((p) => p.university === selectedUniversity)
           .sort((a, b) => a.price - b.price);
 
@@ -528,12 +655,12 @@ export default function HomePage() {
                   const prop = uniAccommodations.find((p) => p.id === id);
                   if (!prop) return;
                   setSelected(prop);
-                  animatePropertyShowcase(prop);
                 }}
                 placeholder="Pick an accommodation…"
                 minWidth={140}
                 maxWidth={320}
                 openDirection="down"
+                searchable
               />
             </div>
 
@@ -566,8 +693,12 @@ export default function HomePage() {
       {/* ── Filter Bar (top centre — only when no university selected) ── */}
       {!loading && !selectedUniversity && (
         <FilterBar
+          countryFilter={countryFilter}
+          onCountryChange={handleCountryChange}
+          countries={countries}
           cityFilter={cityFilter}
           onCityChange={handleCityChange}
+          cities={cities}
           universityFilter={uniFilter}
           onUniversityChange={(uni) => {
             if (!uni) { setUniFilter(''); return; }

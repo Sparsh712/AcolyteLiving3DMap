@@ -28,11 +28,31 @@ export const IMAGE_SIZE = {
   full: '',
 } as const;
 
+function extractFilenameFromUrl(raw: string): string | null {
+  try {
+    const url = new URL(raw);
+    const parts = url.pathname.split('/').filter(Boolean);
+    return parts.length > 0 ? parts[parts.length - 1] : null;
+  } catch {
+    return null;
+  }
+}
+
 /**
  * Returns a CDN URL for a property image.
  * @param filename - e.g. "01J2E05TFF95BDS75PE1RTBJ75.webp"
  */
 export function getImageUrl(filename: string, _size?: keyof typeof IMAGE_SIZE): string {
-  if (filename.startsWith('http')) return filename;
-  return `${IMAGE_CDN_BASE}/${filename}`;
+  if (!filename) return '';
+
+  if (/^https?:\/\//i.test(filename)) {
+    const lower = filename.toLowerCase();
+    if (lower.includes('uhzcdn') || lower.includes('uhomes')) {
+      const extracted = extractFilenameFromUrl(filename);
+      if (extracted) return `${IMAGE_CDN_BASE}/${extracted}`;
+    }
+    return filename;
+  }
+
+  return `${IMAGE_CDN_BASE}/${filename.replace(/^\/+/, '')}`;
 }

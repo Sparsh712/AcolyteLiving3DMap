@@ -25,44 +25,54 @@ function normalizeAmenityCategory(feature: AmenityFeature): string | undefined {
   return category;
 }
 
+function getAmenityFilePaths(): string[] {
+  const dataDir = path.join(process.cwd(), 'public', 'data');
+  if (!fs.existsSync(dataDir)) return [];
+
+  const nestedPaths: string[] = [];
+  const legacyPaths: string[] = [];
+  const entries = fs.readdirSync(dataDir, { withFileTypes: true });
+
+  for (const entry of entries) {
+    if (entry.isFile() && entry.name.endsWith('_amenities.json')) {
+      legacyPaths.push(path.join(dataDir, entry.name));
+      continue;
+    }
+
+    if (!entry.isDirectory()) continue;
+
+    const countryDir = path.join(dataDir, entry.name);
+    const cityEntries = fs.readdirSync(countryDir, { withFileTypes: true });
+    for (const cityEntry of cityEntries) {
+      if (!cityEntry.isDirectory()) continue;
+      const amenitiesPath = path.join(countryDir, cityEntry.name, 'amenities.json');
+      if (fs.existsSync(amenitiesPath)) {
+        nestedPaths.push(amenitiesPath);
+      }
+    }
+  }
+
+  return [...nestedPaths, ...legacyPaths];
+}
+
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const { id } = await params;
-    const manchesterPath = path.join(process.cwd(), 'public', 'data', 'manchester_amenities.json');
-    const londonPath = path.join(process.cwd(), 'public', 'data', 'london_amenities.json');
-    const coventryPath = path.join(process.cwd(), 'public', 'data', 'coventry_amenities.json');
-    const nottinghamPath = path.join(process.cwd(), 'public', 'data', 'nottingham_amenities.json');
-    
+    const amenityFiles = getAmenityFilePaths();
     let propertyAmenities = null;
 
-    if (fs.existsSync(manchesterPath)) {
-      const data = JSON.parse(fs.readFileSync(manchesterPath, 'utf8'));
-      if (data[id]) {
-        propertyAmenities = data[id];
-      }
-    }
-
-    if (!propertyAmenities && fs.existsSync(londonPath)) {
-      const data = JSON.parse(fs.readFileSync(londonPath, 'utf8'));
-      if (data[id]) {
-        propertyAmenities = data[id];
-      }
-    }
-
-    if (!propertyAmenities && fs.existsSync(coventryPath)) {
-      const data = JSON.parse(fs.readFileSync(coventryPath, 'utf8'));
-      if (data[id]) {
-        propertyAmenities = data[id];
-      }
-    }
-
-    if (!propertyAmenities && fs.existsSync(nottinghamPath)) {
-      const data = JSON.parse(fs.readFileSync(nottinghamPath, 'utf8'));
-      if (data[id]) {
-        propertyAmenities = data[id];
+    for (const amenityPath of amenityFiles) {
+      try {
+        const data = JSON.parse(fs.readFileSync(amenityPath, 'utf8'));
+        if (data[id]) {
+          propertyAmenities = data[id];
+          break;
+        }
+      } catch {
+        continue;
       }
     }
 

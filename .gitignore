@@ -45,18 +45,7 @@ eslint-output.txt
 eslint.json
 
 # raw source datasets (local processing inputs — too large, never deployed)
-Manchester All Data.json
-london All Data.json
-raw_osm_universities.json
-coventry_properties_data.json
-nottingham_Properties_Data (1).json
-
-# generated aggregate datasets not needed at runtime
-public/data/all-properties.json
-
-# generated/intermediate datasets — large, not referenced in app code
-public/data/manchester-university-buildings.json
-public/data/manchester_amenities_structures.json
+full json/
 
 # Next.js boilerplate SVGs (not used in the app)
 public/file.svg
@@ -66,16 +55,11 @@ public/vercel.svg
 public/window.svg
 
 # developer-only data-fetch & one-off fix scripts (not needed in repo)
-scripts_other/fetch-london-amenities.ts
-scripts_other/fetch-property-buildings.ts
-scripts_other/mock-london-amenities.ts
-scripts_other/fix-park-categorization.ts
-scripts_other/process-data.ts
-
+scripts_other/*
 scripts/*
-scripts/process-data.ts
 
 README.md
+Help.md
 
 # AI tooling config files (not for collaborators)
 CLAUDE.md

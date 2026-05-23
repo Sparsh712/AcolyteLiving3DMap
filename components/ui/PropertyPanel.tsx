@@ -369,12 +369,49 @@ function arrowBtnStyle(side: 'left' | 'right'): React.CSSProperties {
 const detailLabelStyle = { fontSize: 11, color: '#8b95a8', textTransform: 'uppercase' as const, letterSpacing: '0.05em', marginBottom: 2 };
 const detailValueStyle = { fontSize: 13, color: '#e8eaf0', fontWeight: 500 };
 
-function getPropertyCitySlug(property: Property): 'manchester' | 'london' | 'coventry' | 'nottingham' {
-  const houseUrl = property.houseUrl?.toLowerCase() ?? '';
-  if (houseUrl.includes('/nottingham/')) return 'nottingham';
-  if (houseUrl.includes('/coventry/')) return 'coventry';
-  if (houseUrl.includes('/london/')) return 'london';
-  if (houseUrl.includes('/manchester/')) return 'manchester';
+function normalizeHouseUrl(raw: string): string {
+  const trimmed = raw.trim();
+  if (!trimmed) return '';
+  if (/^https?:\/\//i.test(trimmed)) {
+    try {
+      return new URL(trimmed).pathname.replace(/^\/+/, '');
+    } catch {
+      return trimmed.replace(/^\/+/, '');
+    }
+  }
+  return trimmed.replace(/^\/+/, '');
+}
+
+function extractCitySlug(houseUrl: string): string | null {
+  const normalized = normalizeHouseUrl(houseUrl);
+  if (!normalized) return null;
+  const parts = normalized.split('/').filter(Boolean);
+  if (parts.length === 0) return null;
+
+  const lower = parts.map((part) => part.toLowerCase());
+  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us');
+
+  if (countryIndex >= 0 && parts[countryIndex + 1]) {
+    return parts[countryIndex + 1].toLowerCase();
+  }
+
+  return parts[0]?.toLowerCase() ?? null;
+}
+
+function getPropertyCountrySlug(property: Property): 'uk' | 'us' {
+  const normalized = normalizeHouseUrl(property.houseUrl?.toLowerCase() ?? '');
+  const match = normalized.match(/(^|\/)(uk|us)\//);
+  if (match?.[2] === 'us') return 'us';
+  if (match?.[2] === 'uk') return 'uk';
+
+  if (property.lng < -20) return 'us';
+  return 'uk';
+}
+
+function getPropertyCitySlug(property: Property): string {
+  const slug = extractCitySlug(property.houseUrl ?? '');
+  if (slug) return slug;
+
   if (property.lat > 52.7 && property.lng > -2.0) return 'nottingham';
   return property.lat > 52.5 ? 'manchester' : 'london';
 }
@@ -388,7 +425,8 @@ function buildListingUrl(property: Property): string {
   }
 
   const city = getPropertyCitySlug(property);
-  return `https://acolyteliving.com/properties/uk/${city}/apartments-${property.id}`;
+  const country = getPropertyCountrySlug(property);
+  return `https://acolyteliving.com/properties/${country}/${city}/apartments-${property.id}`;
 }
 
 export function getCategoryColor(category: string) {

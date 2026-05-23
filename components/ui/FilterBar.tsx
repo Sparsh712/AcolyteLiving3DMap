@@ -2,29 +2,37 @@
 
 import CustomSelect, { type SelectOption } from '@/components/ui/CustomSelect';
 
-type CityFilter = '' | 'Manchester' | 'London' | 'Coventry' | 'Nottingham';
+type CountryFilter = string;
+type CityFilter = string;
 
 interface FilterBarProps {
+  countryFilter: CountryFilter;
+  onCountryChange: (country: CountryFilter) => void;
+  countries: string[];
   cityFilter: CityFilter;
   onCityChange: (city: CityFilter) => void;
+  cities: string[];
   universityFilter: string;
   onUniversityChange: (uni: string) => void;
   universities: string[];
 }
 
 export default function FilterBar({
+  countryFilter,
+  onCountryChange,
+  countries,
   cityFilter,
   onCityChange,
+  cities,
   universityFilter,
   onUniversityChange,
   universities,
 }: FilterBarProps) {
-  const cityOptions: SelectOption[] = [
-    { value: 'Manchester', label: 'Manchester' },
-    { value: 'London', label: 'London' },
-    { value: 'Coventry', label: 'Coventry' },
-    { value: 'Nottingham', label: 'Nottingham' },
-  ];
+  const countryOptions: SelectOption[] = countries.map((country) => ({
+    value: country,
+    label: country,
+  }));
+  const cityOptions: SelectOption[] = cities.map((city) => ({ value: city, label: city }));
   const uniOptions: SelectOption[] = universities.map((u) => ({ value: u, label: u }));
 
   return (
@@ -64,16 +72,38 @@ export default function FilterBar({
 
       <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.1)', flexShrink: 0 }} />
 
-      {/* City filter first */}
+      {/* Country filter first */}
       <CustomSelect
-        id="city-filter"
-        options={cityOptions}
-        value={cityFilter}
-        onChange={(value) => onCityChange(value as CityFilter)}
-        placeholder="Choose City"
+        id="country-filter"
+        options={countryOptions}
+        value={countryFilter}
+        onChange={(value) => onCountryChange(value as CountryFilter)}
+        placeholder="Choose Country"
         minWidth={150}
         maxWidth={180}
+        searchable
       />
+
+      <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.1)', flexShrink: 0 }} />
+
+      {/* City filter */}
+      <div
+        style={{
+          pointerEvents: countryFilter ? 'auto' : 'none',
+          opacity: countryFilter ? 1 : 0.5,
+        }}
+      >
+        <CustomSelect
+          id="city-filter"
+          options={cityOptions}
+          value={cityFilter}
+          onChange={(value) => onCityChange(value as CityFilter)}
+          placeholder={countryFilter ? 'Choose City' : 'Choose Country First'}
+          minWidth={150}
+          maxWidth={180}
+          searchable
+        />
+      </div>
 
       <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.1)', flexShrink: 0 }} />
 

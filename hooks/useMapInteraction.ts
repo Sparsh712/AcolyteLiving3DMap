@@ -21,24 +21,6 @@ export function useMapInteraction({
   propertiesRef,
 }: UseMapInteractionOptions) {
   const hoveredIdRef = useRef<string | null>(null);
-  const smoothEaseOut = useCallback((t: number) => 1 - Math.pow(1 - t, 4), []);
-  const smoothEaseInOut = useCallback((t: number) => {
-    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  }, []);
-  const animationTokenRef = useRef(0);
-
-  const continueRotation = useCallback((map: MapLibreMap, token: number) => {
-    if (token !== animationTokenRef.current) return;
-    map.rotateTo(map.getBearing() + 24, {
-      duration: 7000,
-      essential: true,
-      easing: (t: number) => t,
-    });
-
-    map.once('moveend', () => {
-      continueRotation(map, token);
-    });
-  }, []);
 
   const attachHandlers = useCallback(
     (map: MapLibreMap) => {
@@ -53,63 +35,13 @@ export function useMapInteraction({
         const id = feature.properties?.id as string;
         const found = propertiesRef.current.find((p) => p.id === id) ?? null;
         onSelect(found);
-
-        if (found) {
-          const lat = (feature.properties?.centLat as number | undefined) ?? found.lat;
-          const lng = (feature.properties?.centLng as number | undefined) ?? found.lng;
-          const animationToken = ++animationTokenRef.current;
-
-          map.stop();
-          map.flyTo({
-            center: [lng, lat],
-            zoom: Math.max(map.getZoom(), 16.3),
-            pitch: 66,
-            bearing: map.getBearing(),
-            duration: 2200,
-            speed: 0.78,
-            curve: 1.4,
-            essential: true,
-            easing: smoothEaseOut,
-          });
-
-          map.once('moveend', () => {
-            if (animationToken !== animationTokenRef.current) return;
-
-            map.easeTo({
-              center: [lng, lat],
-              zoom: Math.max(map.getZoom() - 0.35, 15.7),
-              pitch: 64,
-              duration: 1800,
-              essential: true,
-              easing: smoothEaseInOut,
-            });
-
-            map.once('moveend', () => {
-              if (animationToken !== animationTokenRef.current) return;
-              continueRotation(map, animationToken);
-            });
-          });
-        }
       });
 
       // ── Click canvas (not on circle) → deselect ─────────────────────────
       map.on('click', (e: MapMouseEvent) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         if ((e.originalEvent as any)._isMarkerHit) return;
-        animationTokenRef.current += 1;
-        map.stop();
         onSelect(null);
-      });
-
-      // Any pointer click should cancel cinematic rotation until next selection.
-      const onPointerDown = () => {
-        animationTokenRef.current += 1;
-        map.stop();
-      };
-      const ownerDocument = map.getContainer().ownerDocument;
-      ownerDocument.addEventListener('pointerdown', onPointerDown);
-      map.on('remove', () => {
-        ownerDocument.removeEventListener('pointerdown', onPointerDown);
       });
 
       // ── Hover → cursor + highlight ───────────────────────────────────────
@@ -142,7 +74,7 @@ export function useMapInteraction({
         });
       }
     },
-    [continueRotation, onSelect, onNearest, propertiesRef, smoothEaseInOut, smoothEaseOut]
+    [onSelect, onNearest, propertiesRef]
   );
 
   return { attachHandlers };
