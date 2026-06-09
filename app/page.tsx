@@ -42,7 +42,7 @@ function extractCitySlug(houseUrl: string): string | null {
   if (parts.length === 0) return null;
 
   const lower = parts.map((part) => part.toLowerCase());
-  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us');
+  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us' || part === 'au');
 
   if (countryIndex >= 0 && parts[countryIndex + 1]) {
     return parts[countryIndex + 1].toLowerCase();
@@ -61,9 +61,10 @@ function slugToLabel(slug: string): string {
 
 function getPropertyCountry(property: Property): string {
   const normalized = normalizeHouseUrl(property.houseUrl?.toLowerCase() ?? '');
-  const match = normalized.match(/(^|\/)(uk|us)\//);
+  const match = normalized.match(/(^|\/)(uk|us|au)\//);
   if (match?.[2] === 'us') return 'US';
   if (match?.[2] === 'uk') return 'UK';
+  if (match?.[2] === 'au') return 'AU';
 
   if (property.lng < -20) return 'US';
   return 'UK';
@@ -367,6 +368,7 @@ export default function HomePage() {
   const resolveCountryZoom = useCallback((country: CountryFilter): number => {
     if (country === 'US') return 3.2;
     if (country === 'UK') return 4.4;
+    if (country === 'AU') return 3.5;
     return 4.0;
   }, []);
 

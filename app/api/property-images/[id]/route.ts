@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const BASE_URL = 'https://acolyteliving.com/properties';
-const ALLOWED_COUNTRIES = new Set(['uk', 'us']);
+const ALLOWED_COUNTRIES = new Set(['uk', 'us', 'au']);
 const ALLOWED_CITIES = new Set([
   'manchester',
   'london',
@@ -34,6 +34,14 @@ const ALLOWED_CITIES = new Set([
   'st-andrews',
   'swansea',
   'york',
+  'melbourne',
+  'adelaide',
+  'brisbane',
+  'canberra',
+  'gold-coast',
+  'newcastle',
+  'perth',
+  'sydney',
 ]);
 
 /**

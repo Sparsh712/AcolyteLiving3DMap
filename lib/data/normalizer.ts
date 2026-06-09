@@ -17,11 +17,8 @@ function normalizeImageRef(value: string): string {
   if (/^https?:\/\//i.test(trimmed)) {
     try {
       const url = new URL(trimmed);
-      const host = url.hostname.toLowerCase();
-      if (host.includes('uhzcdn') || host.includes('uhomes')) {
-        const parts = url.pathname.split('/').filter(Boolean);
-        return parts.length > 0 ? parts[parts.length - 1] : trimmed;
-      }
+      const parts = url.pathname.split('/').filter(Boolean);
+      return parts.length > 0 ? parts[parts.length - 1] : trimmed;
     } catch {
       return trimmed;
     }
@@ -190,7 +187,7 @@ function normalizeHouseUrl(raw: string): string {
 
 function extractCountrySlug(houseUrl: string): string | null {
   const normalized = normalizeHouseUrl(houseUrl.toLowerCase());
-  const match = normalized.match(/(^|\/)(uk|us)\//);
+  const match = normalized.match(/(^|\/)(uk|us|au)\//);
   return match?.[2] ?? null;
 }
 
@@ -200,7 +197,7 @@ function extractCitySlug(houseUrl: string): string | null {
   const parts = normalized.split('/').filter(Boolean);
   if (parts.length === 0) return null;
 
-  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us');
+  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us' || part === 'au');
   if (countryIndex >= 0 && parts[countryIndex + 1]) {
     return parts[countryIndex + 1];
   }
@@ -213,6 +210,7 @@ function getPropertyCountrySlug(property: Property): string {
   if (slug) return slug;
 
   if (property.lng < -20) return 'us';
+  if (property.lng > 110 && property.lat < -10) return 'au';
   return 'uk';
 }
 

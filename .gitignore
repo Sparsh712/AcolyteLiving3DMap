@@ -60,6 +60,11 @@ scripts/*
 
 README.md
 Help.md
+graphify-out/
 
 # AI tooling config files (not for collaborators)
 CLAUDE.md
+
+# Backup files created by bulk-replace scripts
+*.bak.*
+**/*.bak.*

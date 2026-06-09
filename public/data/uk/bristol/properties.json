@@ -37,7 +37,7 @@
     "rating": 5,
     "about": "Favell House is located in the heart of the city and is home to 234 students. All rooms are non en-suite, meaning you’ll share your bathroom and kitchen, which has space for socialising with your flatmates. Away from your room there’s a Communal Study Space and a convenience store conveniently located on the ground floor. You’ll also have access to the social spaces and events at neighbouring Waverley House and the Rackhay.",
     "images": [
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1389/01JN192DV6BSVRERXV2XQNPE1F.webp",
       "image/1383/01KBMWT7JV0C4VFR998P8CA8YC.webp",
       "image/1383/01KBMXQNB3F0R2Z6QFPA17G2KJ.webp",
@@ -62,7 +62,7 @@
     "rating": null,
     "about": "The Rackhay is a popular student accommodation in Bristol, offering non-en-suite rooms. Located at Queen Charlotte Street, Bristol, England, BS1 4HJ, The Rackhay Bristol is exclusively for University of Bristol students, and is an 18-minute walk. Away from your room, you'll find a large common room with a pool and table tennis, as well as a communal study space. Opposite The Rackhay is a convenience store, with King Street's lively pubs just around the corner. Music and video shops, bookshops, restaurants and other amenities are all within easy reach, making it an excellent choice for students.Features\nThe Rackhay Bristol has 115 rooms, all non-en-suite rooms, meaning you’ll share your bathroom, kitchen and lounge area with flatmates. The room is cosy and warm, featuring a three-quarter bed, a desk with a chair for studying, and curtains for privacy and comfort. Kitchen facilities include a refrigerator, freezer, microwave, vacuum cleaner, cupboards, and a fridge-freezer.\n \nBeing part of the Riverside residence means you’ll have access to the social spaces and events at neighbouring Favell House and Waverley House, too. The communal spaces in The Rackhay are:Bike storageLaundryAll-inclusive bills24/7 assistanceOn-site service teamLocation and What's Hot?\nThe Rackhay is located in the centre of Bristol, just off the waterfront. Home exclusively to University of Bristol students, it’s just 10 minutes on foot from the University campus. Directly opposite the Rackhay is a convenience store, and the bustling bars of Kings Street are right around the corner. Feeling peckish? The St Nicholas indoor market offers a fun dining experience, with everything from gyoza and falafel to wraps and specialty cakes to choose from, all made by independent traders.Key Locations NearbyDistance/milesCommute/walkingCappadocia Restaurant495 ft2-minPasta Ripiena Bristol0.13-minTurtle Bay Bristol Broad Quay0.36-minTesco Express0.25-minNihow Asian Supermarket0.24-minBristol Aquarium0.49-minCabot Tower0.822-minTransport\nThe Rackhay is located at Queen Charlotte Street, Bristol BS1 4HJ, a 18-minute walk from the University of Bristol. The apartment enjoys excellent transport links, with The Centre (C4) bus stop just a three-minute walk away and Bristol Temple Meads railway station an 18-minute stroll, making it convenient for students to explore Bristol.",
     "images": [
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1389/01JN1BBTR2YJ2M5T4WRJN5D6BK.webp",
       "image/1393/01JMYRWZN7HP1TYNTW4PFS2Z9V.webp",
       "image/1385/01JMYQZ7ETKKQ02F1D3TYX488G.webp",
@@ -87,8 +87,8 @@
     "rating": null,
     "about": "Settle into Croft Court, a brand-new student home coming to the centre of Bristol in September 2026. Perfectly placed for campus and city life, it puts you right where you need to be. Book here and you'll be minutes from BIMM, a short walk to the University of Bristol, and surrounded by the buzz of shops, cafes, bars, and restaurants.\nInside, you'll find more than just a place to sleep. Choose from a modern en suite room or a private studio - all with a double bed, smart storage, and your own study space. Then head downstairs to unwind in the cinema room, challenge friends in the games area, or grab some fresh air in the courtyard. With dedicated study spots and a vibrant community on site, Croft Court makes it easy to balance work, enjoy, and everything in between.",
     "images": [
-      "636a9bd5e5837aec6046cab70a50d7f664a077.png",
-      "2ca7f114bc3cdbb3922b2acb2d2c3b529a7010.jpg",
+      "https://cdn.acolyteliving.com/images/images/supplier/87/636a9bd5e5837aec6046cab70a50d7f664a077.png",
+      "https://cdn.acolyteliving.com/images/images/user/fd/2ca7f114bc3cdbb3922b2acb2d2c3b529a7010.jpg",
       "image/1399/01KC9KRYGT48E125EX5RH8C53Y.webp",
       "image/1383/01KC7432SJNM1TVT1CF2TR2EW2.webp",
       "image/1391/01KC742CK6JY3R6FSTYJMZN4EC.webp"
@@ -902,7 +902,7 @@
     "rating": null,
     "about": "",
     "images": [
-      "aa8e10ee969e270f9886a6f16370d26df669a4.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/3f/aa8e10ee969e270f9886a6f16370d26df669a4.jpg",
       "image/1385/01JV7JB7M5BR29DBBDP0AS5X24.webp",
       "image/1397/01JV7K6VCJBYGJXZR92RJDCF16.webp",
       "image/1399/01JV7J71BJ6JTHJQAGETP0Z24H.webp",
@@ -1034,7 +1034,7 @@
       "01HVRJ89AA8VESJNKCQMYXAJQQ.webp"
     ],
     "houseUrl": "uk/bristol/detail-apartments-1568885",
-    "operator": "Uhomes-UK",
+    "operator": "acolyteliving-UK",
     "floors": 0,
     "beds": 0,
     "roomTypes": ""
@@ -1277,8 +1277,8 @@
     "rating": null,
     "about": "",
     "images": [
-      "70effb91708634fddbc4ea5b240614888eb2cf.png",
-      "aa8e10ee969e270f9886a6f16370d26df669a4.jpg",
+      "https://cdn.acolyteliving.com/images/images/supplier/3a/70effb91708634fddbc4ea5b240614888eb2cf.png",
+      "https://cdn.acolyteliving.com/images/images/user/3f/aa8e10ee969e270f9886a6f16370d26df669a4.jpg",
       "image/1385/01J475ZY9546RMSQQXA1KDEW49.webp",
       "image/1383/01HVRGAV3RWS12N6XGE8CY6QZ3.webp",
       "image/1391/01HVT3562JQ31270FHYS1YFSW4.webp"
@@ -1302,9 +1302,9 @@
     "rating": 3.9,
     "about": "",
     "images": [
-      "03386dd382229a69d19ba7739aebc268bbe998.png",
-      "92116878a821f44cc75d9be99d54a0592b960f.jpg",
-      "2ca7f114bc3cdbb3922b2acb2d2c3b529a7010.jpg",
+      "https://cdn.acolyteliving.com/images/files/113/76/03386dd382229a69d19ba7739aebc268bbe998.png",
+      "https://cdn.acolyteliving.com/images/images/supplier/2a/92116878a821f44cc75d9be99d54a0592b960f.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/fd/2ca7f114bc3cdbb3922b2acb2d2c3b529a7010.jpg",
       "image/1397/01JQP8MN1EHWFZAWG9A0ZVZ4XZ.webp",
       "image/1393/01HVQNAWKYA7YTEAB55GJBP4A3.webp"
     ],
@@ -1327,7 +1327,7 @@
     "rating": null,
     "about": "",
     "images": [
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1381/01J7KCXPVPHSW9TETN7E2Y18S6.webp",
       "image/1389/01J7KGSBT4HEBTG2Q6E2SQA1N3.webp",
       "image/1385/01J7KGYH3K38RRT26K96VTN1Q7.webp",
@@ -1377,8 +1377,8 @@
     "rating": null,
     "about": "",
     "images": [
-      "4de5e9cda7c95f9038e596586c0e037ebab68a.png",
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/supplier/e0/4de5e9cda7c95f9038e596586c0e037ebab68a.png",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1395/01J475SMZ4Z5185HV1M0DM5GS1.webp",
       "image/1383/01HVRGEMPM30QR88CK5FTCSZWD.webp",
       "image/1395/01HVRGEPF690V23AWSJNP3DYXP.webp"
@@ -1402,8 +1402,8 @@
     "rating": 5,
     "about": "",
     "images": [
-      "4de5e9cda7c95f9038e596586c0e037ebab68a.png",
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/supplier/e0/4de5e9cda7c95f9038e596586c0e037ebab68a.png",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1383/01J4VJBCAY1Z20NRHQEG4WD9RZ.webp",
       "image/1393/01HVRGHR8VW6XN0D9J63SWRX1K.webp",
       "image/1391/01HVRGHMCM433JKDJ2N8595HEV.webp"
@@ -1427,8 +1427,8 @@
     "rating": null,
     "about": "",
     "images": [
-      "4de5e9cda7c95f9038e596586c0e037ebab68a.png",
-      "aa8e10ee969e270f9886a6f16370d26df669a4.jpg",
+      "https://cdn.acolyteliving.com/images/images/supplier/e0/4de5e9cda7c95f9038e596586c0e037ebab68a.png",
+      "https://cdn.acolyteliving.com/images/images/user/3f/aa8e10ee969e270f9886a6f16370d26df669a4.jpg",
       "image/1395/01J4VE995QWD0ERC7EFVNRZ9FM.webp",
       "image/1387/01HVRGTZN3SX2M685SXMBMQVWH.webp",
       "image/1391/01HVRGV1C6NTW0BCR8V0PF2G9J.webp"

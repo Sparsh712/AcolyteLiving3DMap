@@ -38,19 +38,12 @@ function extractFilenameFromUrl(raw: string): string | null {
   }
 }
 
-/**
- * Returns a CDN URL for a property image.
- * @param filename - e.g. "01J2E05TFF95BDS75PE1RTBJ75.webp"
- */
 export function getImageUrl(filename: string, _size?: keyof typeof IMAGE_SIZE): string {
   if (!filename) return '';
 
   if (/^https?:\/\//i.test(filename)) {
-    const lower = filename.toLowerCase();
-    if (lower.includes('uhzcdn') || lower.includes('uhomes')) {
-      const extracted = extractFilenameFromUrl(filename);
-      if (extracted) return `${IMAGE_CDN_BASE}/${extracted}`;
-    }
+    const extracted = extractFilenameFromUrl(filename);
+    if (extracted) return `${IMAGE_CDN_BASE}/${extracted}`;
     return filename;
   }
 

@@ -12,7 +12,7 @@
     "rating": null,
     "about": "Opening September 2026, Valerian is our brand-new, premium student accommodation in York. Offering a mix of stunning studios and large 1 bed apartments, this scheme features rich chocolate inspired design throughout, a nod to the city’s iconic confectionary heritage and historic factory roots.\nWith stunning views across York – including views of York Minster – this is student living reimagined. A hugely social complex, with tons of amenities including a gym, dedicated coffee bar, cinema room just to name a few!\nConvenience is key at Valerian, with Waitrose & Morrisons just next door, the city centre a 5 minute walk away, and both Universities less than 20 minutes away!",
     "images": [
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1381/01KBMZK8G6AEX8GTAJRH1YDZC4.webp",
       "image/1387/01KBMW4DCDQJX0T13F1M0JQCY1.webp",
       "image/1395/01KBMYX9HDZJ25DST1K9MAAXCT.webp",
@@ -37,7 +37,7 @@
     "rating": null,
     "about": "",
     "images": [
-      "beabf47ad069a65ed9278d2ba11a7fa26d3949.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/35/beabf47ad069a65ed9278d2ba11a7fa26d3949.jpg",
       "image/1395/01KD374Q2S5DRPTKCB85ZMXNH7.webp",
       "image/1395/01KD386BDXAZGFKQBGRGMFD5HE.webp",
       "image/1393/01KD38DS1Y3GF3FAHCHFKS105K.webp",
@@ -62,7 +62,7 @@
     "rating": null,
     "about": "",
     "images": [
-      "5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/b5/5f1939c9ee0b16a763d3ed5f95db058f1d970b.jpg",
       "image/1387/01KAV4TM5RYWB22V6QQVCZR2S0.webp",
       "image/1393/01KAV4JMSEZCHNNSP4YVWMSRTN.webp",
       "image/1381/01KAV4BF9GH3R04FD68ASQCJYV.webp",
@@ -87,8 +87,8 @@
     "rating": null,
     "about": "",
     "images": [
-      "4de5e9cda7c95f9038e596586c0e037ebab68a.png",
-      "beabf47ad069a65ed9278d2ba11a7fa26d3949.jpg",
+      "https://cdn.acolyteliving.com/images/images/supplier/e0/4de5e9cda7c95f9038e596586c0e037ebab68a.png",
+      "https://cdn.acolyteliving.com/images/images/user/35/beabf47ad069a65ed9278d2ba11a7fa26d3949.jpg",
       "image/1395/01J6F3AGE381E0YMZQG22SY7H6.webp",
       "image/1389/01HVRH2C2G7HAH5N94K69SJ6D8.webp",
       "image/1391/01HVRH20ZFNFD4VX0E3CBTW13M.webp"
@@ -112,9 +112,9 @@
     "rating": 4.7,
     "about": "",
     "images": [
-      "03386dd382229a69d19ba7739aebc268bbe998.png",
-      "92116878a821f44cc75d9be99d54a0592b960f.jpg",
-      "beabf47ad069a65ed9278d2ba11a7fa26d3949.jpg",
+      "https://cdn.acolyteliving.com/images/files/113/76/03386dd382229a69d19ba7739aebc268bbe998.png",
+      "https://cdn.acolyteliving.com/images/images/supplier/2a/92116878a821f44cc75d9be99d54a0592b960f.jpg",
+      "https://cdn.acolyteliving.com/images/images/user/35/beabf47ad069a65ed9278d2ba11a7fa26d3949.jpg",
       "image/1381/01J3M4Z44WGKBW3HFGWBJ4TPC1.webp",
       "image/1395/01HVQW96993PCJSFE0HQ623Z2E.webp"
     ],

@@ -45,6 +45,14 @@ const CITY_SOURCES: CitySource[] = [
   { country: 'uk', city: 'st-andrews', legacySlug: 'st-andrews' },
   { country: 'uk', city: 'swansea', legacySlug: 'swansea' },
   { country: 'uk', city: 'york', legacySlug: 'york' },
+  { country: 'au', city: 'melbourne', legacySlug: 'melbourne' },
+  { country: 'au', city: 'sydney', legacySlug: 'sydney' },
+  { country: 'au', city: 'brisbane', legacySlug: 'brisbane' },
+  { country: 'au', city: 'perth', legacySlug: 'perth' },
+  { country: 'au', city: 'canberra', legacySlug: 'canberra' },
+  { country: 'au', city: 'adelaide', legacySlug: 'adelaide' },
+  { country: 'au', city: 'gold-coast', legacySlug: 'gold-coast' },
+  { country: 'au', city: 'newcastle', legacySlug: 'newcastle' },
 ];
 
 function isValidProperty(property: Property): boolean {
