@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1427246",
+    "name": "Résidence Etudiante",
+    "lat": 49.249018,
+    "lng": 4.012909,
+    "price": 530,
+    "currency": "EUR",
+    "address": "1 Rue Dr Bienfait, Reims, Champagne-Ardenne 51100",
+    "university": "UNIVERSITE DE REIMS",
+    "distance": 4.56,
+    "rating": null,
+    "about": "",
+    "images": [
+      "8e1c4398d9003bf4738a11f20b0abaee5ae96a.jpg",
+      "image/1385/01HX6FNFZMNW7DX14F8798TFSR.webp",
+      "image/1399/01HX6FNGS318RKYCD6AV60T2TW.webp",
+      "image/1399/01HX6FNF71GVXMV8S12JVF4G9Q.webp",
+      "image/1389/01HX6FNEGK3TE9HPB1A2EZK7C2.webp"
+    ],
+    "houseUrl": "fr/reims/detail-apartments-1427246",
+    "operator": "Student France",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1427248",
+    "name": "Reims Ecole Blot Résidence Etudiante",
+    "lat": 49.245562,
+    "lng": 4.035911,
+    "price": 490,
+    "currency": "EUR",
+    "address": "rue des moulins, Reims, Champagne-Ardenne 51100",
+    "university": "UNIVERSITE DE REIMS",
+    "distance": 2.9,
+    "rating": null,
+    "about": "",
+    "images": [
+      "8e1c4398d9003bf4738a11f20b0abaee5ae96a.jpg",
+      "image/1385/01HX6FNM3B219XQ74A3600NSCA.webp",
+      "image/1395/01HX6FNK5M95G8FQAGYEM1J41T.webp",
+      "image/1389/01HX6FNN0GR0C208RHH7C6MFST.webp",
+      "image/1391/01HX6FNJ7T0S359JWHTZBXXTS3.webp"
+    ],
+    "houseUrl": "fr/reims/detail-apartments-1427248",
+    "operator": "Student France",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1668161",
+    "name": "Reims Victor",
+    "lat": 49.26163,
+    "lng": 4.021824,
+    "price": 530,
+    "currency": "EUR",
+    "address": "Impasse des Docks Rémois, Reims, Champagne-Ardenne 51100",
+    "university": "NEOMA Business School Reims",
+    "distance": 2.94,
+    "rating": null,
+    "about": "",
+    "images": [
+      "cb21c666fa41901f295cf7de643635c8fedc34.jpg",
+      "a29a5c80fd5b85561e7c5f574dd03518e17e63.jpg",
+      "027eb98dfca8d326bdaa3c33cb6f3da5914425.jpg",
+      "bcc0d569eec876105d0e15bf17ae8b6993dcff.jpg",
+      "4514f5296e1aa3c1fe3f147a654d7cb1bbeee3.jpg"
+    ],
+    "houseUrl": "fr/reims/detail-apartments-1668161",
+    "operator": "Sharies",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1678202",
+    "name": "Lance Kley",
+    "lat": 49.261204,
+    "lng": 4.022744,
+    "price": 600,
+    "currency": "EUR",
+    "address": "1 Rue des Sœurs Étienne, Reims, Champagne-Ardenne 51100",
+    "university": "NEOMA Business School Reims",
+    "distance": 2.94,
+    "rating": null,
+    "about": "",
+    "images": [
+      "8e1c4398d9003bf4738a11f20b0abaee5ae96a.jpg",
+      "da65f38abfc94490ed8d1176dc8e32e52d8e2e.png",
+      "082093b2d4f853a94fef818eaac9617bda4d32.png"
+    ],
+    "houseUrl": "fr/reims/detail-apartments-1678202",
+    "operator": "Student France",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

@@ -389,7 +389,7 @@ function extractCitySlug(houseUrl: string): string | null {
   if (parts.length === 0) return null;
 
   const lower = parts.map((part) => part.toLowerCase());
-  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us' || part === 'au');
+  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us' || part === 'au' || part === 'de' || part === 'es' || part === 'fr');
 
   if (countryIndex >= 0 && parts[countryIndex + 1]) {
     return parts[countryIndex + 1].toLowerCase();
@@ -398,12 +398,10 @@ function extractCitySlug(houseUrl: string): string | null {
   return parts[0]?.toLowerCase() ?? null;
 }
 
-function getPropertyCountrySlug(property: Property): 'uk' | 'us' | 'au' {
+function getPropertyCountrySlug(property: Property): string {
   const normalized = normalizeHouseUrl(property.houseUrl?.toLowerCase() ?? '');
-  const match = normalized.match(/(^|\/)(uk|us|au)\//);
-  if (match?.[2] === 'us') return 'us';
-  if (match?.[2] === 'uk') return 'uk';
-  if (match?.[2] === 'au') return 'au';
+  const match = normalized.match(/(^|\/)(uk|us|au|de|es|fr)\//);
+  if (match?.[2]) return match[2];
 
   if (property.lng < -20) return 'us';
   if (property.lng > 110 && property.lat < -10) return 'au';

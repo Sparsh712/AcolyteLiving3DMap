@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1627896",
+    "name": "Cergy 95e·80m²·F4·AppartementNo furniture",
+    "lat": 48.856602,
+    "lng": 2.3522,
+    "price": 1580,
+    "currency": "EUR",
+    "address": "6 Pl. de l'Hotel de Ville, Cergy, ile-de-france 95800",
+    "university": "Sorbonne University",
+    "distance": 1.1,
+    "rating": null,
+    "about": "",
+    "images": [
+      "ed0e66e3ce1f9e8c02b935cd3ccfe8f114aa95.png",
+      "2153a02799cfd9d4e575c14426e8f9ab137fac.png",
+      "fedde72c0a93b0c0f99c8ef3c5869d43115c2b.png",
+      "2a050c09f7f3b3f0306fe6ee96ceb2ca7a1de9.png",
+      "830a86f2f120fc1afbe04c9fc5fe4cec9901b7.png"
+    ],
+    "houseUrl": "fr/cergy/detail-apartments-1627896",
+    "operator": "Vivefrance法国安居",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1628244",
+    "name": "Cergy 95e·140m²·F6·Une chambre （Colocation）·With furniture",
+    "lat": 49.029991,
+    "lng": 2.078109,
+    "price": 600,
+    "currency": "EUR",
+    "address": "20 Les Touleuses Pourpres, Cergy, ile-de-france 95000",
+    "university": "Institut SupErieur de PropEdeutique d'Amiens (ISPA)",
+    "distance": 6.61,
+    "rating": null,
+    "about": "",
+    "images": [
+      "e0850b1e0e56eeaa66ae935efb707895a6825f.jpg"
+    ],
+    "houseUrl": "fr/cergy/detail-apartments-1628244",
+    "operator": "Vivefrance法国安居",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

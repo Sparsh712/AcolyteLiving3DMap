@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1652090",
+    "name": "Northside Apartments",
+    "lat": 32.994073,
+    "lng": -96.748853,
+    "price": 575,
+    "currency": "USD",
+    "address": "3000 Northside Blvd, Richardson, Texas 75080",
+    "university": "The University of Texas At Dallas （UTD）",
+    "distance": 1.12,
+    "rating": null,
+    "about": "From President George Bush Tollway, take the Waterview Pkwy exit south, make a left on to Synergy Park Blvd, Community will be on your left. From US75, take the Renner Rd exit west, turn left on to Synergy Park Blvd, Community will be on your right.",
+    "images": [
+      "01JKV5SNXS75ZP62Z688HTQEGD.webp",
+      "01JKVC5SWS83759GRW8758DD72.webp",
+      "01JKV2PMYMSP46TPV8NJ14F79M.webp",
+      "01JKVBJ1GT50CPNRYA9XCN1HBA.webp",
+      "01JKV96NE2DA9F3XFJP6VVN8DE.webp"
+    ],
+    "houseUrl": "us/richardson/detail-apartments-1652090",
+    "operator": "Balfour Beatty Communities, LLC",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

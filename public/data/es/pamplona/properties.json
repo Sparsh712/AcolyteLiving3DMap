@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1557123",
+    "name": "AMRO Pamplona",
+    "lat": 42.797427,
+    "lng": -1.640429,
+    "price": 549,
+    "currency": "EUR",
+    "address": "Travesía de Extremadura 2, Pamplona, Comunidad Foral de Navarra 31006",
+    "university": "University of Navarra",
+    "distance": 1.18,
+    "rating": 5,
+    "about": "the AMRO student residence in the city offers 185 rooms with a total of 340 beds. It is perfect for making friends! It has apartments for groups, double studios, 35 twodios, 60 studios in a range of categories, and 60 single rooms. A wide range of accommodation so that everyone can make use of the facilities in the residence as they please. It is located in Pamplona, the capital of Navarra, specifically on the Travesía de Extremadura. Just an 8-minute walk from Universidad Pública de Navarra (UPNA). The UNAV, ESIC, Creanavarra and Sonograf are just a 10-minute bike ride away. A luxury, because there are also extensive connections with the main universities by public transport, which means people will be able to get around regardless of their means.",
+    "images": [
+      "2fb3b76994545a5d9c8f11c069fe2bfe4092ab.jpg"
+    ],
+    "houseUrl": "es/pamplona/detail-apartments-1557123",
+    "operator": "Amro Estudiantes",
+    "floors": 0,
+    "beds": 340,
+    "roomTypes": ""
+  },
+  {
+    "id": "1671077",
+    "name": "micampus Pamplona",
+    "lat": 42.804562,
+    "lng": -1.652479,
+    "price": 646,
+    "currency": "EUR",
+    "address": "Calle de Iturrama，21, Pamplona, Comunidad Foral de Navarra 31007",
+    "university": "University of Navarra",
+    "distance": 0.47,
+    "rating": null,
+    "about": "Our university residence in Pamplona is not like the typical student halls in Pamplona. It offers much more. To the location of micampus Pamplona, we must add modern facilities which allow residents to combine the independence and peace of mind necessary for their studies with the fun and friendship they will find in our communal areas. Discover the micampus experience!\nThe rooms in our university residence in Pamplona are equipped with air-conditioning, heating, Wi-Fi connection and a bathroom. If you would rather share, you will love the double rooms. And if you prefer total independence, you can choose one of the private rooms with a single or double bed. We also offer bright penthouse rooms, which are popular thanks to their attic style. Fortnightly room cleaning and a change of bedding and towels are included.",
+    "images": [
+      "2778d2516ccb72936481de9ef2f076af56917c.webp",
+      "e41f71f7b76d4477f7e2f8527a6783712032b7.webp",
+      "9a3ae5620a5ef2204349f1bd2d30ee8e2eaede.webp",
+      "2c3538201bd0f6f86667afbc1f69def128f415.webp",
+      "a1c210a370ecd145777d79b8383b4d4b616e9f.webp"
+    ],
+    "houseUrl": "es/pamplona/detail-apartments-1671077",
+    "operator": "Micampus",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

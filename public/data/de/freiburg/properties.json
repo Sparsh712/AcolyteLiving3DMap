@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1603529",
+    "name": "Black F Tower Family Suite Black L",
+    "lat": 48.01154,
+    "lng": 7.847278,
+    "price": 3300,
+    "currency": "EUR",
+    "address": "Zollhallenstraße, Freiburg, Baden-Württemberg 79106",
+    "university": "",
+    "distance": 0,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png",
+      "d890d6fd3c897274b8d7e83902bdab06719084.jpeg",
+      "aa58dd578a27e0d648b564a6745c02d50abcbb.jpeg",
+      "4594e8bab4fb4e43ad8ba8eba4c4a01b2e2261.jpeg",
+      "df495d20b488759b58aa8a44a4d070ed0f9bb3.jpeg"
+    ],
+    "houseUrl": "de/freiburg/detail-apartments-1603529",
+    "operator": "Roomless（德国）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1603530",
+    "name": "Black F Tower - Junior Suite Black L",
+    "lat": 48.01154,
+    "lng": 7.847278,
+    "price": 3000,
+    "currency": "EUR",
+    "address": "Zollhallenstraße, Freiburg, Baden-Württemberg 79106",
+    "university": "",
+    "distance": 0,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png",
+      "5278d5ba25dac55743ce5898ca03633f67438c.jpeg",
+      "ff44aa730abb936672ea7bdec200a3be5e642e.jpeg",
+      "dbb60f5b602444b102e341864c5e7f752b6d3f.jpeg",
+      "d99536c58f448cdb4cedf62ac4c2a89bd2bf5c.jpeg"
+    ],
+    "houseUrl": "de/freiburg/detail-apartments-1603530",
+    "operator": "Roomless（德国）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1603531",
+    "name": "Black F Tower M- View",
+    "lat": 48.01154,
+    "lng": 7.847278,
+    "price": 2400,
+    "currency": "EUR",
+    "address": "Zollhallenstraße, Freiburg, Baden-Württemberg 79106",
+    "university": "",
+    "distance": 0,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png",
+      "d76c1a16e1c1badad020fa261a7f88de7de966.jpeg",
+      "5986a44ebf7424fa4265b05b4c14ce3aa7297c.jpeg",
+      "5d60c77b2adfaaf21aa64954de36341faac88b.jpeg",
+      "6ed8b64a9772cd580cf51a7749da7a66b1a982.jpeg"
+    ],
+    "houseUrl": "de/freiburg/detail-apartments-1603531",
+    "operator": "Roomless（德国）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

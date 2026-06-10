@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1672507",
+    "name": "Studio 8",
+    "lat": 48.412718,
+    "lng": 2.701127,
+    "price": 630,
+    "currency": "EUR",
+    "address": "7 Rue Lagorsse, Fontainebleau, ile-de-france 77300",
+    "university": "Télécom Sud Paris",
+    "distance": 30.32,
+    "rating": null,
+    "about": "",
+    "images": [
+      "8e1c4398d9003bf4738a11f20b0abaee5ae96a.jpg",
+      "fe94df9c70036ad5b60d88b7908472916b4d85.png",
+      "12f37efaafa8cbb55391501be3c8e902150982.png",
+      "b9599b32c9d48d89c7ba671d4eaa8c1f941696.png"
+    ],
+    "houseUrl": "fr/fontainebleau/detail-apartments-1672507",
+    "operator": "Student France",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

@@ -187,7 +187,7 @@ function normalizeHouseUrl(raw: string): string {
 
 function extractCountrySlug(houseUrl: string): string | null {
   const normalized = normalizeHouseUrl(houseUrl.toLowerCase());
-  const match = normalized.match(/(^|\/)(uk|us|au)\//);
+  const match = normalized.match(/(^|\/)(uk|us|au|de|es|fr)\//);
   return match?.[2] ?? null;
 }
 
@@ -197,7 +197,7 @@ function extractCitySlug(houseUrl: string): string | null {
   const parts = normalized.split('/').filter(Boolean);
   if (parts.length === 0) return null;
 
-  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us' || part === 'au');
+  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us' || part === 'au' || part === 'de' || part === 'es' || part === 'fr');
   if (countryIndex >= 0 && parts[countryIndex + 1]) {
     return parts[countryIndex + 1];
   }

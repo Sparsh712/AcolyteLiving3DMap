@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1666462",
+    "name": "Reiherweg",
+    "lat": 52.411826,
+    "lng": 13.033387,
+    "price": 761,
+    "currency": "EUR",
+    "address": "Reiherweg, Potsdam, Brandenburg 14469",
+    "university": "Fachhochschule Potsdam",
+    "distance": 1.23,
+    "rating": null,
+    "about": "",
+    "images": [
+      "89a80e228d3b8e367cd99fba0347185a2fe57d.png",
+      "fe405591b50cb6163a369e55f2d1bfefc8eeb0.png",
+      "230bf89c47bbdfac10d3bd9e66ee75d394ff42.png",
+      "380a970b89876b27fe0a1f3c76dfe58cfa6276.png",
+      "71bc1f62044064c4c03526ac3ca3d14bae0f6a.png"
+    ],
+    "houseUrl": "de/potsdam/detail-apartments-1666462",
+    "operator": "German Apartment",
+    "floors": 4,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1684653",
+    "name": "Bright single bedroom near the Rehbrücke train station",
+    "lat": 52.360027,
+    "lng": 13.088685,
+    "price": 590,
+    "currency": "EUR",
+    "address": "Am Schlangenfenn, Potsdam, Brandenburg 14478",
+    "university": "Universität Potsdam",
+    "distance": 5.33,
+    "rating": null,
+    "about": "",
+    "images": [
+      "3587f39dc036e31b0e5d9aad6bd319bcfab6dc.png",
+      "c3ceaa135394f036b058b51f5e610f0f67d516.jpg",
+      "1679b820f45708f4f7a76feabe854bb151df68.jpg",
+      "7af04f6f2d0930be510f221308692ec687a55e.jpg",
+      "ff7ef4bfd2cdfa57411a2e822247a6f5da3d59.jpg"
+    ],
+    "houseUrl": "de/potsdam/detail-apartments-1684653",
+    "operator": "Uniplaces Germany",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

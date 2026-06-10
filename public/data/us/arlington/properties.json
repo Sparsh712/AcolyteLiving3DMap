@@ -1,0 +1,52 @@
+[
+  {
+    "id": "193286",
+    "name": "Brattle Drive",
+    "lat": 42.422029,
+    "lng": -71.166002,
+    "price": 1400,
+    "currency": "USD",
+    "address": "12 Brattle Drive, Arlington MA, Massachusetts MA 02474",
+    "university": "Tufts University",
+    "distance": 4.24,
+    "rating": null,
+    "about": "",
+    "images": [
+      "55738ceeb30252e668712c55cc103cd6349a87.jpg",
+      "image/1389/01HW56GTXB592WRJEJ244GQ2FP.webp",
+      "image/1389/01HW56GFHCVME0YCF6A567XSV4.webp",
+      "image/1395/01HW56GW4NEPAZGBA4YTTZS3FF.webp",
+      "image/1397/01HW56GGHAQ1J5G39CSCPAYA6V.webp"
+    ],
+    "houseUrl": "us/arlington/detail-apartments-193286",
+    "operator": "The Hamilton Company.",
+    "floors": 0,
+    "beds": 400,
+    "roomTypes": ""
+  },
+  {
+    "id": "193861",
+    "name": "385 Massachusetts Avenue",
+    "lat": 42.41287,
+    "lng": -71.148687,
+    "price": 2500,
+    "currency": "USD",
+    "address": "385 Massachusetts Avenue, Arlington MA, Massachusetts MA 02476",
+    "university": "Tufts University",
+    "distance": 2.55,
+    "rating": null,
+    "about": "",
+    "images": [
+      "19cdbf9ea9138305bd34a8b874d8734a365113.jpg",
+      "image/1389/01HW56HCT43778AGXEZWG93XWH.webp",
+      "image/1399/01HW56HDYCV2DM43H5J41E0HT9.webp",
+      "image/1381/01HW56HF1570G2Z5R2AZ6FWXZ2.webp",
+      "image/1399/01HW56HGDT9NQK7VG19C8RPQRS.webp"
+    ],
+    "houseUrl": "us/arlington/detail-apartments-193861",
+    "operator": "The Hamilton Company.",
+    "floors": 0,
+    "beds": 220,
+    "roomTypes": ""
+  }
+]

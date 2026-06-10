@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1583012",
+    "name": "Studio B7+",
+    "lat": 51.451267,
+    "lng": 7.268185,
+    "price": 849,
+    "currency": "EUR",
+    "address": "Universitätsstraße, Dortmund, Nordrhein-Westfalen 44",
+    "university": "Ruhr-Universität Bochum",
+    "distance": 0.81,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png",
+      "1d677f3b22c42c3d08ab2b760275143216e292.jpeg",
+      "4b03e99d4666957408261199ba791957b3a879.jpeg",
+      "fa7470ec5675cb24ae25f4503328d900cab433.jpeg",
+      "58871c684e15705ab445b7b655d0298dd58b2d.jpeg"
+    ],
+    "houseUrl": "de/dortmund/detail-apartments-1583012",
+    "operator": "Roomless（西班牙）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1583011",
+    "name": "Studio B4-6",
+    "lat": 51.451267,
+    "lng": 7.268185,
+    "price": 799,
+    "currency": "EUR",
+    "address": "Universitätsstraße, Dortmund, Nordrhein-Westfalen 44",
+    "university": "Ruhr-Universität Bochum",
+    "distance": 0.81,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png",
+      "2d83092174c620fcbda03f9d6ce411f143573e.jpeg",
+      "1414ccd6d6809d56f65e932cda5adc373b1938.jpeg",
+      "72ead5e8ac897b10e9f3a6606f26fbcbc69e1d.jpeg",
+      "1d677f3b22c42c3d08ab2b760275143216e292.jpeg"
+    ],
+    "houseUrl": "de/dortmund/detail-apartments-1583011",
+    "operator": "Roomless（西班牙）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1666725",
+    "name": "Platz von Leeds",
+    "lat": 51.515013,
+    "lng": 7.466753,
+    "price": 720,
+    "currency": "EUR",
+    "address": "Platz von Leeds, Dortmund, Nordrhein-Westfalen 44135",
+    "university": "Technische Universität Dortmund",
+    "distance": 4.17,
+    "rating": null,
+    "about": "",
+    "images": [
+      "ee31cdbde01c26df46087ad52e5dac88f9f554.png",
+      "b96fa5dfdd15b3ce55f867a5d67b0cb3b141de.png",
+      "02f1b126b01609aea6c252b88890bc49d65bca.png",
+      "9e4d7869d5c6a89d097938a9459b61b2c67982.png"
+    ],
+    "houseUrl": "de/dortmund/detail-apartments-1666725",
+    "operator": "German Apartment",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1709511",
+    "name": "Neat single bedroom near Münsterstraße metro",
+    "lat": 51.507201,
+    "lng": 7.619755,
+    "price": 300,
+    "currency": "EUR",
+    "address": "Mozartstraße, Dortmund, Nordrhein-Westfalen 59439",
+    "university": "Technische Universität Dortmund",
+    "distance": 14,
+    "rating": null,
+    "about": "",
+    "images": [
+      "3587f39dc036e31b0e5d9aad6bd319bcfab6dc.png",
+      "34984201622ee393a17b47c42fc23fad3f846a.jpeg",
+      "b27bc6e336ede2c8eff49533564ca0bd4dafd3.jpeg",
+      "9b79ae0a5a57e63b161f7a90836a86bea506e9.jpeg",
+      "2cefe81f634584742790262f5ce6e39949e7db.jpeg"
+    ],
+    "houseUrl": "de/dortmund/detail-apartments-1709511",
+    "operator": "Uniplaces Germany",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

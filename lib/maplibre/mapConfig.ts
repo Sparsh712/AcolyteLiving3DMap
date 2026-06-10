@@ -47,5 +47,14 @@ export function getImageUrl(filename: string, _size?: keyof typeof IMAGE_SIZE): 
     return filename;
   }
 
-  return `${IMAGE_CDN_BASE}/${filename.replace(/^\/+/, '')}`;
+  const cleanPath = filename.replace(/^\/+/, '');
+
+  // If the path already has a folder structure like "image/..." or "images/...",
+  // serve it directly from the CDN root domain.
+  if (cleanPath.startsWith('image/') || cleanPath.startsWith('images/')) {
+    return `https://cdn.acolyteliving.com/${cleanPath}`;
+  }
+
+  // Fallback for flat filenames
+  return `${IMAGE_CDN_BASE}/${cleanPath}`;
 }

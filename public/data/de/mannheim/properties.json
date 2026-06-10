@@ -1,0 +1,136 @@
+[
+  {
+    "id": "1669877",
+    "name": "THE FIZZ Ludwigshafen Mannheim",
+    "lat": 49.477431,
+    "lng": 8.454385,
+    "price": 718,
+    "currency": "EUR",
+    "address": "Halbergstraße 3, Mannheim, Baden-Württemberg 67061",
+    "university": "Universität Mannheim",
+    "distance": 0.97,
+    "rating": 5,
+    "about": "Enjoy a well-thought-out all-in living concept on the left bank of the Rhine in the Rhine-Neckar metropolitan region and directly opposite to the university city of Mannheim! Our student residence THE FIZZ Ludwigshafen offers 371 fully furnished apartments in a central location and just a few minutes away from the Ludwigshafen University of Applied Sciences and the University of Mannheim.\nWhether alone or with friends – choose your personal favourite apartment and feel right at home. There is something for everyone at THE FIZZ. Relax on the sunny rooftop terrace, chill-out in the gaming room and experience unforgettable moments with your fellow neighbours in our diverse community areas.",
+    "images": [
+      "ba12a06d12bb1ad101706c4dc1828ab97ba369.jpg",
+      "18177a0b650a088a775a9ec7a5ae1877a0378f.png",
+      "5081d6833457518dbaef33ccfb884ec98e7d01.png",
+      "45d1c18fd1025b3b0e739dc7386aff3baf9369.png",
+      "1521d1b37c6358378de631f3a575760b70bb71.png"
+    ],
+    "houseUrl": "de/mannheim/detail-apartments-1669877",
+    "operator": "The Fizz",
+    "floors": 5,
+    "beds": 371,
+    "roomTypes": ""
+  },
+  {
+    "id": "1592408",
+    "name": "Kaethe-Kollwitz-Strasse - Studio",
+    "lat": 49.5064,
+    "lng": 8.472718,
+    "price": 935,
+    "currency": "EUR",
+    "address": "Käthe-Kollwitz-Straße, Mannheim, Baden-Württemberg 68169",
+    "university": "",
+    "distance": 0,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png",
+      "a6c88e7be375e55075023fbb07ab446468c650.jpg",
+      "01eed5858cf215e30b13bfdb3a7e62ee94312a.jpg",
+      "6666c99985999b1df8d60c7b656149987eebda.jpg",
+      "70c9bbd3748d6446adfe6ce1df639fbf3d2770.jpg"
+    ],
+    "houseUrl": "de/mannheim/detail-apartments-1592408",
+    "operator": "Roomless（德国）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1583015",
+    "name": "Käthe-Kollwitz-Straße - Studio",
+    "lat": 49.505678,
+    "lng": 8.474903,
+    "price": 935,
+    "currency": "EUR",
+    "address": "Käthe-Kollwitz-Straße, Mannheim, Baden-Württemberg 68169",
+    "university": "Universität Mannheim",
+    "distance": 2.67,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png"
+    ],
+    "houseUrl": "de/mannheim/detail-apartments-1583015",
+    "operator": "Roomless（西班牙）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1583021",
+    "name": "Käthe-Kollwitz-Straße - Superior",
+    "lat": 49.505678,
+    "lng": 8.474903,
+    "price": 1105,
+    "currency": "EUR",
+    "address": "Käthe-Kollwitz-Straße, Mannheim, Baden-Württemberg 68169",
+    "university": "Universität Mannheim",
+    "distance": 2.67,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png"
+    ],
+    "houseUrl": "de/mannheim/detail-apartments-1583021",
+    "operator": "Roomless（西班牙）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1592726",
+    "name": "Modern, Charming apartment near Rhein River & Waldpark",
+    "lat": 49.46751,
+    "lng": 8.471435,
+    "price": 1995,
+    "currency": "EUR",
+    "address": "Eschkopfstraße, Mannheim, Baden-Württemberg 68163",
+    "university": "",
+    "distance": 0,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png"
+    ],
+    "houseUrl": "de/mannheim/detail-apartments-1592726",
+    "operator": "Roomless（德国）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  },
+  {
+    "id": "1583014",
+    "name": "Modern, Charming apartment near Rhein River & Waldpark",
+    "lat": 49.468241,
+    "lng": 8.471615,
+    "price": 1995,
+    "currency": "EUR",
+    "address": "Eschkopfstraße, Mannheim, Baden-Württemberg 68163",
+    "university": "Universität Mannheim",
+    "distance": 1.66,
+    "rating": null,
+    "about": "",
+    "images": [
+      "a6c996a5d364bbcccc1e2823064bec62d3e593.png"
+    ],
+    "houseUrl": "de/mannheim/detail-apartments-1583014",
+    "operator": "Roomless（西班牙）",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

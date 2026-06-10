@@ -46,6 +46,7 @@ eslint.json
 
 # raw source datasets (local processing inputs — too large, never deployed)
 full json/
+all_city_pairs.json
 
 # Next.js boilerplate SVGs (not used in the app)
 public/file.svg

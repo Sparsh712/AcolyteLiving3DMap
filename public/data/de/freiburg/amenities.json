@@ -1,0 +1,3902 @@
+{
+  "1603529": {
+    "name": "Black F Tower Family Suite Black L",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "McNamara's Irish Pub",
+          "category": "Bar",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 251,
+          "osm_id": "node/376829074"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8481043,
+                48.0093076
+              ],
+              [
+                7.8482043,
+                48.0093076
+              ],
+              [
+                7.8482043,
+                48.0094076
+              ],
+              [
+                7.8481043,
+                48.0094076
+              ],
+              [
+                7.8481043,
+                48.0093076
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rückgrat",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 147,
+          "osm_id": "node/2295298557"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8491325000000005,
+                48.0118556
+              ],
+              [
+                7.8492325,
+                48.0118556
+              ],
+              [
+                7.8492325,
+                48.0119556
+              ],
+              [
+                7.8491325000000005,
+                48.0119556
+              ],
+              [
+                7.8491325000000005,
+                48.0118556
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 168,
+          "osm_id": "node/3880640375"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8489546,
+                48.012461099999996
+              ],
+              [
+                7.8490546,
+                48.012461099999996
+              ],
+              [
+                7.8490546,
+                48.0125611
+              ],
+              [
+                7.8489546,
+                48.0125611
+              ],
+              [
+                7.8489546,
+                48.012461099999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 151,
+          "osm_id": "node/3880640380"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.848617,
+                48.012482399999996
+              ],
+              [
+                7.848717,
+                48.012482399999996
+              ],
+              [
+                7.848717,
+                48.0125824
+              ],
+              [
+                7.848617,
+                48.0125824
+              ],
+              [
+                7.848617,
+                48.012482399999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Newgöl Market",
+          "category": "Convenience Store",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 174,
+          "osm_id": "node/3979040127"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486046,
+                48.0127503
+              ],
+              [
+                7.8487046,
+                48.0127503
+              ],
+              [
+                7.8487046,
+                48.012850300000004
+              ],
+              [
+                7.8486046,
+                48.012850300000004
+              ],
+              [
+                7.8486046,
+                48.0127503
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Yoga & Pilates Center",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 135,
+          "osm_id": "node/4253156584"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8490484,
+                48.011455999999995
+              ],
+              [
+                7.8491484,
+                48.011455999999995
+              ],
+              [
+                7.8491484,
+                48.011556
+              ],
+              [
+                7.8490484,
+                48.011556
+              ],
+              [
+                7.8490484,
+                48.011455999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "kraft.werk powered by Rückgrat",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 64,
+          "osm_id": "node/4254712474"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8480516,
+                48.0116594
+              ],
+              [
+                7.8481516,
+                48.0116594
+              ],
+              [
+                7.8481516,
+                48.0117594
+              ],
+              [
+                7.8480516,
+                48.0117594
+              ],
+              [
+                7.8480516,
+                48.0116594
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bäckerei Heitzmann",
+          "category": "Cafe",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 204,
+          "osm_id": "node/4972305052"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8482548,
+                48.013194399999996
+              ],
+              [
+                7.8483548,
+                48.013194399999996
+              ],
+              [
+                7.8483548,
+                48.0132944
+              ],
+              [
+                7.8482548,
+                48.0132944
+              ],
+              [
+                7.8482548,
+                48.013194399999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 326,
+          "osm_id": "node/6334300280"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488523,
+                48.008765
+              ],
+              [
+                7.8489523,
+                48.008765
+              ],
+              [
+                7.8489523,
+                48.008865
+              ],
+              [
+                7.8488523,
+                48.008865
+              ],
+              [
+                7.8488523,
+                48.008765
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 321,
+          "osm_id": "node/6334300281"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8487151,
+                48.0087798
+              ],
+              [
+                7.8488150999999995,
+                48.0087798
+              ],
+              [
+                7.8488150999999995,
+                48.0088798
+              ],
+              [
+                7.8487151,
+                48.0088798
+              ],
+              [
+                7.8487151,
+                48.0087798
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 320,
+          "osm_id": "node/6334300282"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8487417,
+                48.0087992
+              ],
+              [
+                7.8488416999999995,
+                48.0087992
+              ],
+              [
+                7.8488416999999995,
+                48.0088992
+              ],
+              [
+                7.8487417,
+                48.0088992
+              ],
+              [
+                7.8487417,
+                48.0087992
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 327,
+          "osm_id": "node/6334300283"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488309,
+                48.0087496
+              ],
+              [
+                7.8489309,
+                48.0087496
+              ],
+              [
+                7.8489309,
+                48.008849600000005
+              ],
+              [
+                7.8488309,
+                48.008849600000005
+              ],
+              [
+                7.8488309,
+                48.0087496
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 210,
+          "osm_id": "node/6334300988"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445185,
+                48.010958699999996
+              ],
+              [
+                7.8446185,
+                48.010958699999996
+              ],
+              [
+                7.8446185,
+                48.0110587
+              ],
+              [
+                7.8445185,
+                48.0110587
+              ],
+              [
+                7.8445185,
+                48.010958699999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 208,
+          "osm_id": "node/6334300989"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445616000000005,
+                48.0109274
+              ],
+              [
+                7.8446616,
+                48.0109274
+              ],
+              [
+                7.8446616,
+                48.0110274
+              ],
+              [
+                7.8445616000000005,
+                48.0110274
+              ],
+              [
+                7.8445616000000005,
+                48.0109274
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 205,
+          "osm_id": "node/6334300990"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445986,
+                48.0109506
+              ],
+              [
+                7.8446986,
+                48.0109506
+              ],
+              [
+                7.8446986,
+                48.011050600000004
+              ],
+              [
+                7.8445986,
+                48.011050600000004
+              ],
+              [
+                7.8445986,
+                48.0109506
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 214,
+          "osm_id": "node/6334300991"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8444672,
+                48.0109359
+              ],
+              [
+                7.8445672,
+                48.0109359
+              ],
+              [
+                7.8445672,
+                48.0110359
+              ],
+              [
+                7.8444672,
+                48.0110359
+              ],
+              [
+                7.8444672,
+                48.0109359
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Urban Eight",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 16,
+          "osm_id": "node/9758548300"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8473896000000005,
+                48.011392799999996
+              ],
+              [
+                7.8474896,
+                48.011392799999996
+              ],
+              [
+                7.8474896,
+                48.0114928
+              ],
+              [
+                7.8473896000000005,
+                48.0114928
+              ],
+              [
+                7.8473896000000005,
+                48.011392799999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "La Pizzeria",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 199,
+          "osm_id": "node/9796685059"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8497388,
+                48.012111999999995
+              ],
+              [
+                7.8498388,
+                48.012111999999995
+              ],
+              [
+                7.8498388,
+                48.012212
+              ],
+              [
+                7.8497388,
+                48.012212
+              ],
+              [
+                7.8497388,
+                48.012111999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Basic-Fit",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 350,
+          "osm_id": "node/9796685064"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8498002,
+                48.014129
+              ],
+              [
+                7.8499001999999996,
+                48.014129
+              ],
+              [
+                7.8499001999999996,
+                48.014229
+              ],
+              [
+                7.8498002,
+                48.014229
+              ],
+              [
+                7.8498002,
+                48.014129
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Purino Freiburg",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 362,
+          "osm_id": "node/10138128886"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8443383,
+                48.0141059
+              ],
+              [
+                7.8444383,
+                48.0141059
+              ],
+              [
+                7.8444383,
+                48.0142059
+              ],
+              [
+                7.8443383,
+                48.0142059
+              ],
+              [
+                7.8443383,
+                48.0141059
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 172,
+          "osm_id": "node/10690232969"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488063,
+                48.0103638
+              ],
+              [
+                7.8489062999999994,
+                48.0103638
+              ],
+              [
+                7.8489062999999994,
+                48.010463800000004
+              ],
+              [
+                7.8488063,
+                48.010463800000004
+              ],
+              [
+                7.8488063,
+                48.0103638
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 154,
+          "osm_id": "node/10690232970"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8485871000000005,
+                48.010441799999995
+              ],
+              [
+                7.8486871,
+                48.010441799999995
+              ],
+              [
+                7.8486871,
+                48.0105418
+              ],
+              [
+                7.8485871000000005,
+                48.0105418
+              ],
+              [
+                7.8485871000000005,
+                48.010441799999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Freiladestraße",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 139,
+          "osm_id": "node/10690232971"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8454385,
+                48.0118479
+              ],
+              [
+                7.8455385,
+                48.0118479
+              ],
+              [
+                7.8455385,
+                48.0119479
+              ],
+              [
+                7.8454385,
+                48.0119479
+              ],
+              [
+                7.8454385,
+                48.0118479
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Edeka Rees",
+          "category": "Supermarket",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 235,
+          "osm_id": "node/10742935376"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.849344,
+                48.0130634
+              ],
+              [
+                7.849444,
+                48.0130634
+              ],
+              [
+                7.849444,
+                48.0131634
+              ],
+              [
+                7.849344,
+                48.0131634
+              ],
+              [
+                7.849344,
+                48.0130634
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 164,
+          "osm_id": "node/10979222295"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486991,
+                48.0103935
+              ],
+              [
+                7.8487991,
+                48.0103935
+              ],
+              [
+                7.8487991,
+                48.0104935
+              ],
+              [
+                7.8486991,
+                48.0104935
+              ],
+              [
+                7.8486991,
+                48.0103935
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 160,
+          "osm_id": "node/10979222297"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486641,
+                48.0104135
+              ],
+              [
+                7.8487640999999995,
+                48.0104135
+              ],
+              [
+                7.8487640999999995,
+                48.0105135
+              ],
+              [
+                7.8486641,
+                48.0105135
+              ],
+              [
+                7.8486641,
+                48.0104135
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sankt Konrad und Elisabeth",
+          "category": "Church",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 338,
+          "osm_id": "way/100084386"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8496605,
+                48.0087092
+              ],
+              [
+                7.8497132,
+                48.0087533
+              ],
+              [
+                7.8499943,
+                48.008996
+              ],
+              [
+                7.8499417,
+                48.0090218
+              ],
+              [
+                7.8500181,
+                48.0090895
+              ],
+              [
+                7.8500029,
+                48.009098
+              ],
+              [
+                7.8499144,
+                48.0091448
+              ],
+              [
+                7.8498791,
+                48.0091167
+              ],
+              [
+                7.8497679,
+                48.0091755
+              ],
+              [
+                7.8497214,
+                48.0091361
+              ],
+              [
+                7.8497751,
+                48.0091082
+              ],
+              [
+                7.8497267,
+                48.0090668
+              ],
+              [
+                7.8497169,
+                48.009072
+              ],
+              [
+                7.849686,
+                48.0090478
+              ],
+              [
+                7.8496972,
+                48.0090415
+              ],
+              [
+                7.8496454,
+                48.008997
+              ],
+              [
+                7.8496346,
+                48.0090021
+              ],
+              [
+                7.8496048,
+                48.0089771
+              ],
+              [
+                7.8496149,
+                48.0089729
+              ],
+              [
+                7.8495593,
+                48.0089269
+              ],
+              [
+                7.8495505,
+                48.0089319
+              ],
+              [
+                7.8495204,
+                48.0089087
+              ],
+              [
+                7.8495326,
+                48.0089016
+              ],
+              [
+                7.8494976,
+                48.0088701
+              ],
+              [
+                7.8494415,
+                48.008824
+              ],
+              [
+                7.8495172,
+                48.008784
+              ],
+              [
+                7.849551,
+                48.008766
+              ],
+              [
+                7.8495838,
+                48.0087487
+              ],
+              [
+                7.8496605,
+                48.0087092
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mitscherlich Kapelle",
+          "category": "Church",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 377,
+          "osm_id": "way/153667321"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8447109,
+                48.0085539
+              ],
+              [
+                7.8447658,
+                48.0085246
+              ],
+              [
+                7.8448038,
+                48.0085576
+              ],
+              [
+                7.8448258,
+                48.0085588
+              ],
+              [
+                7.8448666,
+                48.0085934
+              ],
+              [
+                7.8448649,
+                48.0086091
+              ],
+              [
+                7.8448133,
+                48.008638
+              ],
+              [
+                7.8447895,
+                48.0086359
+              ],
+              [
+                7.8447528,
+                48.0086045
+              ],
+              [
+                7.8447527,
+                48.0085879
+              ],
+              [
+                7.8447109,
+                48.0085539
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlplatz",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 289,
+          "osm_id": "relation/13108795"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8477731,
+                48.0088647
+              ],
+              [
+                7.8477379,
+                48.0088803
+              ],
+              [
+                7.847718,
+                48.0089036
+              ],
+              [
+                7.8477179,
+                48.0089502
+              ],
+              [
+                7.8477767,
+                48.0090087
+              ],
+              [
+                7.8478077,
+                48.0090393
+              ],
+              [
+                7.8479948,
+                48.0092236
+              ],
+              [
+                7.8480158,
+                48.0092124
+              ],
+              [
+                7.8480618,
+                48.0091879
+              ],
+              [
+                7.8481007,
+                48.0091672
+              ],
+              [
+                7.8483014,
+                48.0090604
+              ],
+              [
+                7.8483324,
+                48.0090435
+              ],
+              [
+                7.8483837,
+                48.0090134
+              ],
+              [
+                7.8483347,
+                48.0089655
+              ],
+              [
+                7.8482666,
+                48.0089318
+              ],
+              [
+                7.8482071,
+                48.0089072
+              ],
+              [
+                7.8479802,
+                48.0088522
+              ],
+              [
+                7.8478938,
+                48.0088398
+              ],
+              [
+                7.8478365,
+                48.0088495
+              ],
+              [
+                7.8477731,
+                48.0088647
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "Bar": 1,
+      "Sports Centre": 3,
+      "Sports Pitch": 2,
+      "Convenience Store": 1,
+      "Cafe": 1,
+      "Bus Stop": 13,
+      "Restaurant": 3,
+      "Gym": 1,
+      "Supermarket": 1,
+      "Church": 2,
+      "Park": 1
+    }
+  },
+  "1603530": {
+    "name": "Black F Tower - Junior Suite Black L",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "McNamara's Irish Pub",
+          "category": "Bar",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 251,
+          "osm_id": "node/376829074"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8481043,
+                48.0093076
+              ],
+              [
+                7.8482043,
+                48.0093076
+              ],
+              [
+                7.8482043,
+                48.0094076
+              ],
+              [
+                7.8481043,
+                48.0094076
+              ],
+              [
+                7.8481043,
+                48.0093076
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rückgrat",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 147,
+          "osm_id": "node/2295298557"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8491325000000005,
+                48.0118556
+              ],
+              [
+                7.8492325,
+                48.0118556
+              ],
+              [
+                7.8492325,
+                48.0119556
+              ],
+              [
+                7.8491325000000005,
+                48.0119556
+              ],
+              [
+                7.8491325000000005,
+                48.0118556
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 168,
+          "osm_id": "node/3880640375"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8489546,
+                48.012461099999996
+              ],
+              [
+                7.8490546,
+                48.012461099999996
+              ],
+              [
+                7.8490546,
+                48.0125611
+              ],
+              [
+                7.8489546,
+                48.0125611
+              ],
+              [
+                7.8489546,
+                48.012461099999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 151,
+          "osm_id": "node/3880640380"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.848617,
+                48.012482399999996
+              ],
+              [
+                7.848717,
+                48.012482399999996
+              ],
+              [
+                7.848717,
+                48.0125824
+              ],
+              [
+                7.848617,
+                48.0125824
+              ],
+              [
+                7.848617,
+                48.012482399999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Newgöl Market",
+          "category": "Convenience Store",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 174,
+          "osm_id": "node/3979040127"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486046,
+                48.0127503
+              ],
+              [
+                7.8487046,
+                48.0127503
+              ],
+              [
+                7.8487046,
+                48.012850300000004
+              ],
+              [
+                7.8486046,
+                48.012850300000004
+              ],
+              [
+                7.8486046,
+                48.0127503
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Yoga & Pilates Center",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 135,
+          "osm_id": "node/4253156584"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8490484,
+                48.011455999999995
+              ],
+              [
+                7.8491484,
+                48.011455999999995
+              ],
+              [
+                7.8491484,
+                48.011556
+              ],
+              [
+                7.8490484,
+                48.011556
+              ],
+              [
+                7.8490484,
+                48.011455999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "kraft.werk powered by Rückgrat",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 64,
+          "osm_id": "node/4254712474"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8480516,
+                48.0116594
+              ],
+              [
+                7.8481516,
+                48.0116594
+              ],
+              [
+                7.8481516,
+                48.0117594
+              ],
+              [
+                7.8480516,
+                48.0117594
+              ],
+              [
+                7.8480516,
+                48.0116594
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bäckerei Heitzmann",
+          "category": "Cafe",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 204,
+          "osm_id": "node/4972305052"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8482548,
+                48.013194399999996
+              ],
+              [
+                7.8483548,
+                48.013194399999996
+              ],
+              [
+                7.8483548,
+                48.0132944
+              ],
+              [
+                7.8482548,
+                48.0132944
+              ],
+              [
+                7.8482548,
+                48.013194399999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 326,
+          "osm_id": "node/6334300280"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488523,
+                48.008765
+              ],
+              [
+                7.8489523,
+                48.008765
+              ],
+              [
+                7.8489523,
+                48.008865
+              ],
+              [
+                7.8488523,
+                48.008865
+              ],
+              [
+                7.8488523,
+                48.008765
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 321,
+          "osm_id": "node/6334300281"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8487151,
+                48.0087798
+              ],
+              [
+                7.8488150999999995,
+                48.0087798
+              ],
+              [
+                7.8488150999999995,
+                48.0088798
+              ],
+              [
+                7.8487151,
+                48.0088798
+              ],
+              [
+                7.8487151,
+                48.0087798
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 320,
+          "osm_id": "node/6334300282"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8487417,
+                48.0087992
+              ],
+              [
+                7.8488416999999995,
+                48.0087992
+              ],
+              [
+                7.8488416999999995,
+                48.0088992
+              ],
+              [
+                7.8487417,
+                48.0088992
+              ],
+              [
+                7.8487417,
+                48.0087992
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 327,
+          "osm_id": "node/6334300283"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488309,
+                48.0087496
+              ],
+              [
+                7.8489309,
+                48.0087496
+              ],
+              [
+                7.8489309,
+                48.008849600000005
+              ],
+              [
+                7.8488309,
+                48.008849600000005
+              ],
+              [
+                7.8488309,
+                48.0087496
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 210,
+          "osm_id": "node/6334300988"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445185,
+                48.010958699999996
+              ],
+              [
+                7.8446185,
+                48.010958699999996
+              ],
+              [
+                7.8446185,
+                48.0110587
+              ],
+              [
+                7.8445185,
+                48.0110587
+              ],
+              [
+                7.8445185,
+                48.010958699999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 208,
+          "osm_id": "node/6334300989"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445616000000005,
+                48.0109274
+              ],
+              [
+                7.8446616,
+                48.0109274
+              ],
+              [
+                7.8446616,
+                48.0110274
+              ],
+              [
+                7.8445616000000005,
+                48.0110274
+              ],
+              [
+                7.8445616000000005,
+                48.0109274
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 205,
+          "osm_id": "node/6334300990"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445986,
+                48.0109506
+              ],
+              [
+                7.8446986,
+                48.0109506
+              ],
+              [
+                7.8446986,
+                48.011050600000004
+              ],
+              [
+                7.8445986,
+                48.011050600000004
+              ],
+              [
+                7.8445986,
+                48.0109506
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 214,
+          "osm_id": "node/6334300991"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8444672,
+                48.0109359
+              ],
+              [
+                7.8445672,
+                48.0109359
+              ],
+              [
+                7.8445672,
+                48.0110359
+              ],
+              [
+                7.8444672,
+                48.0110359
+              ],
+              [
+                7.8444672,
+                48.0109359
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Urban Eight",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 16,
+          "osm_id": "node/9758548300"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8473896000000005,
+                48.011392799999996
+              ],
+              [
+                7.8474896,
+                48.011392799999996
+              ],
+              [
+                7.8474896,
+                48.0114928
+              ],
+              [
+                7.8473896000000005,
+                48.0114928
+              ],
+              [
+                7.8473896000000005,
+                48.011392799999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "La Pizzeria",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 199,
+          "osm_id": "node/9796685059"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8497388,
+                48.012111999999995
+              ],
+              [
+                7.8498388,
+                48.012111999999995
+              ],
+              [
+                7.8498388,
+                48.012212
+              ],
+              [
+                7.8497388,
+                48.012212
+              ],
+              [
+                7.8497388,
+                48.012111999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Basic-Fit",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 350,
+          "osm_id": "node/9796685064"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8498002,
+                48.014129
+              ],
+              [
+                7.8499001999999996,
+                48.014129
+              ],
+              [
+                7.8499001999999996,
+                48.014229
+              ],
+              [
+                7.8498002,
+                48.014229
+              ],
+              [
+                7.8498002,
+                48.014129
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Purino Freiburg",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 362,
+          "osm_id": "node/10138128886"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8443383,
+                48.0141059
+              ],
+              [
+                7.8444383,
+                48.0141059
+              ],
+              [
+                7.8444383,
+                48.0142059
+              ],
+              [
+                7.8443383,
+                48.0142059
+              ],
+              [
+                7.8443383,
+                48.0141059
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 172,
+          "osm_id": "node/10690232969"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488063,
+                48.0103638
+              ],
+              [
+                7.8489062999999994,
+                48.0103638
+              ],
+              [
+                7.8489062999999994,
+                48.010463800000004
+              ],
+              [
+                7.8488063,
+                48.010463800000004
+              ],
+              [
+                7.8488063,
+                48.0103638
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 154,
+          "osm_id": "node/10690232970"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8485871000000005,
+                48.010441799999995
+              ],
+              [
+                7.8486871,
+                48.010441799999995
+              ],
+              [
+                7.8486871,
+                48.0105418
+              ],
+              [
+                7.8485871000000005,
+                48.0105418
+              ],
+              [
+                7.8485871000000005,
+                48.010441799999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Freiladestraße",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 139,
+          "osm_id": "node/10690232971"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8454385,
+                48.0118479
+              ],
+              [
+                7.8455385,
+                48.0118479
+              ],
+              [
+                7.8455385,
+                48.0119479
+              ],
+              [
+                7.8454385,
+                48.0119479
+              ],
+              [
+                7.8454385,
+                48.0118479
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Edeka Rees",
+          "category": "Supermarket",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 235,
+          "osm_id": "node/10742935376"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.849344,
+                48.0130634
+              ],
+              [
+                7.849444,
+                48.0130634
+              ],
+              [
+                7.849444,
+                48.0131634
+              ],
+              [
+                7.849344,
+                48.0131634
+              ],
+              [
+                7.849344,
+                48.0130634
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 164,
+          "osm_id": "node/10979222295"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486991,
+                48.0103935
+              ],
+              [
+                7.8487991,
+                48.0103935
+              ],
+              [
+                7.8487991,
+                48.0104935
+              ],
+              [
+                7.8486991,
+                48.0104935
+              ],
+              [
+                7.8486991,
+                48.0103935
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 160,
+          "osm_id": "node/10979222297"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486641,
+                48.0104135
+              ],
+              [
+                7.8487640999999995,
+                48.0104135
+              ],
+              [
+                7.8487640999999995,
+                48.0105135
+              ],
+              [
+                7.8486641,
+                48.0105135
+              ],
+              [
+                7.8486641,
+                48.0104135
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sankt Konrad und Elisabeth",
+          "category": "Church",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 338,
+          "osm_id": "way/100084386"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8496605,
+                48.0087092
+              ],
+              [
+                7.8497132,
+                48.0087533
+              ],
+              [
+                7.8499943,
+                48.008996
+              ],
+              [
+                7.8499417,
+                48.0090218
+              ],
+              [
+                7.8500181,
+                48.0090895
+              ],
+              [
+                7.8500029,
+                48.009098
+              ],
+              [
+                7.8499144,
+                48.0091448
+              ],
+              [
+                7.8498791,
+                48.0091167
+              ],
+              [
+                7.8497679,
+                48.0091755
+              ],
+              [
+                7.8497214,
+                48.0091361
+              ],
+              [
+                7.8497751,
+                48.0091082
+              ],
+              [
+                7.8497267,
+                48.0090668
+              ],
+              [
+                7.8497169,
+                48.009072
+              ],
+              [
+                7.849686,
+                48.0090478
+              ],
+              [
+                7.8496972,
+                48.0090415
+              ],
+              [
+                7.8496454,
+                48.008997
+              ],
+              [
+                7.8496346,
+                48.0090021
+              ],
+              [
+                7.8496048,
+                48.0089771
+              ],
+              [
+                7.8496149,
+                48.0089729
+              ],
+              [
+                7.8495593,
+                48.0089269
+              ],
+              [
+                7.8495505,
+                48.0089319
+              ],
+              [
+                7.8495204,
+                48.0089087
+              ],
+              [
+                7.8495326,
+                48.0089016
+              ],
+              [
+                7.8494976,
+                48.0088701
+              ],
+              [
+                7.8494415,
+                48.008824
+              ],
+              [
+                7.8495172,
+                48.008784
+              ],
+              [
+                7.849551,
+                48.008766
+              ],
+              [
+                7.8495838,
+                48.0087487
+              ],
+              [
+                7.8496605,
+                48.0087092
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mitscherlich Kapelle",
+          "category": "Church",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 377,
+          "osm_id": "way/153667321"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8447109,
+                48.0085539
+              ],
+              [
+                7.8447658,
+                48.0085246
+              ],
+              [
+                7.8448038,
+                48.0085576
+              ],
+              [
+                7.8448258,
+                48.0085588
+              ],
+              [
+                7.8448666,
+                48.0085934
+              ],
+              [
+                7.8448649,
+                48.0086091
+              ],
+              [
+                7.8448133,
+                48.008638
+              ],
+              [
+                7.8447895,
+                48.0086359
+              ],
+              [
+                7.8447528,
+                48.0086045
+              ],
+              [
+                7.8447527,
+                48.0085879
+              ],
+              [
+                7.8447109,
+                48.0085539
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlplatz",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 289,
+          "osm_id": "relation/13108795"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8477731,
+                48.0088647
+              ],
+              [
+                7.8477379,
+                48.0088803
+              ],
+              [
+                7.847718,
+                48.0089036
+              ],
+              [
+                7.8477179,
+                48.0089502
+              ],
+              [
+                7.8477767,
+                48.0090087
+              ],
+              [
+                7.8478077,
+                48.0090393
+              ],
+              [
+                7.8479948,
+                48.0092236
+              ],
+              [
+                7.8480158,
+                48.0092124
+              ],
+              [
+                7.8480618,
+                48.0091879
+              ],
+              [
+                7.8481007,
+                48.0091672
+              ],
+              [
+                7.8483014,
+                48.0090604
+              ],
+              [
+                7.8483324,
+                48.0090435
+              ],
+              [
+                7.8483837,
+                48.0090134
+              ],
+              [
+                7.8483347,
+                48.0089655
+              ],
+              [
+                7.8482666,
+                48.0089318
+              ],
+              [
+                7.8482071,
+                48.0089072
+              ],
+              [
+                7.8479802,
+                48.0088522
+              ],
+              [
+                7.8478938,
+                48.0088398
+              ],
+              [
+                7.8478365,
+                48.0088495
+              ],
+              [
+                7.8477731,
+                48.0088647
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "Bar": 1,
+      "Sports Centre": 3,
+      "Sports Pitch": 2,
+      "Convenience Store": 1,
+      "Cafe": 1,
+      "Bus Stop": 13,
+      "Restaurant": 3,
+      "Gym": 1,
+      "Supermarket": 1,
+      "Church": 2,
+      "Park": 1
+    }
+  },
+  "1603531": {
+    "name": "Black F Tower M- View",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "McNamara's Irish Pub",
+          "category": "Bar",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 251,
+          "osm_id": "node/376829074"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8481043,
+                48.0093076
+              ],
+              [
+                7.8482043,
+                48.0093076
+              ],
+              [
+                7.8482043,
+                48.0094076
+              ],
+              [
+                7.8481043,
+                48.0094076
+              ],
+              [
+                7.8481043,
+                48.0093076
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rückgrat",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 147,
+          "osm_id": "node/2295298557"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8491325000000005,
+                48.0118556
+              ],
+              [
+                7.8492325,
+                48.0118556
+              ],
+              [
+                7.8492325,
+                48.0119556
+              ],
+              [
+                7.8491325000000005,
+                48.0119556
+              ],
+              [
+                7.8491325000000005,
+                48.0118556
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 168,
+          "osm_id": "node/3880640375"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8489546,
+                48.012461099999996
+              ],
+              [
+                7.8490546,
+                48.012461099999996
+              ],
+              [
+                7.8490546,
+                48.0125611
+              ],
+              [
+                7.8489546,
+                48.0125611
+              ],
+              [
+                7.8489546,
+                48.012461099999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 151,
+          "osm_id": "node/3880640380"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.848617,
+                48.012482399999996
+              ],
+              [
+                7.848717,
+                48.012482399999996
+              ],
+              [
+                7.848717,
+                48.0125824
+              ],
+              [
+                7.848617,
+                48.0125824
+              ],
+              [
+                7.848617,
+                48.012482399999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Newgöl Market",
+          "category": "Convenience Store",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 174,
+          "osm_id": "node/3979040127"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486046,
+                48.0127503
+              ],
+              [
+                7.8487046,
+                48.0127503
+              ],
+              [
+                7.8487046,
+                48.012850300000004
+              ],
+              [
+                7.8486046,
+                48.012850300000004
+              ],
+              [
+                7.8486046,
+                48.0127503
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Yoga & Pilates Center",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 135,
+          "osm_id": "node/4253156584"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8490484,
+                48.011455999999995
+              ],
+              [
+                7.8491484,
+                48.011455999999995
+              ],
+              [
+                7.8491484,
+                48.011556
+              ],
+              [
+                7.8490484,
+                48.011556
+              ],
+              [
+                7.8490484,
+                48.011455999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "kraft.werk powered by Rückgrat",
+          "category": "Sports Centre",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 64,
+          "osm_id": "node/4254712474"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8480516,
+                48.0116594
+              ],
+              [
+                7.8481516,
+                48.0116594
+              ],
+              [
+                7.8481516,
+                48.0117594
+              ],
+              [
+                7.8480516,
+                48.0117594
+              ],
+              [
+                7.8480516,
+                48.0116594
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Bäckerei Heitzmann",
+          "category": "Cafe",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 204,
+          "osm_id": "node/4972305052"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8482548,
+                48.013194399999996
+              ],
+              [
+                7.8483548,
+                48.013194399999996
+              ],
+              [
+                7.8483548,
+                48.0132944
+              ],
+              [
+                7.8482548,
+                48.0132944
+              ],
+              [
+                7.8482548,
+                48.013194399999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 326,
+          "osm_id": "node/6334300280"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488523,
+                48.008765
+              ],
+              [
+                7.8489523,
+                48.008765
+              ],
+              [
+                7.8489523,
+                48.008865
+              ],
+              [
+                7.8488523,
+                48.008865
+              ],
+              [
+                7.8488523,
+                48.008765
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 321,
+          "osm_id": "node/6334300281"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8487151,
+                48.0087798
+              ],
+              [
+                7.8488150999999995,
+                48.0087798
+              ],
+              [
+                7.8488150999999995,
+                48.0088798
+              ],
+              [
+                7.8487151,
+                48.0088798
+              ],
+              [
+                7.8487151,
+                48.0087798
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 320,
+          "osm_id": "node/6334300282"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8487417,
+                48.0087992
+              ],
+              [
+                7.8488416999999995,
+                48.0087992
+              ],
+              [
+                7.8488416999999995,
+                48.0088992
+              ],
+              [
+                7.8487417,
+                48.0088992
+              ],
+              [
+                7.8487417,
+                48.0087992
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Rennweg",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 327,
+          "osm_id": "node/6334300283"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488309,
+                48.0087496
+              ],
+              [
+                7.8489309,
+                48.0087496
+              ],
+              [
+                7.8489309,
+                48.008849600000005
+              ],
+              [
+                7.8488309,
+                48.008849600000005
+              ],
+              [
+                7.8488309,
+                48.0087496
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 210,
+          "osm_id": "node/6334300988"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445185,
+                48.010958699999996
+              ],
+              [
+                7.8446185,
+                48.010958699999996
+              ],
+              [
+                7.8446185,
+                48.0110587
+              ],
+              [
+                7.8445185,
+                48.0110587
+              ],
+              [
+                7.8445185,
+                48.010958699999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 208,
+          "osm_id": "node/6334300989"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445616000000005,
+                48.0109274
+              ],
+              [
+                7.8446616,
+                48.0109274
+              ],
+              [
+                7.8446616,
+                48.0110274
+              ],
+              [
+                7.8445616000000005,
+                48.0110274
+              ],
+              [
+                7.8445616000000005,
+                48.0109274
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 205,
+          "osm_id": "node/6334300990"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8445986,
+                48.0109506
+              ],
+              [
+                7.8446986,
+                48.0109506
+              ],
+              [
+                7.8446986,
+                48.011050600000004
+              ],
+              [
+                7.8445986,
+                48.011050600000004
+              ],
+              [
+                7.8445986,
+                48.0109506
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlstraße Mitte",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 214,
+          "osm_id": "node/6334300991"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8444672,
+                48.0109359
+              ],
+              [
+                7.8445672,
+                48.0109359
+              ],
+              [
+                7.8445672,
+                48.0110359
+              ],
+              [
+                7.8444672,
+                48.0110359
+              ],
+              [
+                7.8444672,
+                48.0109359
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Urban Eight",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 16,
+          "osm_id": "node/9758548300"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8473896000000005,
+                48.011392799999996
+              ],
+              [
+                7.8474896,
+                48.011392799999996
+              ],
+              [
+                7.8474896,
+                48.0114928
+              ],
+              [
+                7.8473896000000005,
+                48.0114928
+              ],
+              [
+                7.8473896000000005,
+                48.011392799999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "La Pizzeria",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 199,
+          "osm_id": "node/9796685059"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8497388,
+                48.012111999999995
+              ],
+              [
+                7.8498388,
+                48.012111999999995
+              ],
+              [
+                7.8498388,
+                48.012212
+              ],
+              [
+                7.8497388,
+                48.012212
+              ],
+              [
+                7.8497388,
+                48.012111999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Basic-Fit",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 350,
+          "osm_id": "node/9796685064"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8498002,
+                48.014129
+              ],
+              [
+                7.8499001999999996,
+                48.014129
+              ],
+              [
+                7.8499001999999996,
+                48.014229
+              ],
+              [
+                7.8498002,
+                48.014229
+              ],
+              [
+                7.8498002,
+                48.014129
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Purino Freiburg",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 362,
+          "osm_id": "node/10138128886"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8443383,
+                48.0141059
+              ],
+              [
+                7.8444383,
+                48.0141059
+              ],
+              [
+                7.8444383,
+                48.0142059
+              ],
+              [
+                7.8443383,
+                48.0142059
+              ],
+              [
+                7.8443383,
+                48.0141059
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 172,
+          "osm_id": "node/10690232969"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8488063,
+                48.0103638
+              ],
+              [
+                7.8489062999999994,
+                48.0103638
+              ],
+              [
+                7.8489062999999994,
+                48.010463800000004
+              ],
+              [
+                7.8488063,
+                48.010463800000004
+              ],
+              [
+                7.8488063,
+                48.0103638
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 154,
+          "osm_id": "node/10690232970"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8485871000000005,
+                48.010441799999995
+              ],
+              [
+                7.8486871,
+                48.010441799999995
+              ],
+              [
+                7.8486871,
+                48.0105418
+              ],
+              [
+                7.8485871000000005,
+                48.0105418
+              ],
+              [
+                7.8485871000000005,
+                48.010441799999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Freiladestraße",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 139,
+          "osm_id": "node/10690232971"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8454385,
+                48.0118479
+              ],
+              [
+                7.8455385,
+                48.0118479
+              ],
+              [
+                7.8455385,
+                48.0119479
+              ],
+              [
+                7.8454385,
+                48.0119479
+              ],
+              [
+                7.8454385,
+                48.0118479
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Edeka Rees",
+          "category": "Supermarket",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 235,
+          "osm_id": "node/10742935376"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.849344,
+                48.0130634
+              ],
+              [
+                7.849444,
+                48.0130634
+              ],
+              [
+                7.849444,
+                48.0131634
+              ],
+              [
+                7.849344,
+                48.0131634
+              ],
+              [
+                7.849344,
+                48.0130634
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 164,
+          "osm_id": "node/10979222295"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486991,
+                48.0103935
+              ],
+              [
+                7.8487991,
+                48.0103935
+              ],
+              [
+                7.8487991,
+                48.0104935
+              ],
+              [
+                7.8486991,
+                48.0104935
+              ],
+              [
+                7.8486991,
+                48.0103935
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zollhallenplatz",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 160,
+          "osm_id": "node/10979222297"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8486641,
+                48.0104135
+              ],
+              [
+                7.8487640999999995,
+                48.0104135
+              ],
+              [
+                7.8487640999999995,
+                48.0105135
+              ],
+              [
+                7.8486641,
+                48.0105135
+              ],
+              [
+                7.8486641,
+                48.0104135
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sankt Konrad und Elisabeth",
+          "category": "Church",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 338,
+          "osm_id": "way/100084386"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8496605,
+                48.0087092
+              ],
+              [
+                7.8497132,
+                48.0087533
+              ],
+              [
+                7.8499943,
+                48.008996
+              ],
+              [
+                7.8499417,
+                48.0090218
+              ],
+              [
+                7.8500181,
+                48.0090895
+              ],
+              [
+                7.8500029,
+                48.009098
+              ],
+              [
+                7.8499144,
+                48.0091448
+              ],
+              [
+                7.8498791,
+                48.0091167
+              ],
+              [
+                7.8497679,
+                48.0091755
+              ],
+              [
+                7.8497214,
+                48.0091361
+              ],
+              [
+                7.8497751,
+                48.0091082
+              ],
+              [
+                7.8497267,
+                48.0090668
+              ],
+              [
+                7.8497169,
+                48.009072
+              ],
+              [
+                7.849686,
+                48.0090478
+              ],
+              [
+                7.8496972,
+                48.0090415
+              ],
+              [
+                7.8496454,
+                48.008997
+              ],
+              [
+                7.8496346,
+                48.0090021
+              ],
+              [
+                7.8496048,
+                48.0089771
+              ],
+              [
+                7.8496149,
+                48.0089729
+              ],
+              [
+                7.8495593,
+                48.0089269
+              ],
+              [
+                7.8495505,
+                48.0089319
+              ],
+              [
+                7.8495204,
+                48.0089087
+              ],
+              [
+                7.8495326,
+                48.0089016
+              ],
+              [
+                7.8494976,
+                48.0088701
+              ],
+              [
+                7.8494415,
+                48.008824
+              ],
+              [
+                7.8495172,
+                48.008784
+              ],
+              [
+                7.849551,
+                48.008766
+              ],
+              [
+                7.8495838,
+                48.0087487
+              ],
+              [
+                7.8496605,
+                48.0087092
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mitscherlich Kapelle",
+          "category": "Church",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 377,
+          "osm_id": "way/153667321"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8447109,
+                48.0085539
+              ],
+              [
+                7.8447658,
+                48.0085246
+              ],
+              [
+                7.8448038,
+                48.0085576
+              ],
+              [
+                7.8448258,
+                48.0085588
+              ],
+              [
+                7.8448666,
+                48.0085934
+              ],
+              [
+                7.8448649,
+                48.0086091
+              ],
+              [
+                7.8448133,
+                48.008638
+              ],
+              [
+                7.8447895,
+                48.0086359
+              ],
+              [
+                7.8447528,
+                48.0086045
+              ],
+              [
+                7.8447527,
+                48.0085879
+              ],
+              [
+                7.8447109,
+                48.0085539
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaiserstuhlplatz",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 289,
+          "osm_id": "relation/13108795"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                7.8477731,
+                48.0088647
+              ],
+              [
+                7.8477379,
+                48.0088803
+              ],
+              [
+                7.847718,
+                48.0089036
+              ],
+              [
+                7.8477179,
+                48.0089502
+              ],
+              [
+                7.8477767,
+                48.0090087
+              ],
+              [
+                7.8478077,
+                48.0090393
+              ],
+              [
+                7.8479948,
+                48.0092236
+              ],
+              [
+                7.8480158,
+                48.0092124
+              ],
+              [
+                7.8480618,
+                48.0091879
+              ],
+              [
+                7.8481007,
+                48.0091672
+              ],
+              [
+                7.8483014,
+                48.0090604
+              ],
+              [
+                7.8483324,
+                48.0090435
+              ],
+              [
+                7.8483837,
+                48.0090134
+              ],
+              [
+                7.8483347,
+                48.0089655
+              ],
+              [
+                7.8482666,
+                48.0089318
+              ],
+              [
+                7.8482071,
+                48.0089072
+              ],
+              [
+                7.8479802,
+                48.0088522
+              ],
+              [
+                7.8478938,
+                48.0088398
+              ],
+              [
+                7.8478365,
+                48.0088495
+              ],
+              [
+                7.8477731,
+                48.0088647
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "Bar": 1,
+      "Sports Centre": 3,
+      "Sports Pitch": 2,
+      "Convenience Store": 1,
+      "Cafe": 1,
+      "Bus Stop": 13,
+      "Restaurant": 3,
+      "Gym": 1,
+      "Supermarket": 1,
+      "Church": 2,
+      "Park": 1
+    }
+  }
+}

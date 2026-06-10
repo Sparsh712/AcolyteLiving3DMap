@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const BASE_URL = 'https://acolyteliving.com/properties';
-const ALLOWED_COUNTRIES = new Set(['uk', 'us', 'au']);
+const ALLOWED_COUNTRIES = new Set(['uk', 'us', 'au', 'de', 'es', 'fr']);
 const ALLOWED_CITIES = new Set([
   'manchester',
   'london',
@@ -42,6 +42,56 @@ const ALLOWED_CITIES = new Set([
   'newcastle',
   'perth',
   'sydney',
+  // New US Cities
+  'boston',
+  'los-angeles',
+  'tempe',
+  'richardson',
+  'urbana-champaign',
+  'pittsburgh',
+  'west-lafayette',
+  'berkeley',
+  'ann-arbor',
+  'college-station',
+  'atlanta',
+  'philadelphia',
+  'san-diego',
+  'raleigh',
+  'buffalo',
+  'arlington',
+  'new-york',
+  // DE (Germany) Cities
+  'munchen',
+  'aachen',
+  'berlin',
+  'stuttgart',
+  'bonn',
+  'freiburg',
+  'hamburg',
+  'frankfurt-am-main',
+  'darmstadt',
+  'mannheim',
+  'hannover',
+  'koln',
+  'dortmund',
+  'essen',
+  'potsdam',
+  // FR (France) Cities
+  'fontainebleau',
+  'cergy',
+  'lille',
+  'reims',
+  'bordeaux',
+  'paris',
+  'lyon',
+  'grenoble',
+  'toulouse',
+  'nantes',
+  'nancy',
+  // ES (Spain) Cities
+  'madrid',
+  'barcelona',
+  'pamplona',
 ]);
 
 /**

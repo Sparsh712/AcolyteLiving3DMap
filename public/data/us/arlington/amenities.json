@@ -1,0 +1,2160 @@
+{
+  "193286": {
+    "name": "Brattle Drive",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Prentiss Rd",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 343,
+          "osm_id": "node/1399788364"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1672116,
+                42.4190162
+              ],
+              [
+                -71.1671116,
+                42.4190162
+              ],
+              [
+                -71.1671116,
+                42.419116200000005
+              ],
+              [
+                -71.1672116,
+                42.419116200000005
+              ],
+              [
+                -71.1672116,
+                42.4190162
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Summer St @ Hospital Rd",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 168,
+          "osm_id": "node/1399796008"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.164151,
+                42.422542
+              ],
+              [
+                -71.164051,
+                42.422542
+              ],
+              [
+                -71.164051,
+                42.422642
+              ],
+              [
+                -71.164151,
+                42.422642
+              ],
+              [
+                -71.164151,
+                42.422542
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Summer St opp Hospital Rd - Lahey Clinic",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 146,
+          "osm_id": "node/1399796180"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.164456,
+                42.422561
+              ],
+              [
+                -71.164356,
+                42.422561
+              ],
+              [
+                -71.164356,
+                42.422661000000005
+              ],
+              [
+                -71.164456,
+                42.422661000000005
+              ],
+              [
+                -71.164456,
+                42.422561
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Summer St opp Washington St",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 310,
+          "osm_id": "node/1399796240"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1687593,
+                42.423926099999996
+              ],
+              [
+                -71.1686593,
+                42.423926099999996
+              ],
+              [
+                -71.1686593,
+                42.4240261
+              ],
+              [
+                -71.1687593,
+                42.4240261
+              ],
+              [
+                -71.1687593,
+                42.423926099999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Inspire Fitness Studio",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 104,
+          "osm_id": "node/11999398257"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1667418,
+                42.421194799999995
+              ],
+              [
+                -71.1666418,
+                42.421194799999995
+              ],
+              [
+                -71.1666418,
+                42.4212948
+              ],
+              [
+                -71.1667418,
+                42.4212948
+              ],
+              [
+                -71.1667418,
+                42.421194799999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Wellington Park",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 222,
+          "osm_id": "way/29835471"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1663734,
+                42.4201047
+              ],
+              [
+                -71.1657446,
+                42.4203004
+              ],
+              [
+                -71.165732,
+                42.4203051
+              ],
+              [
+                -71.1653778,
+                42.4205213
+              ],
+              [
+                -71.1651161,
+                42.420323
+              ],
+              [
+                -71.1649683,
+                42.4203181
+              ],
+              [
+                -71.1648376,
+                42.420296
+              ],
+              [
+                -71.1648699,
+                42.4201791
+              ],
+              [
+                -71.1644158,
+                42.4200698
+              ],
+              [
+                -71.164463,
+                42.4200156
+              ],
+              [
+                -71.1648141,
+                42.4196129
+              ],
+              [
+                -71.1649432,
+                42.4194767
+              ],
+              [
+                -71.1656753,
+                42.4198134
+              ],
+              [
+                -71.1659561,
+                42.4197488
+              ],
+              [
+                -71.1659977,
+                42.4198475
+              ],
+              [
+                -71.1660181,
+                42.4198892
+              ],
+              [
+                -71.1660411,
+                42.4199302
+              ],
+              [
+                -71.1663141,
+                42.4198136
+              ],
+              [
+                -71.167102,
+                42.4198914
+              ],
+              [
+                -71.1667872,
+                42.4201505
+              ],
+              [
+                -71.166733,
+                42.420121
+              ],
+              [
+                -71.1665229,
+                42.4201262
+              ],
+              [
+                -71.1665088,
+                42.4201266
+              ],
+              [
+                -71.1663734,
+                42.4201047
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Little Joe's Convenience",
+          "category": "Convenience Store",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 177,
+          "osm_id": "way/196451671"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.163926,
+                42.4221473
+              ],
+              [
+                -71.1638291,
+                42.4222431
+              ],
+              [
+                -71.1637462,
+                42.4221971
+              ],
+              [
+                -71.1638431,
+                42.4221012
+              ],
+              [
+                -71.163926,
+                42.4221473
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 250,
+          "osm_id": "way/1000428633"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1650425,
+                42.4199408
+              ],
+              [
+                -71.1648051,
+                42.41982
+              ],
+              [
+                -71.1647297,
+                42.4199007
+              ],
+              [
+                -71.1649672,
+                42.4200215
+              ],
+              [
+                -71.1650425,
+                42.4199408
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 259,
+          "osm_id": "way/1000428634"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1651434,
+                42.4198328
+              ],
+              [
+                -71.1649059,
+                42.419712
+              ],
+              [
+                -71.1648306,
+                42.4197927
+              ],
+              [
+                -71.165068,
+                42.4199135
+              ],
+              [
+                -71.1651434,
+                42.4198328
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 268,
+          "osm_id": "way/1000428635"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1652451,
+                42.4197235
+              ],
+              [
+                -71.1650076,
+                42.4196027
+              ],
+              [
+                -71.1649323,
+                42.4196834
+              ],
+              [
+                -71.1651697,
+                42.4198042
+              ],
+              [
+                -71.1652451,
+                42.4197235
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 243,
+          "osm_id": "way/1000428636"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.165437,
+                42.419853
+              ],
+              [
+                -71.1653247,
+                42.4197958
+              ],
+              [
+                -71.1651603,
+                42.4199719
+              ],
+              [
+                -71.1652727,
+                42.4200291
+              ],
+              [
+                -71.165437,
+                42.419853
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 233,
+          "osm_id": "way/1000428637"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1655823,
+                42.4199273
+              ],
+              [
+                -71.1654699,
+                42.4198702
+              ],
+              [
+                -71.1653056,
+                42.4200463
+              ],
+              [
+                -71.1654179,
+                42.4201034
+              ],
+              [
+                -71.1655823,
+                42.4199273
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Park",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 116,
+          "osm_id": "way/1359531321"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1652585,
+                42.4229067
+              ],
+              [
+                -71.1652641,
+                42.4229191
+              ],
+              [
+                -71.1652256,
+                42.4229126
+              ],
+              [
+                -71.1652005,
+                42.422909
+              ],
+              [
+                -71.165178,
+                42.4228963
+              ],
+              [
+                -71.1651659,
+                42.422877
+              ],
+              [
+                -71.1651659,
+                42.4228631
+              ],
+              [
+                -71.1651753,
+                42.4228651
+              ],
+              [
+                -71.1652585,
+                42.4229067
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Park",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 111,
+          "osm_id": "way/1359531322"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1652545,
+                42.4228636
+              ],
+              [
+                -71.1652578,
+                42.4228294
+              ],
+              [
+                -71.1651928,
+                42.4228428
+              ],
+              [
+                -71.165182,
+                42.4228457
+              ],
+              [
+                -71.1652552,
+                42.42288
+              ],
+              [
+                -71.1652545,
+                42.4228636
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "Bus Stop": 4,
+      "Gym": 1,
+      "Park": 3,
+      "Convenience Store": 1,
+      "Sports Pitch": 5
+    }
+  },
+  "193861": {
+    "name": "385 Massachusetts Avenue",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Monsignor Linnehan Library",
+          "category": "Library",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 335,
+          "osm_id": "node/257537169"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1505159,
+                42.415532
+              ],
+              [
+                -71.1504159,
+                42.415532
+              ],
+              [
+                -71.1504159,
+                42.415632
+              ],
+              [
+                -71.1505159,
+                42.415632
+              ],
+              [
+                -71.1505159,
+                42.415532
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Starbucks",
+          "category": "Cafe",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 283,
+          "osm_id": "node/356114066"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1510521,
+                42.4147074
+              ],
+              [
+                -71.1509521,
+                42.4147074
+              ],
+              [
+                -71.1509521,
+                42.4148074
+              ],
+              [
+                -71.1510521,
+                42.4148074
+              ],
+              [
+                -71.1510521,
+                42.4147074
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Makalu Boston",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 173,
+          "osm_id": "node/433561048"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1485691,
+                42.4112691
+              ],
+              [
+                -71.1484691,
+                42.4112691
+              ],
+              [
+                -71.1484691,
+                42.4113691
+              ],
+              [
+                -71.1485691,
+                42.4113691
+              ],
+              [
+                -71.1485691,
+                42.4112691
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Gail Ann Coffee Shop",
+          "category": "Cafe",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 314,
+          "osm_id": "node/439211089"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1510966,
+                42.415045899999996
+              ],
+              [
+                -71.1509966,
+                42.415045899999996
+              ],
+              [
+                -71.1509966,
+                42.4151459
+              ],
+              [
+                -71.1510966,
+                42.4151459
+              ],
+              [
+                -71.1510966,
+                42.415045899999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sweat Fixx",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 314,
+          "osm_id": "node/456710134"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1517218,
+                42.414589899999996
+              ],
+              [
+                -71.1516218,
+                42.414589899999996
+              ],
+              [
+                -71.1516218,
+                42.4146899
+              ],
+              [
+                -71.1517218,
+                42.4146899
+              ],
+              [
+                -71.1517218,
+                42.414589899999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Donut Villa Brunch & Bar",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 245,
+          "osm_id": "node/463156774"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1506348,
+                42.4145161
+              ],
+              [
+                -71.1505348,
+                42.4145161
+              ],
+              [
+                -71.1505348,
+                42.4146161
+              ],
+              [
+                -71.1506348,
+                42.4146161
+              ],
+              [
+                -71.1506348,
+                42.4145161
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Fusion Taste",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 218,
+          "osm_id": "node/463157240"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.15034250000001,
+                42.4143864
+              ],
+              [
+                -71.1502425,
+                42.4143864
+              ],
+              [
+                -71.1502425,
+                42.4144864
+              ],
+              [
+                -71.15034250000001,
+                42.4144864
+              ],
+              [
+                -71.15034250000001,
+                42.4143864
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Zomsa",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 256,
+          "osm_id": "node/463157807"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1511815,
+                42.414246899999995
+              ],
+              [
+                -71.1510815,
+                42.414246899999995
+              ],
+              [
+                -71.1510815,
+                42.4143469
+              ],
+              [
+                -71.1511815,
+                42.4143469
+              ],
+              [
+                -71.1511815,
+                42.414246899999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "WooRi Korean Fusion Grill",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 290,
+          "osm_id": "node/633118822"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1507199,
+                42.414976599999996
+              ],
+              [
+                -71.1506199,
+                42.414976599999996
+              ],
+              [
+                -71.1506199,
+                42.4150766
+              ],
+              [
+                -71.1507199,
+                42.4150766
+              ],
+              [
+                -71.1507199,
+                42.414976599999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Body & Brain Yoga Tai Chi",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 269,
+          "osm_id": "node/1155618499"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1509039,
+                42.4146362
+              ],
+              [
+                -71.1508039,
+                42.4146362
+              ],
+              [
+                -71.1508039,
+                42.4147362
+              ],
+              [
+                -71.1509039,
+                42.4147362
+              ],
+              [
+                -71.1509039,
+                42.4146362
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Broadway @ Allen St",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 233,
+          "osm_id": "node/1399777173"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1459244,
+                42.4125473
+              ],
+              [
+                -71.1458244,
+                42.4125473
+              ],
+              [
+                -71.1458244,
+                42.4126473
+              ],
+              [
+                -71.1459244,
+                42.4126473
+              ],
+              [
+                -71.1459244,
+                42.4125473
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Broadway @ Massachusetts Ave",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 240,
+          "osm_id": "node/1399777344"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1507485,
+                42.414389899999996
+              ],
+              [
+                -71.1506485,
+                42.414389899999996
+              ],
+              [
+                -71.1506485,
+                42.4144899
+              ],
+              [
+                -71.1507485,
+                42.4144899
+              ],
+              [
+                -71.1507485,
+                42.414389899999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Avon Pl",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 57,
+          "osm_id": "node/1399788092"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1494324,
+                42.4128009
+              ],
+              [
+                -71.14933239999999,
+                42.4128009
+              ],
+              [
+                -71.14933239999999,
+                42.412900900000004
+              ],
+              [
+                -71.1494324,
+                42.412900900000004
+              ],
+              [
+                -71.1494324,
+                42.4128009
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Broadway",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 250,
+          "osm_id": "node/1399788144"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1510944,
+                42.4142365
+              ],
+              [
+                -71.1509944,
+                42.4142365
+              ],
+              [
+                -71.1509944,
+                42.414336500000005
+              ],
+              [
+                -71.1510944,
+                42.414336500000005
+              ],
+              [
+                -71.1510944,
+                42.4142365
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Franklin St",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 59,
+          "osm_id": "node/1399788288"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1493636,
+                42.4130835
+              ],
+              [
+                -71.1492636,
+                42.4130835
+              ],
+              [
+                -71.1492636,
+                42.4131835
+              ],
+              [
+                -71.1493636,
+                42.4131835
+              ],
+              [
+                -71.1493636,
+                42.4130835
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Medford St",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 334,
+          "osm_id": "node/1399788322"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1516399,
+                42.4149288
+              ],
+              [
+                -71.1515399,
+                42.4149288
+              ],
+              [
+                -71.1515399,
+                42.4150288
+              ],
+              [
+                -71.1516399,
+                42.4150288
+              ],
+              [
+                -71.1516399,
+                42.4149288
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Wyman St",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 114,
+          "osm_id": "node/1399788344"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.148488,
+                42.411811
+              ],
+              [
+                -71.148388,
+                42.411811
+              ],
+              [
+                -71.148388,
+                42.411911
+              ],
+              [
+                -71.148488,
+                42.411911
+              ],
+              [
+                -71.148488,
+                42.411811
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Massachusetts Ave @ Wyman Terr",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 153,
+          "osm_id": "node/1399788421"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1485743,
+                42.4114522
+              ],
+              [
+                -71.1484743,
+                42.4114522
+              ],
+              [
+                -71.1484743,
+                42.4115522
+              ],
+              [
+                -71.1485743,
+                42.4115522
+              ],
+              [
+                -71.1485743,
+                42.4114522
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Medford St @ Mass Ave",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 295,
+          "osm_id": "node/1399788563"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.15088300000001,
+                42.414950999999995
+              ],
+              [
+                -71.150783,
+                42.414950999999995
+              ],
+              [
+                -71.150783,
+                42.415051
+              ],
+              [
+                -71.15088300000001,
+                42.415051
+              ],
+              [
+                -71.15088300000001,
+                42.414950999999995
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "La Victoria's Taqueria",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 314,
+          "osm_id": "node/5362393825"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1510705,
+                42.4150582
+              ],
+              [
+                -71.1509705,
+                42.4150582
+              ],
+              [
+                -71.1509705,
+                42.4151582
+              ],
+              [
+                -71.1510705,
+                42.4151582
+              ],
+              [
+                -71.1510705,
+                42.4150582
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "7 Star Grocery",
+          "category": "Convenience Store",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 314,
+          "osm_id": "node/5362415509"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1511311,
+                42.4150218
+              ],
+              [
+                -71.1510311,
+                42.4150218
+              ],
+              [
+                -71.1510311,
+                42.4151218
+              ],
+              [
+                -71.1511311,
+                42.4151218
+              ],
+              [
+                -71.1511311,
+                42.4150218
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Thai Moon",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 240,
+          "osm_id": "node/9980940011"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.150585,
+                42.4144937
+              ],
+              [
+                -71.150485,
+                42.4144937
+              ],
+              [
+                -71.150485,
+                42.414593700000005
+              ],
+              [
+                -71.150585,
+                42.414593700000005
+              ],
+              [
+                -71.150585,
+                42.4144937
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Caffè Nero",
+          "category": "Cafe",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 253,
+          "osm_id": "node/9980940012"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1507347,
+                42.4145524
+              ],
+              [
+                -71.1506347,
+                42.4145524
+              ],
+              [
+                -71.1506347,
+                42.4146524
+              ],
+              [
+                -71.1507347,
+                42.4146524
+              ],
+              [
+                -71.1507347,
+                42.4145524
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Brickstone Cafe",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 228,
+          "osm_id": "node/10828220909"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1504413,
+                42.4144395
+              ],
+              [
+                -71.1503413,
+                42.4144395
+              ],
+              [
+                -71.1503413,
+                42.414539500000004
+              ],
+              [
+                -71.1504413,
+                42.414539500000004
+              ],
+              [
+                -71.1504413,
+                42.4144395
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Brizuela Fitness",
+          "category": "Gym",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 227,
+          "osm_id": "node/10828243726"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1509452,
+                42.4140509
+              ],
+              [
+                -71.15084519999999,
+                42.4140509
+              ],
+              [
+                -71.15084519999999,
+                42.4141509
+              ],
+              [
+                -71.1509452,
+                42.4141509
+              ],
+              [
+                -71.1509452,
+                42.4140509
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "SUMEN",
+          "category": "Restaurant",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 281,
+          "osm_id": "node/10828247806"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1514018,
+                42.414406299999996
+              ],
+              [
+                -71.1513018,
+                42.414406299999996
+              ],
+              [
+                -71.1513018,
+                42.4145063
+              ],
+              [
+                -71.1514018,
+                42.4145063
+              ],
+              [
+                -71.1514018,
+                42.414406299999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Broadway @ Franklin St",
+          "category": "Bus Stop",
+          "height": 1,
+          "base_height": 0,
+          "distance_m": 115,
+          "osm_id": "node/13630386499"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1490522,
+                42.413828699999996
+              ],
+              [
+                -71.1489522,
+                42.413828699999996
+              ],
+              [
+                -71.1489522,
+                42.4139287
+              ],
+              [
+                -71.1490522,
+                42.4139287
+              ],
+              [
+                -71.1490522,
+                42.413828699999996
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Arlington Center Memorial",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 171,
+          "osm_id": "way/36897333"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1505428,
+                42.4142561
+              ],
+              [
+                -71.1505137,
+                42.4142753
+              ],
+              [
+                -71.1501729,
+                42.4141451
+              ],
+              [
+                -71.1499171,
+                42.4140473
+              ],
+              [
+                -71.1498856,
+                42.4140355
+              ],
+              [
+                -71.1498397,
+                42.4140183
+              ],
+              [
+                -71.149812,
+                42.4139535
+              ],
+              [
+                -71.1498839,
+                42.4139488
+              ],
+              [
+                -71.1499204,
+                42.4139684
+              ],
+              [
+                -71.1499824,
+                42.4139035
+              ],
+              [
+                -71.1499826,
+                42.4138634
+              ],
+              [
+                -71.1500216,
+                42.4138603
+              ],
+              [
+                -71.1500365,
+                42.4138634
+              ],
+              [
+                -71.1500784,
+                42.4138703
+              ],
+              [
+                -71.1500867,
+                42.4138745
+              ],
+              [
+                -71.1500987,
+                42.4138805
+              ],
+              [
+                -71.1502816,
+                42.4140352
+              ],
+              [
+                -71.1505428,
+                42.4142561
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Church of St Agnes",
+          "category": "Church",
+          "height": 6,
+          "base_height": 0,
+          "distance_m": 378,
+          "osm_id": "way/37226692"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1503299,
+                42.416017
+              ],
+              [
+                -71.1503687,
+                42.4159866
+              ],
+              [
+                -71.1504462,
+                42.4160411
+              ],
+              [
+                -71.15034,
+                42.4161232
+              ],
+              [
+                -71.1503528,
+                42.4161494
+              ],
+              [
+                -71.1503469,
+                42.4161751
+              ],
+              [
+                -71.1503197,
+                42.4161965
+              ],
+              [
+                -71.1502848,
+                42.4162053
+              ],
+              [
+                -71.1502453,
+                42.4161964
+              ],
+              [
+                -71.1502215,
+                42.4161786
+              ],
+              [
+                -71.1502177,
+                42.4161815
+              ],
+              [
+                -71.1502252,
+                42.4161874
+              ],
+              [
+                -71.1502253,
+                42.4161949
+              ],
+              [
+                -71.1502224,
+                42.4162016
+              ],
+              [
+                -71.1502128,
+                42.4162072
+              ],
+              [
+                -71.1502026,
+                42.4162081
+              ],
+              [
+                -71.1501933,
+                42.4162076
+              ],
+              [
+                -71.1501837,
+                42.4162018
+              ],
+              [
+                -71.1501683,
+                42.4161922
+              ],
+              [
+                -71.1501547,
+                42.416204
+              ],
+              [
+                -71.1501257,
+                42.4161996
+              ],
+              [
+                -71.1500212,
+                42.4161275
+              ],
+              [
+                -71.15005,
+                42.4161052
+              ],
+              [
+                -71.1499289,
+                42.4160151
+              ],
+              [
+                -71.1499135,
+                42.4160255
+              ],
+              [
+                -71.1498505,
+                42.4159801
+              ],
+              [
+                -71.1499311,
+                42.4159183
+              ],
+              [
+                -71.149944,
+                42.415927
+              ],
+              [
+                -71.1499994,
+                42.4158844
+              ],
+              [
+                -71.1499829,
+                42.4158718
+              ],
+              [
+                -71.150017,
+                42.4158461
+              ],
+              [
+                -71.1502113,
+                42.4159848
+              ],
+              [
+                -71.1502465,
+                42.4159584
+              ],
+              [
+                -71.1503299,
+                42.416017
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sports Pitch",
+          "category": "Sports Pitch",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 375,
+          "osm_id": "way/1167484102"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1459261,
+                42.4100495
+              ],
+              [
+                -71.1455982,
+                42.4102887
+              ],
+              [
+                -71.1458148,
+                42.4104426
+              ],
+              [
+                -71.1461347,
+                42.4101951
+              ],
+              [
+                -71.1459261,
+                42.4100495
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Spy Pond Field",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 270,
+          "osm_id": "relation/1835514"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1516727,
+                42.412365
+              ],
+              [
+                -71.151738,
+                42.4125586
+              ],
+              [
+                -71.1518593,
+                42.4127461
+              ],
+              [
+                -71.1519617,
+                42.4128422
+              ],
+              [
+                -71.1520636,
+                42.4129396
+              ],
+              [
+                -71.1521558,
+                42.4130829
+              ],
+              [
+                -71.152305,
+                42.4134292
+              ],
+              [
+                -71.152388,
+                42.413858
+              ],
+              [
+                -71.1516727,
+                42.412365
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Spy Pond Park",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 277,
+          "osm_id": "relation/1835515"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1510752,
+                42.4118454
+              ],
+              [
+                -71.1508628,
+                42.4116496
+              ],
+              [
+                -71.1507047,
+                42.4115116
+              ],
+              [
+                -71.1501722,
+                42.4110637
+              ],
+              [
+                -71.149994,
+                42.4108852
+              ],
+              [
+                -71.1499107,
+                42.4108036
+              ],
+              [
+                -71.1498233,
+                42.4107235
+              ],
+              [
+                -71.1497327,
+                42.410635
+              ],
+              [
+                -71.1496162,
+                42.4105108
+              ],
+              [
+                -71.1494994,
+                42.4103631
+              ],
+              [
+                -71.1494035,
+                42.4102314
+              ],
+              [
+                -71.1493091,
+                42.410098
+              ],
+              [
+                -71.1492389,
+                42.4099876
+              ],
+              [
+                -71.1491877,
+                42.4099052
+              ],
+              [
+                -71.1491178,
+                42.4097846
+              ],
+              [
+                -71.1490489,
+                42.4096691
+              ],
+              [
+                -71.1490106,
+                42.4095847
+              ],
+              [
+                -71.1489717,
+                42.4094941
+              ],
+              [
+                -71.1489244,
+                42.4093956
+              ],
+              [
+                -71.1510752,
+                42.4118454
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Park",
+          "category": "Park",
+          "height": 10,
+          "base_height": 0,
+          "distance_m": 295,
+          "osm_id": "relation/1835518"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1521691,
+                42.4142007
+              ],
+              [
+                -71.152095,
+                42.413954
+              ],
+              [
+                -71.151992,
+                42.4136192
+              ],
+              [
+                -71.1519397,
+                42.413458
+              ],
+              [
+                -71.1519164,
+                42.4133985
+              ],
+              [
+                -71.1521691,
+                42.4142007
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "Library": 1,
+      "Cafe": 3,
+      "Restaurant": 9,
+      "Gym": 3,
+      "Bus Stop": 10,
+      "Convenience Store": 1,
+      "Park": 4,
+      "Church": 1,
+      "Sports Pitch": 1
+    }
+  }
+}
