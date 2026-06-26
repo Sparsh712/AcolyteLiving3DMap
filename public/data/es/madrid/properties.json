@@ -77,8 +77,8 @@
   {
     "id": "1522433",
     "name": "Coliseo Europea",
-    "lat": 40.383534,
-    "lng": -3.932091,
+    "lat": 40.3859575,
+    "lng": -3.9406309,
     "price": 1245,
     "currency": "EUR",
     "address": "Calle Guadiana 40 - Villaviciosa de Odón, Madrid, Madrid 28670",
@@ -339,8 +339,8 @@
   {
     "id": "1569067",
     "name": "Nido Aravaca",
-    "lat": 40.447194,
-    "lng": -3.777361,
+    "lat": 40.4469749,
+    "lng": -3.7785555,
     "price": 1188,
     "currency": "EUR",
     "address": "Av. del Talgo 3, Madrid, Madrid 28023",

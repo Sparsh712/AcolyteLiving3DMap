@@ -187,7 +187,7 @@ function normalizeHouseUrl(raw: string): string {
 
 function extractCountrySlug(houseUrl: string): string | null {
   const normalized = normalizeHouseUrl(houseUrl.toLowerCase());
-  const match = normalized.match(/(^|\/)(uk|us|au|de|es|fr)\//);
+  const match = normalized.match(/(^|\/)(uk|us|au|de|es|fr|ca)\//);
   return match?.[2] ?? null;
 }
 
@@ -197,7 +197,7 @@ function extractCitySlug(houseUrl: string): string | null {
   const parts = normalized.split('/').filter(Boolean);
   if (parts.length === 0) return null;
 
-  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us' || part === 'au' || part === 'de' || part === 'es' || part === 'fr');
+  const countryIndex = parts.findIndex((part) => part === 'uk' || part === 'us' || part === 'au' || part === 'de' || part === 'es' || part === 'fr' || part === 'ca');
   if (countryIndex >= 0 && parts[countryIndex + 1]) {
     return parts[countryIndex + 1];
   }
@@ -209,17 +209,14 @@ function getPropertyCountrySlug(property: Property): string {
   const slug = extractCountrySlug(property.houseUrl ?? '');
   if (slug) return slug;
 
-  if (property.lng < -20) return 'us';
-  if (property.lng > 110 && property.lat < -10) return 'au';
-  return 'uk';
+  return '';
 }
 
 function getPropertyCitySlug(property: Property): string {
   const slug = extractCitySlug(property.houseUrl ?? '');
   if (slug) return slug;
 
-  if (property.lat > 52.7 && property.lng > -2.0) return 'nottingham';
-  return property.lat > 52.5 ? 'manchester' : 'london';
+  return '';
 }
 
 // Lazily loaded OSM building data per city (client-safe: only used in browser via fetch)

@@ -45,6 +45,10 @@ const CITY_SOURCES: CitySource[] = [
   { country: 'uk', city: 'st-andrews', legacySlug: 'st-andrews' },
   { country: 'uk', city: 'swansea', legacySlug: 'swansea' },
   { country: 'uk', city: 'york', legacySlug: 'york' },
+  // New UK Cities
+  { country: 'uk', city: 'hertfordshire' },
+  { country: 'uk', city: 'leicestershire' },
+  { country: 'uk', city: 'newcastle' },
   { country: 'au', city: 'melbourne', legacySlug: 'melbourne' },
   { country: 'au', city: 'sydney', legacySlug: 'sydney' },
   { country: 'au', city: 'brisbane', legacySlug: 'brisbane' },
@@ -71,6 +75,7 @@ const CITY_SOURCES: CitySource[] = [
   { country: 'us', city: 'buffalo', legacySlug: 'buffalo' },
   { country: 'us', city: 'arlington', legacySlug: 'arlington' },
   { country: 'us', city: 'new-york', legacySlug: 'new-york' },
+  { country: 'us', city: 'chicago' },
   // DE (Germany) Cities
   { country: 'de', city: 'munchen' },
   { country: 'de', city: 'aachen' },
@@ -103,6 +108,19 @@ const CITY_SOURCES: CitySource[] = [
   { country: 'es', city: 'madrid' },
   { country: 'es', city: 'barcelona' },
   { country: 'es', city: 'pamplona' },
+  // CA (Canada) Cities
+  { country: 'ca', city: 'burnaby' },
+  { country: 'ca', city: 'calgary' },
+  { country: 'ca', city: 'edmonton' },
+  { country: 'ca', city: 'hamilton' },
+  { country: 'ca', city: 'kitchener' },
+  { country: 'ca', city: 'london' },
+  { country: 'ca', city: 'montreal' },
+  { country: 'ca', city: 'oakville' },
+  { country: 'ca', city: 'ottawa' },
+  { country: 'ca', city: 'toronto' },
+  { country: 'ca', city: 'vancouver' },
+  { country: 'ca', city: 'waterloo' },
 ];
 
 function isValidProperty(property: Property): boolean {

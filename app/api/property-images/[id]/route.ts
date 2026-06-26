@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const BASE_URL = 'https://acolyteliving.com/properties';
-const ALLOWED_COUNTRIES = new Set(['uk', 'us', 'au', 'de', 'es', 'fr']);
+const ALLOWED_COUNTRIES = new Set(['uk', 'us', 'au', 'de', 'es', 'fr', 'ca']);
 const ALLOWED_CITIES = new Set([
   'manchester',
   'london',
@@ -42,6 +42,9 @@ const ALLOWED_CITIES = new Set([
   'newcastle',
   'perth',
   'sydney',
+  // New UK Cities
+  'hertfordshire',
+  'leicestershire',
   // New US Cities
   'boston',
   'los-angeles',
@@ -60,6 +63,7 @@ const ALLOWED_CITIES = new Set([
   'buffalo',
   'arlington',
   'new-york',
+  'chicago',
   // DE (Germany) Cities
   'munchen',
   'aachen',
@@ -92,6 +96,18 @@ const ALLOWED_CITIES = new Set([
   'madrid',
   'barcelona',
   'pamplona',
+  // CA (Canada) Cities
+  'burnaby',
+  'calgary',
+  'edmonton',
+  'hamilton',
+  'kitchener',
+  'montreal',
+  'oakville',
+  'ottawa',
+  'toronto',
+  'vancouver',
+  'waterloo',
 ]);
 
 /**

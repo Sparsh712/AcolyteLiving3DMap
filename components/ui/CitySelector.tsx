@@ -1,9 +1,10 @@
 'use client';
 
 import type { Map as MapLibreMap } from 'maplibre-gl';
-import { MANCHESTER_CENTER } from '@/lib/maplibre/mapConfig';
 
 export type City = 'Manchester';
+
+const MANCHESTER_CENTER: [number, number] = [-2.2426, 53.4808];
 
 interface CitySelectorProps {
   map: MapLibreMap | null;

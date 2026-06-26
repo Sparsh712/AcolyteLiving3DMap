@@ -7,7 +7,7 @@ import type { Map as MapLibreMap, MapMouseEvent } from 'maplibre-gl';
 import { useProperties } from '@/hooks/useProperties';
 import { useMapInteraction } from '@/hooks/useMapInteraction';
 import type { Property } from '@/types/property';
-import { COVENTRY_CENTER, LONDON_CENTER, MANCHESTER_CENTER, NOTTINGHAM_CENTER } from '@/lib/maplibre/mapConfig';
+import { INITIAL_VIEW } from '@/lib/maplibre/mapConfig';
 
 // SSR-safe dynamic imports for anything that uses `window`
 const MapView          = dynamic(() => import('@/components/map/MapView'),          { ssr: false });
@@ -42,7 +42,7 @@ function extractCitySlug(houseUrl: string): string | null {
   if (parts.length === 0) return null;
 
   const lower = parts.map((part) => part.toLowerCase());
-  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us' || part === 'au' || part === 'de' || part === 'es' || part === 'fr');
+  const countryIndex = lower.findIndex((part) => part === 'uk' || part === 'us' || part === 'au' || part === 'de' || part === 'es' || part === 'fr' || part === 'ca');
 
   if (countryIndex >= 0 && parts[countryIndex + 1]) {
     return parts[countryIndex + 1].toLowerCase();
@@ -61,13 +61,12 @@ function slugToLabel(slug: string): string {
 
 function getPropertyCountry(property: Property): string {
   const normalized = normalizeHouseUrl(property.houseUrl?.toLowerCase() ?? '');
-  const match = normalized.match(/(^|\/)(uk|us|au|de|es|fr)\//);
+  const match = normalized.match(/(^|\/)(uk|us|au|de|es|fr|ca)\//);
   if (match?.[2]) {
     return match[2].toUpperCase();
   }
 
-  if (property.lng < -20) return 'US';
-  return 'UK';
+  return '';
 }
 
 function getPropertyCity(property: Property): string {
@@ -80,9 +79,7 @@ function getPropertyCity(property: Property): string {
   if (houseUrl.includes('/london/')) return 'London';
   if (houseUrl.includes('/manchester/')) return 'Manchester';
 
-  // Fallback by latitude when URL city segment is missing.
-  if (property.lat > 52.7 && property.lng > -2.0) return 'Nottingham';
-  return property.lat > 52.5 ? 'Manchester' : 'London';
+  return '';
 }
 
 function buildCityCenters(properties: Property[]): Record<string, [number, number]> {
@@ -358,11 +355,7 @@ export default function HomePage() {
   }, [cityProperties, map, selectedUniversity, smoothEaseInOut]);
 
   const resolveCityCenter = useCallback((city: CityFilter): [number, number] => {
-    if (city === 'London') return LONDON_CENTER;
-    if (city === 'Coventry') return COVENTRY_CENTER;
-    if (city === 'Nottingham') return NOTTINGHAM_CENTER;
-    if (city === 'Manchester') return MANCHESTER_CENTER;
-    return cityCenters[city] ?? MANCHESTER_CENTER;
+    return cityCenters[city] ?? (INITIAL_VIEW.center as [number, number]);
   }, [cityCenters]);
 
   const resolveCountryZoom = useCallback((country: CountryFilter): number => {
@@ -372,17 +365,18 @@ export default function HomePage() {
     if (country === 'DE') return 5.5;
     if (country === 'FR') return 5.5;
     if (country === 'ES') return 5.8;
-    return 4.0;
+    if (country === 'CA') return 3.2;
+    return INITIAL_VIEW.zoom as number;
   }, []);
 
   const flyToCountry = useCallback((country: CountryFilter) => {
     if (!map) return;
     if (!country) {
       map.flyTo({
-        center: [0, 20],
-        zoom: 1.6,
-        pitch: 0,
-        bearing: 0,
+        center: INITIAL_VIEW.center as [number, number],
+        zoom: INITIAL_VIEW.zoom as number,
+        pitch: INITIAL_VIEW.pitch as number,
+        bearing: INITIAL_VIEW.bearing as number,
         duration: 1800,
         essential: true,
         easing: smoothEaseInOut,
@@ -390,14 +384,15 @@ export default function HomePage() {
       return;
     }
 
-    const targetCenter = countryCenters[country] ?? [0, 20];
-    const targetZoom = resolveCountryZoom(country);
+    const hasCenter = country in countryCenters;
+    const targetCenter = hasCenter ? countryCenters[country] : (INITIAL_VIEW.center as [number, number]);
+    const targetZoom = hasCenter ? resolveCountryZoom(country) : (INITIAL_VIEW.zoom as number);
 
     map.flyTo({
       center: targetCenter,
       zoom: targetZoom,
-      pitch: 0,
-      bearing: 0,
+      pitch: hasCenter ? 0 : (INITIAL_VIEW.pitch as number),
+      bearing: hasCenter ? 0 : (INITIAL_VIEW.bearing as number),
       duration: 1800,
       essential: true,
       easing: smoothEaseInOut,
@@ -428,11 +423,12 @@ export default function HomePage() {
     }
 
     const targetCenter = resolveCityCenter(city);
+    const isFallback = targetCenter === INITIAL_VIEW.center;
     map.flyTo({
       center: targetCenter,
-      zoom: city === 'London' ? 12.8 : 13.4,
-      pitch: 58,
-      bearing: -30,
+      zoom: isFallback ? (INITIAL_VIEW.zoom as number) : (city === 'London' ? 12.8 : 13.4),
+      pitch: isFallback ? (INITIAL_VIEW.pitch as number) : 58,
+      bearing: isFallback ? (INITIAL_VIEW.bearing as number) : -30,
       duration: 1800,
       essential: true,
       easing: smoothEaseInOut,
@@ -444,10 +440,10 @@ export default function HomePage() {
 
     if (!cityFilter) {
       map.flyTo({
-        center: [0, 20],
-        zoom: 1.6,
-        pitch: 0,
-        bearing: 0,
+        center: INITIAL_VIEW.center as [number, number],
+        zoom: INITIAL_VIEW.zoom as number,
+        pitch: INITIAL_VIEW.pitch as number,
+        bearing: INITIAL_VIEW.bearing as number,
         duration: 1800,
         essential: true,
         easing: smoothEaseInOut,
@@ -456,13 +452,14 @@ export default function HomePage() {
     }
 
     const targetCenter = resolveCityCenter(cityFilter);
-    const targetZoom = cityFilter === 'London' ? 12.8 : 13.4;
+    const isFallback = targetCenter === INITIAL_VIEW.center;
+    const targetZoom = isFallback ? (INITIAL_VIEW.zoom as number) : (cityFilter === 'London' ? 12.8 : 13.4);
 
     map.flyTo({
       center: targetCenter,
       zoom: targetZoom,
-      pitch: 58,
-      bearing: -30,
+      pitch: isFallback ? (INITIAL_VIEW.pitch as number) : 58,
+      bearing: isFallback ? (INITIAL_VIEW.bearing as number) : -30,
       duration: 1800,
       essential: true,
       easing: smoothEaseInOut,

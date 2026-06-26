@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1712554",
+    "name": "3265 Carding Mill Trail",
+    "lat": 43.477282,
+    "lng": -79.744113,
+    "price": 2050,
+    "currency": "CAD",
+    "address": "3265 Carding Mill Trail, Oakville, Ontario L6M 5P7",
+    "university": "Ontario Universities Application Centre",
+    "distance": 41.43,
+    "rating": null,
+    "about": "",
+    "images": [
+      "01KA92SY8RHW0M90V8S68QJEMM.webp",
+      "01KA92P7D5SWZPJCKX7MA0N8EC.webp",
+      "01KA92V20CWH1EPRX5C61TFHM1.webp"
+    ],
+    "houseUrl": "ca/oakville/detail-apartments-1712554",
+    "operator": "condos.ca",
+    "floors": 0,
+    "beds": 0,
+    "roomTypes": ""
+  }
+]

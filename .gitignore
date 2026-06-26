@@ -61,6 +61,8 @@ scripts/*
 
 README.md
 Help.md
+location-accuracy-report.md
+location-accuracy-stats.json
 graphify-out/
 
 # AI tooling config files (not for collaborators)
