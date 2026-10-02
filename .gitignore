@@ -55,15 +55,6 @@ public/next.svg
 public/vercel.svg
 public/window.svg
 
-# developer-only data-fetch & one-off fix scripts (not needed in repo)
-scripts_other/*
-scripts/*
-
-README.md
-Help.md
-location-accuracy-report.md
-location-accuracy-stats.json
-graphify-out/
 
 # AI tooling config files (not for collaborators)
 CLAUDE.md
